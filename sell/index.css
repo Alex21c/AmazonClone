@@ -31,13 +31,15 @@ body {
  */
 
 
-
+main{
+  font-family: "Amazon Ember",Arial,sans-serif;
+  color: #232f3e;
+}
 
  /* sell-section1  */
 
 
 h2 {
-  font-family: 'Roboto', sans-serif;
   font-size: 3.2vmin;
 }
 
@@ -51,7 +53,6 @@ h2 {
   justify-content: center;
   width: 100%;
   box-shadow: 0.2px 0px 40px 0.2px #d4d4d4;
-  color: #232f3e;
 }
 
 .sell-section1-content {
@@ -73,7 +74,6 @@ h2 {
   border: none;
   cursor: pointer;
   box-shadow: 1px 1px 20px 1px #f2f2f2;
-  color: #232f32;
 }
 
 .sell-btn button:hover{
@@ -167,21 +167,65 @@ h2 {
   width: 80%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
+  margin: 12vmin auto;
 }
 
 .cards{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 5vmin 0;
 }
 
-.cards-section .cards .card img{
-  width: 40px;
-  height: 30px;
+.cards-section .cards .card .card-content img{
+  width: 8.6vmin;
+  height: 8.6vmin;
+  /* margin-bottom: 2.3vmin; */
 }
 
+.cards-section .cards .card .card-content span{
+  /* margin-bottom: 2.3vmin; */
+  display: inline-block;
+  font-size: 4.6vmin;
+  font-weight:700;
+}
+
+.cards-section .cards .card .card-content p{
+  font-size: 2.3vmin;
+}
+
+
+.cards-section .cards .card{
+  width: 32%;
+  height: 47vmin;
+  background-color: white;
+  box-shadow: 0.2px 0px 25px 0.2px #d4d4d4;
+  border-radius: 8px;
+  padding: 5.2vmin;
+}
+
+.card-content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+
+.cards-section .cards-heading h1{
+  font-size: 6.4vmin;
+  font-weight:bolder
+}
+
+.cards-section .cards-heading{
+  text-align: left;
+  width: 100%;
+}
+/* 
 .sell-review{
   
-}
+} */

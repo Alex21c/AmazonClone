@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Geekster Module #3 Geekathon 01 TeamAmazon">
+  <meta name="keywords" content="Amazon Prime, Amazon Clone, Geekster, Module #3">
+  <!-- #1/6 Teammate, kindly replace homepage with name of the page you're designing-->
+  <meta name="author" content="Savita Mam"> <!-- #2/6 Teammate, you name goes here -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Amazon.in: Amazon Prime</title>
+  <!-- #3/6 Teammate, kindly update title with the actaul title from amazon page, for the page you're designing -->
+  <!-- Google Font matching Amazon Proprietory Fonts, this is how to use them:
+      font-family: 'Roboto', sans-serif;
+     -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="../Assests/Common/CSS/headerAndFooter.css">
+    <link rel="stylesheet" href="../Assests/fontAwesomeProIcons/fontAwesomeIcons.css">
+  <!-- #4/6 Teammate, You Need to update yours style sheet here, just replace index.css  -->
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+  <h1 class="displayNone">Homepage</h1> <!-- #5/6 Kindly replace homepage with the name of the page teammate designing-->
+  <!-- Will be common (assigned to Abhishek kumar)-->
+    <header id="pageHeader">
+      <div class="logo">
+          <a href="../homepage/index.html">
+            <img src="../Assests/Common/Images/pageHeaderAndFooter/logo.png" alt="Amazon Logo">
+            <span>.in</span>
+        </a>
+      </div>
+
+      <div class="deliveringTo">
+        <div class="mapIcon">
+          <i class="fa-sharp fa-regular fa-location-dot"></i>
+        </div>
+        <div class="deliveryAddress">
+          <div>Delivering to Mumbai 400001</div>
+          <div>Update Location</div>
+        </div>
+      </div>
+
+      <form method="GET" action="index.html" class="searchBoxHeader">
+        <select name="url" class="categories">
+          <option selected="selected" value="All">All</option>
+          <option value="alexa-skills">Alexa Skills</option>
+          <option value="amazon-devices">Amazon Devices</option>
+          <option value="fashion">Amazon Fashion</option>
+          <option value="nowstore">Amazon Fresh</option>
+          <option value="amazon-pharmacy">Amazon Pharmacy</option>
+          <option value="appliances">Appliances</option>
+          <option value="mobile-apps">Apps &amp; Games</option>
+          <option value="audible">Audible Audiobooks</option>
+          <option value="baby">Baby</option>
+          <option value="beauty">Beauty</option>
+          <option value="stripbooks">Books</option>
+          <option value="automotive">Car &amp; Motorbike</option>
+          <option value="apparel">Clothing &amp; Accessories</option>
+          <option value="collectibles">Collectibles</option>
+          <option value="computers">Computers &amp; Accessories</option>
+          <option value="electronics">Electronics</option>
+          <option value="furniture">Furniture</option>
+          <option value="lawngarden">Garden &amp; Outdoors</option>
+          <option value="gift-cards">Gift Cards</option>
+          <option value="grocery">Grocery &amp; Gourmet Foods</option>
+          <option value="hpc">Health &amp; Personal Care</option>
+          <option value="kitchen">Home &amp; Kitchen</option>
+          <option value="industrial">Industrial &amp; Scientific</option>
+          <option value="jewelry">Jewellery</option>
+          <option value="digital-text">Kindle Store</option>
+          <option value="luggage">Luggage &amp; Bags</option>
+          <option value="luxury-beauty">Luxury Beauty</option>
+          <option value="dvd">Movies &amp; TV Shows</option>
+          <option value="popular">Music</option>
+          <option value="mi">Musical Instruments</option>
+          <option value="office-products">Office Products</option>
+          <option value="pets">Pet Supplies</option>
+          <option value="instant-video">Prime Video</option>
+          <option value="shoes">Shoes &amp; Handbags</option>
+          <option value="software">Software</option>
+          <option value="sporting">Sports, Fitness &amp; Outdoors</option>
+          <option value="specialty-aps-sns">Subscribe &amp; Save</option>
+          <option value="home-improvement">Tools &amp; Home Improvement</option>
+          <option value="toys">Toys &amp; Games</option>
+          <option value="under-ten-dollars">Under ₹500</option>
+          <option value="videogames">Video Games</option>
+          <option value="watches">Watches</option>
+        </select>        
+        <div class="searchInput">
+          <input type="search" name="search" placeholder="Search Amazon.in">
+        </div>
+        <div class="submitBtn">          
+            <input type="submit" value="Go">      
+            <i class="fa-regular fa-magnifying-glass"></i>              
+        </div>      
+      </form>
+      <div>
+        <img src="../Assests/Common/Images/pageHeaderAndFooter/indiaFlag.png" alt="India Flag">
+        <span>EN</span>
+        <i class="fa-sharp fa-solid fa-caret-down"></i>
+      </div>
+      <div>
+        <div>Hello, sign in</div>
+        <div>
+          <span>Account & Lists</span>
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+      </div>
+
+      <div>
+        <div>Returns</div>
+        <div>& Orders</div>
+      </div>
+
+      <div>
+        <div>
+          <img src="../Assests/Common/Images/pageHeaderAndFooter/cart.png" alt="Shopping Cart">
+          <span>0</span>
+        </div>
+        <div>Cart</div>
+      </div>
+    </header> 
+
+    <nav id="primaryHeaderNavigation">
+      <h2 class="displayNone">Primary Navigation</h2>
+      <ul>
+        <li class="allItemsMenu"><a href="#"><i class="fa-regular fa-bars"></i><span>All</span></a></li>
+        <li><a href="../fresh/index.html">Fresh</a></li>
+        <li><a href="../miniTV/index.html">Amazon miniTV</a></li>
+        <li><a href="../sell/index.html">Sell</a></li>
+        <li><a href="../bestSellers/index.html">Best Sellers</a></li>
+        <li><a href="../todaysDeals/index.html">Today's Deals</a></li>
+        <li><a href="../mobiles/index.html">Mobiles</a></li>
+        <li><a href="../customerService/index.html">Customer Service</a></li>
+        <li><a href="../electronics/index.html">Electronics</a></li>
+        <li><a href="../newReleases/index.html">New Releases</a></li>
+        <li><a href="../prime/index.html">Prime <i class="fa-sharp fa-solid fa-caret-down"></i></a></li>
+        <li><a href="../homeAndKitchen/index.html">Home &amp; Kitchen</a></li>
+        <li><a href="../giftIdeas/index.html">Gift Ideas</a></li>
+        <li><a href="../fashion/index.html">Fashion</a></li>
+        <li><a href="../amazonPay/index.html">Amazon Pay</a></li>
+        <li><a href="../computers/index.html">Computers</a></li>
+        <li><a href="../books/index.html">Books</a></li>
+        <li><a href="../beautyAndPersonalCare/index.html">Beauty & Personal Care</a></li>
+        <li><a href="../coupons/index.html">Coupons</a></li>
+      </ul>
+    </nav>
+  <!-- #5/6 Kindly replace homepage with the name of the page teammate designing-->
+
+  <header id="pageHeader">
+    <div>
+      <a href="index.html">
+        <img src="Assests/Images/Common/logo.png" alt="Amazon Logo">
+      </a>
+    </div>
+  </header> <!-- Will be common (assigned to Abhishek kumar)-->
+
+  <nav id="primaryHeaderNavigation">
+    <h2 class="displayNone">Primary Header Navigation</h2>
+    <ul>
+      <li><a href="sell.html">Sell</a></li>
+      <li><a href="amazonPrime.html">Prime</a></li>
+    </ul>
+  </nav> <!-- Will be common (assigned to Abhishek kumar)-->
+
+  <!------
+  -- #6/6 Teammate, Your code starts from here 
+  -->
+  <main>
+    <!-- <h2 class="info">Savita Mam | (Amazon prime.html)</h2> ofcourse you can delete it! -->
+    <div class="hero-section">
+      <div class="image">
+        <img src="images/prime-1.jpg" alt="image">
+      </div>
+      <div class="para">
+        <img src="images/prime-logo.png" alt="prime-logo">
+        <h1>FREE 1-day delivery, videos, music & more</h1>
+        <span><b>Prime members enjoy unlimited FREE 1-day delivery on eligible items, video streaming, ad-free music,
+            free games and in-game content, early access to deals & more.</b></span>
+        <button>Login to join Prime</button>
+        <span>By signing up for a Prime membership, you agree to the <a href="#">Amazon Prime Terms and
+            Conditions.</a></span>
+      </div>
+    </div>
+    <div class="main">
+      <div class="heading">
+        <span>Enjoy these benefits with<strong> Prime</strong></span>
+      </div>
+      <div class="block-1">
+        <div class="image">
+          <img src="images/prime-2.jpg" alt="">
+        </div>
+        <div class="content">
+          <h2>Unlimited FREE Same-day, 1-day delivery</h2>
+          <br>
+          <p>Why pay more for fast delivery every time you need an item quickly? As a Prime member, get unlimited FREE
+            Same-Day, 1-Day & 2-Day Delivery on eligible items from India’s largest online store, to over a hundred
+            cities. Prime items that are not eligible for free Same-Day or 1-Day Delivery to your location, will always
+            qualify for free Standard Delivery with no minimum purchase value. The fastest, free Prime delivery speed
+            available for an item will be shown on the product <br><br>
+            Get Same-Day Delivery to eligible pin-codes in <b>Delhi, Mumbai, Bangalore & Hyderabad</b> via the Prime Now
+            App.
+          </p><br>
+          <a href="">Learn more about all Prime delivery options</a>
+        </div>
+      </div>
+      <div class="block-2">
+        <div class="image">
+          <img src="images/prime-3.jpg" alt="">
+        </div>
+        <div class="content">
+          <h2>Prime Video</h2>
+          <br>
+          <p>With your Prime membership, you have access to the latest and exclusive Bollywood and regional blockbusters
+            such as Kantara, Jugjugg Jeeyo, Ram Setu and Hollywood movies like Batman, Fast & Furious 9. You can also
+            binge watch US TV shows like Young Sheldon, Suits and exclusive access to Prime Original Series Comicstaan,
+            Breathe and Reacher.<br><br>
+            Access Prime Video anywhere: on the go or in the comfort of your living room. Watch on your Android or iOS
+            phone, tablet, laptop, desktop, or smart TV.
+          </p><br>
+          <a href="">Visit primevideo.com</a>
+        </div>
+      </div>
+      <div class="block-3">
+        <div class="image">
+          <img src="images/prime-4.jpg" alt="">
+        </div>
+        <div class="content">
+          <h2>Prime Music</h2>
+          <br>
+          <p>With your Prime membership, enjoy ad-free music streaming with unlimited offline downloads* across 75
+            million songs in multiple languages - English, Hindi, Tamil, Punjabi, Telugu, Bengali and more. Enjoy
+            Playlists and Stations specially curated by Amazon’s music editors across moods, activities, genres, artists
+            and decades.
+            <br><br>
+            Discover a new way to find and play music - voice controlled with Alexa. Simply tap on Alexa icon in your
+            mobile app and ask for music. No typing, no browsing, no searching - Just ask! Listen to music across
+            devices – Android & iOS devices, Desktop app and Web Player, Amazon Fire TV sticks and Amazon Echo and other
+            Alexa enabled devices.
+            <br><br>
+            *Subject to devices storage
+          </p><br>
+          <a href="">Listen Now</a>
+        </div>
+      </div>
+      <div class="block-4">
+        <div class="image">
+          <img src="images/prime-5.jpg" alt="">
+        </div>
+        <div class="content">
+          <h2>Prime Gaming</h2>
+          <br>
+          <p>Prime members get access to FREE in-game content like power-ups, exclusive collectibles, characters,
+            outfits, skins, themes, in-game currency and more across popular mobile games, refreshed frequently. Login
+            with your Amazon account within supported games to claim in-game content. Enjoy frequent new content drops
+            and launches across top international & Indian mobile games.
+          </p><br>
+          <a href="">Explore Prime Gaming</a>
+        </div>
+      </div>
+      <div class="block-5">
+        <div class="image">
+          <img src="images/prime-6.png" alt="">
+        </div>
+        <div class="content">
+          <h2>Unlimited 5% cashback</h2>
+          <br>
+          <p>Eligible Prime members earn unlimited 5% cashback on all purchases on Amazon.in using the Amazon Pay ICICI
+            Bank credit card. You can also earn unlimited 2% cashback on payments at 100+ Amazon Pay partner merchants
+            and 1% cashback on all other payments (except fuel purchases). Currently available in 35 cities across
+            India.
+          </p><br>
+          <a href="">Know More</a>
+        </div>
+      </div>
+      <div class="block-6">
+        <div class="image">
+          <img src="images/prime-7.png" alt="">
+        </div>
+        <div class="content">
+          <h2>Prime Reading </h2>
+          <br>
+          <p>Read as much as you want from hundreds of eligible eBooks, comics and more. With a catalogue across
+            literature and fiction, quick reads, romance, non-fiction, and eBooks in Indian languages, you will always
+            find something to read.
+            <br><br>
+            You can enjoy Prime Reading on your Kindle E-reader, or install the free Kindle reading apps on mobile,
+            tablet, PC or Mac. You can also try Prime Reading on the 2MB Kindle Lite Android app designed for Indian
+            readers.
+          </p><br>
+          <a href="">Explore Prime Reading</a>
+        </div>
+      </div>
+      <div class="block-7">
+        <div class="image">
+          <img src="images/prime-8.jpg" alt="">
+        </div>
+        <div class="content">
+          <h2>Look for <img src="./Assests/Images/Common/checkPrime._CB483586779_.png" alt=""></h2>
+          <br>
+          <p>Items eligible for Prime delivery benefits (free One-Day, Two-Day and Standard Delivery) are clearly
+            marked. Just look for <img src="./Assests/Images/Common/checkPrime._CB483586779_.png" alt=""> next to
+            products when you search. Choose the Prime logo filter to view Prime items
+            only.
+            <br><br>
+            As a Prime member, you can update your delivery pin-code on product pages to see the fastest, free delivery
+            option next to the Prime logo. You can see all Prime delivery options available for your order at Checkout.
+            <br><br><br>
+            Prime offers a safe and convenient shopping experience on <img src="./Assests/Images/Common/fba.png"
+              alt="">items and items fulfilled by qualified sellers who
+            meet our high delivery performance standards.
+          </p><br>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </main>
+  <!--
+  -- Your code Ends here 
+  ------>
+
+  <footer id="pageFooter">
+    <nav id="footerNavigation">
+      <h2 class="displayNone">Footer Navigation</h2>
+      <ul>
+        <li><a href="aboutAmazon.html">About Us</a></li>
+
+      </ul>
+    </nav>
+    <p>&copy;1996-2023, Amazon.com, Inc. or its affiliates</p>
+  </footer> <!-- Will be common (assigned to Savita Mam)-->
+</body>
+
+</html>

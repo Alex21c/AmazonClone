@@ -1,0 +1,333 @@
+:root {
+  --color-white: #FFFFFF; /* variables for colors and properties if you wish to create any, you can */
+}
+*, ::before, ::after{
+  padding:0;
+  margin:0;
+  box-sizing:border-box; /* to make sure width, height, padding properties are computed inside box, and making width/height exactly what specified*/
+}
+.displayNone{
+  display:none; /* to presever semantic aspect of any element like h1, according to validator.w3c.org */
+}
+html{
+  font-size:16px; /* here to make website responsive, 16px is set as base size, such that 1rem=16px */
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+/***
+ * Yours CSS Code begins from here 
+ */
+ main {
+    font-family: "Amazon Ember",Arial,sans-serif;
+    color: #0F1111;
+ }
+ .hero-section {
+  padding: 1rem;
+  display: grid;
+  grid: 50% / auto auto;
+  width: 100%;
+  min-height: 335px;
+ }
+
+ .hero-section .image img{
+  width: 50vw;
+ }
+
+ .hero-section .para {
+  background-color: #325b87;
+  color: #FFFFFF;
+  padding: 1rem 0px 0px 1rem;
+  object-fit: cover;
+  grid-column-start: 2;
+  grid-row-end: 1;
+ }
+
+ .hero-section .para img{
+  height: 2rem;
+ }
+
+ .hero-section .para h1{
+  padding: 10px 0px 0px 0px;
+  font-weight: 400;
+  line-height: 2rem;
+ }
+
+ .hero-section .para span b{
+  font-size: medium;
+  letter-spacing: 1px;
+  display: block;
+  padding-bottom: 10px;
+ }
+
+ .hero-section .para button {
+   background-color: #FFD814;
+   font-size: large;
+   padding: 10px;
+   text-align: center;
+   border-radius: 5px;
+   border: 1px solid #FCD200;
+   cursor: pointer;
+   box-shadow: 0 2px 5px 0 rgba(213,217,217,.5);
+ }
+
+ .hero-section .para button:hover {
+  background: #F7CA00;
+  border-color: #F2C200
+ }
+
+ .hero-section .para > span {
+  display: block;
+  font-size: small;
+  padding: 1rem 0px 0px 0px;
+ }
+
+ .hero-section .para  span > a {
+  text-decoration: none;
+  color: #FFFFFF;
+  text-decoration: underline;
+ }
+
+ .main {
+  flex-shrink: 0;
+  flex-grow: 0;
+ }
+
+ .main .block-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+ }
+
+ .main .heading {
+     text-align: center;
+     font-size: 1.75rem;
+     padding: 2rem 0px;
+ }
+
+ .main .block-1 .image img{
+  width: 50vw;
+  padding: 1rem;
+ }
+
+ .main .block-1 .content {
+    width: 50vw;
+ }
+
+ .main .block-1 .content>h2{
+    font-weight: 500;
+ }
+
+ .main .block-1 .content>p{
+  color: #565959;
+  font: 18px Arial;
+  line-height: 24px;
+}
+
+.main .block-1 .content a {
+  text-decoration: none;
+  color: #0066c0;
+  font-size: small;
+}
+
+.main .block-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3rem 0px 0px 0px;
+ }
+
+.main .block-2 .image img{
+  width: 50vw;
+  padding: 1rem;
+ }
+
+ .main .block-2 .content {
+    width: 50vw;
+ }
+
+ .main .block-2 .content>h2{
+    font-weight: 500;
+ }
+
+ .main .block-2 .content>p{
+  color: #565959;
+  font: 18px Arial;
+  line-height: 24px;
+}
+
+.main .block-2 .content a {
+  text-decoration: none;
+  color: #0066c0;
+  font-size: small;
+}
+.main .block-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3rem 0px 0px 0px;
+
+ }
+
+.main .block-3 .image img{
+  width: 50vw;
+  padding: 1rem;
+ }
+
+ .main .block-3 .content {
+    width: 50vw;
+ }
+
+ .main .block-3 .content>h2{
+    font-weight: 500;
+ }
+
+ .main .block-3 .content>p{
+  color: #565959;
+  font: 18px Arial;
+  line-height: 24px;
+}
+
+.main .block-3 .content a {
+  text-decoration: none;
+  color: #0066c0;
+  font-size: small;
+}
+.main .block-4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3rem 0px 0px 0px;
+
+ }
+.main .block-4 .image img{
+  width: 50vw;
+  padding: 1rem;
+ }
+
+ .main .block-4 .content {
+    width: 50vw;
+ }
+
+ .main .block-4 .content>h2{
+    font-weight: 500;
+ }
+
+ .main .block-4 .content>p{
+  color: #565959;
+  font: 18px Arial;
+  line-height: 24px;
+}
+
+.main .block-4 .content a {
+  text-decoration: none;
+  color: #0066c0;
+  font-size: small;
+}
+
+.main .block-5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3rem 0px 0px 0px;
+
+ }
+
+.main .block-5 .image img{
+  width: 50vw;
+  padding: 1rem;
+ }
+
+ .main .block-5 .content {
+    width: 50vw;
+ }
+
+ .main .block-5 .content>h2{
+    font-weight: 500;
+ }
+
+ .main .block-5 .content>p{
+  color: #565959;
+  font: 18px Arial;
+  line-height: 24px;
+}
+
+.main .block-5 .content a {
+  text-decoration: none;
+  color: #0066c0;
+  font-size: small;
+}
+.main .block-6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3rem 0px 0px 0px;
+
+ }
+
+.main .block-6 .image img{
+  width: 50vw;
+  padding: 1rem;
+ }
+
+ .main .block-6 .content {
+    width: 50vw;
+ }
+
+ .main .block-6 .content>h2{
+    font-weight: 500;
+ }
+
+ .main .block-6 .content>p{
+  color: #565959;
+  font: 18px Arial;
+  line-height: 24px;
+}
+
+.main .block-6 .content a {
+  text-decoration: none;
+  color: #0066c0;
+  font-size: small;
+}
+
+.main .block-7 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3rem 0px 0px 0px;
+ }
+.main .block-7 .image img{
+  width: 50vw;
+  padding: 1rem;
+ }
+
+ .main .block-7 .content {
+    width: 50vw;
+    padding: 2rem 6rem 2rem 1rem;
+ }
+
+ .main .block-7 .content h2>img {
+     width: 6rem;
+     text-align: center;
+ }
+ .main .block-7 .content p > img {
+  width: 3.5rem;
+  text-align: center;
+}
+
+
+ .main .block-7 .content>h2{
+    font-weight: 500;
+}
+
+ .main .block-7 .content>p{
+  color: #565959;
+  font: 18px Arial;
+  line-height: 24px;
+}
+
+main .main hr {
+  padding-bottom: 6rem;
+}

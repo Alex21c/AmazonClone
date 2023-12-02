@@ -1,8 +1,14 @@
+/***
+ * This file is common to all pages, shared among all members and should be kept intact !
+ * Author: Abhishek kumar
+ */
 :root {
   --color-light-black: #131921;
   --color-white: white;
   --color-light-gray: #cccccc;
+  --color-navBarPrimaryHeader: #232f3e;
   --border-radius: .3rem;
+  --color-caretDown: #a7acb2;
 }
 *, ::before, ::after{
   padding:0;
@@ -18,14 +24,34 @@ html{
 body{
   font-family: 'Roboto', sans-serif;
 }
+.fa-caret-down{
+  color: var(--color-caretDown);
+}
+.info{
+  color:orange;
+  text-align: center;
+  position: relative;
+  top: 5rem;  
+  font-size: 5rem;
+}
+
+/***
+ * MAIN HEADER SECTION
+ */
+main{
+  min-height: 71vh;
+}
+
+
+/***
+ * PAGE HEADER SECTION
+ */
+
 header, footer{
   background-color: var(--color-light-black);
   min-height: 2rem;
 }
-nav#primaryHeaderNavigation{  
-    background-color: var(--color-light-black);  
-    padding-bottom: 2rem;
-}
+
 header#pageHeader{
   display: flex;
   padding:2rem 0;
@@ -80,6 +106,9 @@ header#pageHeader form.searchBoxHeader:focus-within{
   border:.2rem solid orange;
   border-radius: var(--border-radius);
 }
+/***
+ * PAGE FOOTER SECTION
+ */
 
 footer#pageFooter{
   color:var(--color-white);
@@ -90,6 +119,15 @@ footer#pageFooter{
   padding:2rem 0;
   gap:1rem;
 }
+
+/***
+ * PAGE PRIMARY HEADER | FOOTER NAVIGATIONS
+ */
+
+nav#primaryHeaderNavigation{  
+  background-color: var(--color-navBarPrimaryHeader);
+}
+
 nav#primaryHeaderNavigation ul,
 nav#footerNavigation ul{
   list-style: none;
@@ -99,27 +137,41 @@ nav#footerNavigation ul{
   align-items: center;
   
 }
+nav#primaryHeaderNavigation ul{
+  gap:0;
+}
 nav#primaryHeaderNavigation ul li a,
 nav#footerNavigation ul li a{
   color:var(--color-white);
-  font-size: 1.5rem;
-}
-main{
-  min-height: 71vh;
+  font-size: 1rem;
+  text-decoration: none;
 }
 
-.info{
-  color:orange;
-  text-align: center;
-  position: relative;
-  top: 5rem;  
-  font-size: 5rem;
+nav#primaryHeaderNavigation ul li{
+  padding:.7rem .5rem;
+  min-width: fit-content;
 }
+nav#primaryHeaderNavigation ul li:hover{
+  border:.1rem solid var(--color-white);
+}
+nav#primaryHeaderNavigation ul li.allItemsMenu a{
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav#primaryHeaderNavigation ul li.allItemsMenu a i{
+  padding-right:.5rem;
+  font-size:1.5rem;
+}
+
 input[type=submit]::before{
 content:"hi";
 }
 
-/* Some Media Queries */
+/***
+ * Some Media Queries 
+ */
 @media screen and (max-width:900px){
   nav#primaryHeaderNavigation ul li a,
   nav#footerNavigation ul li a{
@@ -146,6 +198,3 @@ content:"hi";
   }
 }
 
-/***
- * This file is common to all pages, shared among all members and should be kept intact !
- */

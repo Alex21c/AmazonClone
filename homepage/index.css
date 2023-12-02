@@ -1,0 +1,21 @@
+:root {
+  --color-white: #FFFFFF; /* variables for colors and properties if you wish to create any, you can */
+}
+*, ::before, ::after{
+  padding:0;
+  margin:0;
+  box-sizing:border-box; /* to make sure width, height, padding properties are computed inside box, and making width/height exactly what specified*/
+}
+.displayNone{
+  display:none; /* to presever semantic aspect of any element like h1, according to validator.w3c.org */
+}
+html{
+  font-size:16px; /* here to make website responsive, 16px is set as base size, such that 1rem=16px */
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+/***
+ * Yours CSS Code begins from here 
+ */

@@ -2,7 +2,7 @@
  * This file is common to all pages, shared among all members and should be kept intact !
  * Author: Abhishek kumar
  */
-:root {
+ :root {
   --color-light-black: #131921;
   --color-white: white;
   --color-light-gray: #cccccc;
@@ -234,7 +234,8 @@ footer {
   display: flex;
   justify-content: center;
   text-align: center;
-  gap: 5rem;
+  gap: 10rem;
+  padding: 2rem 0;
 }
 
 .footer-main-sec .image img {
@@ -243,7 +244,7 @@ footer {
 }
 
 .footer-main-sec .image .button {
-  padding-top: 1.5rem;
+  /* padding-top: 1.5rem; */
 }
 
 .footer-main-sec .image .button button {

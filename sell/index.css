@@ -439,23 +439,24 @@ h2 {
 
 /* for responsiveness  */
 
-@media (max-width: 930px) {
-  .cards {
+@media (max-width: 1450px) {
+  .sell-section2 .cards-section .cards{
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 965px) {
+  .sell-section2 .cards-section .cards {
     align-items: center;
     justify-content: center;
-  }
-
-  .sell-section2 .cards-section .cards .card {
-    width: 80%;
+    padding: 10vmin;
   }
 
   .cards-section .cards-heading h1 {
     text-align: center;
   }
 
-  /* .sell-bottom-section .bottom-svg .bottom-img2 {
-    display: none;
-  } */
 }
 
 

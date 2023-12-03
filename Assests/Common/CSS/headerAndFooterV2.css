@@ -1,0 +1,381 @@
+/***
+ * This file is common to all pages, shared among all members and should be kept intact !
+ * Author: Abhishek kumar
+ */
+ :root {
+  --color-light-black: #111111;
+  --color-light-black2: #131921;
+  --color-black3: #131A22;
+ 
+ --color-white: white;
+ --color-light-gray: #cccccc;
+ --color-light-gray2: #eaeded;
+ --color-light-gray3: #dddddd;
+ --color-light-gray4: #3a4553;
+
+ --color-grayishBlue: #37475A;
+ --color-grayishBlue-2: #485769;
+
+ --color-navBarPrimaryHeader: #232f3e;
+ --border-radius: .3rem;
+ --color-caretDown: #a7acb2;
+ --transition-timing: .3s;
+ --transition-timing-2: .2s;
+ 
+}
+*, ::before, ::after{
+ padding:0;
+ margin:0;
+ box-sizing:border-box;
+}
+.displayNone{
+ display:none !important;
+}
+html{
+ font-size:16px;
+}
+body{
+ font-family: 'Roboto', sans-serif;
+ position:relative;
+}
+.fa-caret-down{
+ color: var(--color-caretDown);
+}
+.info{
+ color:orange;
+ text-align: center;
+ position: relative;
+ top: 5rem;  
+ font-size: 5rem;
+}
+
+/***
+* MAIN HEADER SECTION
+*/
+main{
+ min-height: 71vh;
+}
+
+
+/***
+* PAGE HEADER SECTION
+*/
+
+header, footer{
+ background-color: var(--color-light-black);
+ min-height: 2rem;
+}
+
+header#pageHeader{
+ display: flex;
+ padding:2rem 0;
+ padding-bottom:1rem;
+ justify-content: space-around;
+ align-items: center;
+ color:var(--color-white);
+ gap: 1rem;
+}
+header#pageHeader .logo a{
+ text-decoration: none;
+ color:var(--color-white);
+ display: flex;
+}
+header#pageHeader div.deliveringTo div.mapIcon {
+ font-size: 1.5rem;
+
+}
+header#pageHeader div.deliveringTo {
+ display: flex;
+ align-items: center;
+ gap: .5rem;
+}
+header#pageHeader div.deliveringTo div.deliveryAddress div:first-child{
+ color:var(--color-light-gray);
+}
+header#pageHeader div.deliveringTo div.deliveryAddress div:last-child{
+ font-weight: bold;
+}
+header#pageHeader form.searchBoxHeader{
+ display: flex;
+}
+header#pageHeader form.searchBoxHeader select.categories,
+header#pageHeader form.searchBoxHeader div.searchInput input[type=search],
+header#pageHeader form.searchBoxHeader div.submitBtn input[type=submit]{
+ min-height: 2rem;
+ padding:.5rem;
+ border-radius: var(--border-radius);
+}
+header#pageHeader form.searchBoxHeader select.categories{
+ width: 5rem;
+}
+header#pageHeader form.searchBoxHeader div.searchInput input[type=search]{
+ font-size: 1rem;
+ width: 20rem;
+}
+header#pageHeader form.searchBoxHeader div.searchInput input[type=search]:focus{
+ outline:none;
+}
+header#pageHeader form.searchBoxHeader:focus-within{
+ outline:none;
+ border:.2rem solid orange;
+ border-radius: var(--border-radius);
+}
+
+
+/***
+* PAGE HEADER MENU ALL SECTION
+*/
+
+section#menuAll{
+ position: absolute;
+ top:0;
+ left:0;
+ background-color: white;
+ min-width: 23rem;
+ max-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ gap: 1rem;
+ z-index: 999;
+ padding-bottom: 3rem;  
+}
+
+section#menuAll div.wrapperMenuItems{
+ overflow-y: scroll;
+}
+
+section#menuAll div.helloSignIn{
+ background-color: var(--color-navBarPrimaryHeader);  
+ display: flex;
+ color:var(--color-white);
+ gap:1rem;
+ padding:1rem 0;
+ padding-left: 2rem;  
+ align-items: center;
+ position: relative;
+
+}
+section#menuAll div.helloSignIn div.text{
+ font-weight: bold;
+ font-size: 1.2rem;
+ 
+}
+section#menuAll div.helloSignIn div#closeMenu{
+ position: absolute;
+ right: 0;
+ margin:2rem;
+ margin-right: 1.5rem;
+ font-size: 2rem;
+ color:var(--color-caretDown);  
+ cursor:pointer;
+ transition: var(--transition-timing);
+}
+section#menuAll div.helloSignIn div#closeMenu:hover{
+ color:var(--color-white);
+}
+
+section#menuAll h3{
+ padding:1rem;
+ padding-bottom: 0;
+ padding-left: 1.6rem;
+}
+section#menuAll ul{
+ display: flex;
+ flex-direction: column;
+ padding:1rem;
+ list-style: none;
+}
+section#menuAll ul li{
+ cursor:pointer;
+ padding:.7rem;
+ transition: var(--transition-timing-2);
+}
+
+section#menuAll ul li:hover{
+ background-color: var(--color-light-gray2);
+
+}
+section#menuAll ul li a{
+ display: flex;
+ justify-content: space-between;
+ text-decoration: none;
+ color:var(--color-light-black);
+}
+
+/***
+* PAGE FOOTER SECTION
+*/
+
+footer#pageFooter{
+ color:var(--color-white);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ padding:2rem 0;
+ gap:1rem;
+}
+
+/***
+* PAGE PRIMARY HEADER | FOOTER NAVIGATIONS
+*/
+
+nav#primaryHeaderNavigation{  
+ background-color: var(--color-navBarPrimaryHeader);
+}
+
+nav#primaryHeaderNavigation ul,
+nav#footerNavigation ul{
+ list-style: none;
+ display: flex;
+ gap:1rem;
+ justify-content: center;
+ align-items: center;
+ 
+}
+nav#primaryHeaderNavigation ul{
+ gap:0;
+}
+nav#primaryHeaderNavigation ul li a,
+nav#footerNavigation ul li a{
+ color:var(--color-white);
+ font-size: 1rem;
+ text-decoration: none;
+}
+
+nav#primaryHeaderNavigation ul li{
+ padding:.7rem .5rem;
+ min-width: fit-content;
+}
+nav#primaryHeaderNavigation ul li:hover{
+ border:.1rem solid var(--color-white);
+}
+nav#primaryHeaderNavigation ul li.allItemsMenu a{
+ font-weight: bold;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+nav#primaryHeaderNavigation ul li.allItemsMenu a i{
+ padding-right:.5rem;
+ font-size:1.5rem;
+}
+
+input[type=submit]::before{
+content:"hi";
+}
+/***
+* FOOTER SECTION (DESIGNED BY SAVITA PATIDAR) 
+*/
+footer#pageFooter{
+ display: flex;
+ flex-direction: column;
+ background-color: var(--color-navBarPrimaryHeader);
+}
+
+footer#pageFooter div.footer-top{
+ background-color: var(--color-grayishBlue);
+ width: 100%;
+ padding: 1rem 0;
+ text-align: center;
+ transition: var(--transition-timing);
+}
+footer#pageFooter div.footer-top a{
+ color:var(--color-white);
+ text-decoration: none;
+}
+footer#pageFooter div.footer-top:hover{
+ background-color: var(--color-grayishBlue-2);
+}
+
+footer#pageFooter div.footer-main{
+ display: grid;
+ grid-template-columns: repeat(4, 20rem);
+}
+
+footer#pageFooter  ul{
+ list-style: none;
+ display: flex;
+ flex-direction: column;
+ gap:.5rem;
+} 
+footer#pageFooter ul.countries{
+ flex-direction: row;
+ flex-wrap: wrap;
+}
+
+footer#pageFooter a{
+ text-decoration: none;
+ color:var(--color-white);
+ color:var(--color-light-gray3);
+ transition: var(--transition-timing-2);
+}
+footer#pageFooter  a:hover{
+ text-decoration: underline;
+}
+
+footer#pageFooter hr{
+ border:1px solid var(--color-light-gray4);
+ width: 100%;
+}
+
+footer#pageFooter div.footer-main-sec{
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ align-items: center;
+}
+footer#pageFooter div.footer-main-sec div.wrapperLogoAndLangsButton{
+ display: flex;
+ width: 100%;
+ justify-content: center;
+ gap: 5rem;
+ padding: 1rem 0;
+ align-items: center;
+}
+
+footer#pageFooter div.footer-bottom{
+ background-color: var(--color-black3);
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ padding:1rem 0;
+}
+footer#pageFooter div.footer-bottom div.lists{
+ display: grid;
+ grid-template-columns: repeat(4, 20rem);
+ gap: 1rem;
+ justify-content: center;
+}
+footer#pageFooter div.footer-bottom div.lists div.links a{
+ display: flex;
+ flex-direction: column;
+ gap:.2rem;
+}
+footer#pageFooter div.footer-bottom div.lists div.links a span:first-child{
+  font-weight: bold;
+  color:white;
+}
+footer#pageFooter div.footer-bottom div.lists div.links a span:last-child{
+  font-size: .8rem;
+}
+
+
+footer#pageFooter div.footer-bottom div.last-links{
+  display: flex;
+  flex-direction: column;
+  gap:.3rem;
+  align-items: center;
+  margin:2rem 0;
+
+}
+footer#pageFooter div.footer-bottom div.last-links a{
+  color:white;
+}
+footer#pageFooter div.footer-bottom div.last-links ul{
+  flex-direction: row;
+  gap: 2rem;
+}
+footer#pageFooter{
+  padding:0;
+}

@@ -1,21 +1,57 @@
-:root {
-  --color-white: #FFFFFF; /* variables for colors and properties if you wish to create any, you can */
-}
-*, ::before, ::after{
-  padding:0;
-  margin:0;
-  box-sizing:border-box; /* to make sure width, height, padding properties are computed inside box, and making width/height exactly what specified*/
-}
-.displayNone{
-  display:none; /* to presever semantic aspect of any element like h1, according to validator.w3c.org */
-}
-html{
-  font-size:16px; /* here to make website responsive, 16px is set as base size, such that 1rem=16px */
-}
-body{
-  font-family: 'Roboto', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/***
- * Yours CSS Code begins from here 
- */
+.container {
+    display: flex;
+    background-color: #1a2224;
+    color: #fff;
+    height: 12vh;
+    padding: 10px 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left_header{
+    display: flex;
+    flex-direction: row;
+}
+
+figure > img {
+    margin-left: 31px;
+    margin-right: 35px;
+}
+
+.middle_header > a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+#home{
+    color: #ce146d;
+}
+
+.middle_header a:focus,
+.middle_header a:target,
+.middle_header a:active {
+    text-decoration: none;
+    color: #ce146d;
+}
+
+.right_header > a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+

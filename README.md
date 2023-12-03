@@ -3,7 +3,7 @@
 Implementing [Amazon](https://www.amazon.in/) User Interface ! 
 
 ## Hosted Links:
- + [AmazonClone](https://alex21c.github.io/AmazonClone/)
+ + [AmazonClone](https://alex21c.github.io/AmazonClone/homepage/)
  + [homepage](https://alex21c.github.io/AmazonClone/homepage)
  + [sell](https://alex21c.github.io/AmazonClone/sell)
  + [prime](https://alex21c.github.io/AmazonClone/prime)

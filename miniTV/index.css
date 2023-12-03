@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
 }
 
+/* Wrapping the navBar in this class */
 .container {
     display: flex;
     background-color: #1a2224;
@@ -15,17 +16,22 @@
     align-items: center;
 }
 
-.left_header{
+/* For Logo and Links to make it flex in the navBar  */
+.left_header {
     display: flex;
     flex-direction: row;
 }
 
-figure > img {
+/* Giving Margin to the Logo in navBar */
+figure>img {
     margin-left: 31px;
     margin-right: 35px;
+    height: 32px;
+    width: 157px;
 }
 
-.middle_header > a {
+/* This is for links in the navBar */
+.middle_header>a {
     display: inline-block;
     color: #fff;
     text-decoration: none;
@@ -35,7 +41,8 @@ figure > img {
     padding-left: 10px;
 }
 
-#home{
+/*for targeting the links and default is Home*/
+#home {
     color: #ce146d;
 }
 
@@ -46,12 +53,121 @@ figure > img {
     color: #ce146d;
 }
 
-.right_header > a {
+/* It is use for icons in navBar */
+.right_header>a {
     color: #fff;
     text-decoration: none;
     margin: 0 5px;
     font-size: 20px;
     font-weight: bold;
     padding-right: 20px;
+}
+
+/* This is the hero section where crousel is happening by keyframe animations */
+.hero_section {
+    overflow: hidden;
+    width: 100vw;
+    height: 45vh;
+}
+
+/* Animation properties used here */
+.crousel {
+    position: relative;
+    width: 1000vw;
+    animation-name: imgslider;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+
+}
+
+.crousel>img {
+    width: 100vw;
+    height: 45vh;
+    float: left;
+}
+
+/* keyframes for crousel part */
+@keyframes imgslider {
+    0% {
+        left: 0vw;
+    }
+
+    5% {
+        left: 0vw;
+    }
+
+    10% {
+        left: -100vw;
+    }
+
+    15% {
+        left: -100vw;
+    }
+
+    20% {
+        left: -200vw;
+    }
+
+    25% {
+        left: -200vw;
+    }
+
+    30% {
+        left: -300vw;
+    }
+
+    35% {
+        left: -300vw;
+    }
+
+    40% {
+        left: -400vw;
+    }
+
+    45% {
+        left: -400vw;
+    }
+
+    50% {
+        left: -500vw;
+    }
+
+    55% {
+        left: -500vw;
+    }
+
+    60% {
+        left: -600vw;
+    }
+
+    65% {
+        left: -600vw;
+    }
+
+    70% {
+        left: -700vw;
+    }
+
+    75% {
+        left: -700vw;
+    }
+
+    80% {
+        left: -800vw;
+    }
+
+    85% {
+        left: -800vw;
+    }
+
+    90% {
+        left: -900vw;
+    }
+
+    100% {
+        left: -900vw;
+    }
+
 }
 

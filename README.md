@@ -2,20 +2,21 @@
 ## Project Information
 Implementing [Amazon](https://www.amazon.in/) User Interface ! 
 
-## Hosted Links:
+## Hosted Link:
  + [AmazonClone](https://alex21c.github.io/AmazonClone/homepage/)
- + [homepage](https://alex21c.github.io/AmazonClone/homepage)
- + [sell](https://alex21c.github.io/AmazonClone/sell)
- + [prime](https://alex21c.github.io/AmazonClone/prime)
 
 ## Mentor:
 Jaiten Sahu Sir 
 
 ## Team Info.
  1. Abhishek kumar (Captain)
+    1. [Homepage](https://alex21c.github.io/AmazonClone/homepage)
  2. Vipul Damre
- 3. Chetan Kaushik
+    1. [Sell](https://alex21c.github.io/AmazonClone/sell)
+ 3. Savita
+    1. [Prime](https://alex21c.github.io/AmazonClone/prime)   
  4. Mayank Kumar
- 5. Savita
- 6. Jitender Mangla
- 7. Vaibhav Bisht
+    1. [miniTV](https://alex21c.github.io/AmazonClone/miniTV)  
+ 6. Chetan Kaushik
+ 7. Jitender Mangla
+ 8. Vaibhav Bisht

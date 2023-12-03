@@ -177,6 +177,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   margin: 5vmin 0;
+  flex-wrap: wrap;
 }
 
 .cards-section .cards .card .card-content img{
@@ -225,7 +226,212 @@ h2 {
   text-align: left;
   width: 100%;
 }
-/* 
+
 .sell-review{
-  
-} */
+  width: 100%;
+}
+
+.review-item{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.review-item .review-content{
+  width: 82%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  padding: 1.2rem 0;
+  background-color: #0079AF;
+  border-radius: 1rem;
+  margin: 4vmin;
+}
+
+.review-item .review-content iframe{
+  height: 73vmin;
+  width: 94%;
+}
+
+.review-item .review-content h2{
+  color: white;
+  font-size: 4.4vmin;
+  margin: 1.2vmin;
+}
+
+.review-item .review-content .sell-btn button{
+  margin-top: 2vmin;
+  box-shadow: none;
+}
+
+
+
+/* sell-section3  */
+
+
+
+.sell-section3{
+  width: 100%;
+}
+
+.testimonial-section{
+  width: 80%;
+  margin: 6vmin auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4vmin 0vmin;
+  border-radius: 10px;
+  box-shadow: 0.2px 0px 25px 0.2px #d4d4d4;
+}
+
+
+.testimonial-content{
+  width: 92%;
+  height: 92%;
+  margin: auto;
+}
+
+
+.testimonial-content p{
+  font-size: 4.6vmin;
+  margin: 1.6vmin 0;
+}
+
+.testimonial-content h3{
+  font-size: 3.4vmin;
+  margin: 1.6vmin 0;
+  font-weight: bolder;
+  padding: 1vmin;
+}
+
+.testimonial-content span{
+  color: rgb(82, 82, 82);
+  margin: 1.6vmin 0;
+}
+
+
+
+/* middle-section1   */
+
+
+
+.middle-section1{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6vmin 0;
+}
+
+.middle-section1:hover{
+  cursor: pointer;
+}
+
+.middle-section1 h4{
+  width: 50%;
+}
+
+
+
+
+/* middle-section2  */
+
+.middle-section2{
+  width: 100%;
+  margin: 3vmin 0;
+}
+
+.middle-section2-content{
+  width: 83%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.4vmin 0;
+  border-top: 1px solid black;
+  cursor: pointer;
+}
+
+.middle-section2-content i{
+  margin-right: 1vmin;
+  font-size: 2.5vmin;
+}
+
+
+
+
+/* sell-bottom-section  */
+
+
+
+.sell-bottom-section{
+  width: 100%;
+  position: relative;
+  margin-bottom: 6vmin;
+}
+
+.bottom-svg{
+  width: 100%;
+}
+
+.bottom-svg .bottom-img1{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.sell-bottom-section .bottom-svg .bottom-img2{
+  width: 94vmin;
+  height: 60vmin;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.bottom-section{
+  width: 100%;
+  height: 80vmin;
+ transform: scaleX(1);
+}
+
+.bottom-content{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bottom-content h1{
+  font-size: 9vmin;
+  margin-bottom: 3vmin;
+}
+
+.bottom-content p{
+  font-size: 2.8vmin;
+  margin-bottom: 3vmin;
+  width: 48%;
+}
+
+.bottom-content .sell-btn button{
+  height: 7.5vmin;
+  width: 29vmin;
+  font-size: 3vmin;
+}
+
+
+
+
+
+/* for responsiveness  */
+

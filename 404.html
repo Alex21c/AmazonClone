@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Geekster Module #3 Geekathon 01 TeamAmazon">
+    <meta name="keywords" content="Homepage, Amazon Clone, Geekster, Module #3"> <!-- #1/6 Teammate, kindly replace homepage with name of the page you're designing-->
+    <meta name="author" content="Abhishek kumar"> <!-- #2/6 Teammate, you name goes here -->  
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+    <title>Geekster Module #3 Geekathon 01 TeamAmazon</title> <!-- #3/6 Teammate, kindly update title with the actaul title from amazon page, for the page you're designing -->
+    <meta name="google-site-verification" content="LBARKtXXKC58tg2ClDQXSGU8OntPWMxm0ZFOmwZPHsg">
+    <!-- Favicon icon -->
+     <link rel="icon" href="../Assests/Common/Images/pageHeaderAndFooter/favicon.svg">
+    <!-- Google Font matching Amazon Proprietory Fonts, this is how to use them:
+      font-family: 'Roboto', sans-serif;
+     -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"  rel="stylesheet">
+     <!-- Common Header and footer section CSS -->
+      <link rel="stylesheet" href="../Assests/Common/CSS/headerAndFooterV2.css">
+      <link rel="stylesheet" href="../Assests/fontAwesomeProIcons/fontAwesomeIcons.css">
+    <!-- #4/6 Teammate, You Need to update yours style sheet here, just replace index.css  -->
+      <link rel="stylesheet" href="404.css">
+    
+  </head>
+  <body>
+    <h1 class="displayNone">Homepage</h1> <!-- #5/6 Kindly replace homepage with the name of the page teammate designing-->
+    <div id="backToTop"></div>
+    <!-- Will be common (assigned to Abhishek kumar)-->
+    <header id="pageHeader">
+      <div class="wrapperLogoAndAlternateNav">
+        <div id="navMenuAlternateActionButton">
+          <i class="fa-regular fa-bars"></i>
+        </div>
+        <a href="../homepage/index.html">
+          <img src="../Assests/Common/Images/pageHeaderAndFooter/logo.png" alt="Amazon Logo">
+          <span>.in</span>
+        </a>
+      </div>
+
+      <div class="deliveringTo">
+        <div class="mapIcon">
+          <i class="fa-sharp fa-regular fa-location-dot"></i>
+        </div>
+        <div class="deliveryAddress">
+          <div>Delivering to Mumbai 400001</div>
+          <div>Update Location</div>
+        </div>
+      </div>
+
+      <form method="GET" action="index.html" class="searchBoxHeader">
+        <select name="url" class="categories">
+          <option selected="selected" value="All">All</option>
+          <option value="alexa-skills">Alexa Skills</option>
+          <option value="amazon-devices">Amazon Devices</option>
+          <option value="fashion">Amazon Fashion</option>
+          <option value="nowstore">Amazon Fresh</option>
+          <option value="amazon-pharmacy">Amazon Pharmacy</option>
+          <option value="appliances">Appliances</option>
+          <option value="mobile-apps">Apps &amp; Games</option>
+          <option value="audible">Audible Audiobooks</option>
+          <option value="baby">Baby</option>
+          <option value="beauty">Beauty</option>
+          <option value="stripbooks">Books</option>
+          <option value="automotive">Car &amp; Motorbike</option>
+          <option value="apparel">Clothing &amp; Accessories</option>
+          <option value="collectibles">Collectibles</option>
+          <option value="computers">Computers &amp; Accessories</option>
+          <option value="electronics">Electronics</option>
+          <option value="furniture">Furniture</option>
+          <option value="lawngarden">Garden &amp; Outdoors</option>
+          <option value="gift-cards">Gift Cards</option>
+          <option value="grocery">Grocery &amp; Gourmet Foods</option>
+          <option value="hpc">Health &amp; Personal Care</option>
+          <option value="kitchen">Home &amp; Kitchen</option>
+          <option value="industrial">Industrial &amp; Scientific</option>
+          <option value="jewelry">Jewellery</option>
+          <option value="digital-text">Kindle Store</option>
+          <option value="luggage">Luggage &amp; Bags</option>
+          <option value="luxury-beauty">Luxury Beauty</option>
+          <option value="dvd">Movies &amp; TV Shows</option>
+          <option value="popular">Music</option>
+          <option value="mi">Musical Instruments</option>
+          <option value="office-products">Office Products</option>
+          <option value="pets">Pet Supplies</option>
+          <option value="instant-video">Prime Video</option>
+          <option value="shoes">Shoes &amp; Handbags</option>
+          <option value="software">Software</option>
+          <option value="sporting">Sports, Fitness &amp; Outdoors</option>
+          <option value="specialty-aps-sns">Subscribe &amp; Save</option>
+          <option value="home-improvement">Tools &amp; Home Improvement</option>
+          <option value="toys">Toys &amp; Games</option>
+          <option value="under-ten-dollars">Under ₹500</option>
+          <option value="videogames">Video Games</option>
+          <option value="watches">Watches</option>
+        </select>
+        <div class="searchInput">
+          <input type="search" name="search" placeholder="Search Amazon.in">
+        </div>
+        <div class="submitBtn">
+          <input type="submit" value="Go">
+          <i class="fa-regular fa-magnifying-glass"></i>
+        </div>
+      </form>
+      <div class="wrapperLang">
+        <div class="wrapperFlagImg"><img src="../Assests/Common/Images/pageHeaderAndFooter/indiaFlagV2.png" alt="India Flag"></div>
+        <div>
+          <span class="langEn">EN</span>
+          <i class="fa-sharp fa-solid fa-caret-down"></i>
+        </div>
+      </div>
+
+      <div class="wrapperHeaderKindOfHeading helloSignIn">
+        <div>Hello, sign in</div>
+        <div>
+          <span>Account & Lists</span>
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+      </div>
+      <div class="alternateSignIn">
+        <a href="../signIn/index.html">
+          <span>Sign in</span>
+          <i class="fa-regular fa-user"></i>
+        </a>
+      </div>
+
+      <div class="wrapperHeaderKindOfHeading returnsAndOrders">
+        <div>Returns</div>
+        <div>& Orders</div>
+      </div>
+
+      <div class="shoppingCart">
+        <div>
+          <img src="../Assests/Common/Images/pageHeaderAndFooter/cart.png" alt="Shopping Cart">
+        </div>
+        <div class="labelCart">Cart</div>
+        <div class="noOfItemsInCart">0</div>
+      </div>
+    </header>
+
+    <nav id="primaryHeaderNavigation">
+      <h2 class="displayNone">Primary Navigation</h2>
+      <ul>
+        <li class="allItemsMenu"><a href="#" id="showMenuItems"><i class="fa-regular fa-bars"></i><span>All</span></a></li>
+        <li><a href="../homepage/index.html">Home</a></li>
+        <li><a href="../sell/index.html">Sell</a></li>
+        <li><a href="../prime/index.html">Prime <i class="fa-sharp fa-solid fa-caret-down"></i></a></li>
+        <li><a href="../miniTV/index.html">Amazon miniTV</a></li>
+        <li><a href="../bestSellers/index.html">Best Sellers</a></li>
+        <li><a href="../todaysDeals/index.html">Today's Deals</a></li>
+        <li><a href="../mobiles/index.html">Mobiles</a></li>
+        <li><a href="../customerService/index.html">Customer Service</a></li>
+        <li><a href="../fresh/index.html">Fresh</a></li>
+        <li><a href="../electronics/index.html">Electronics</a></li>
+        <li><a href="../newReleases/index.html">New Releases</a></li>
+        <li><a href="../homeAndKitchen/index.html">Home &amp; Kitchen</a></li>
+        <li><a href="../giftIdeas/index.html">Gift Ideas</a></li>
+        <li><a href="../fashion/index.html">Fashion</a></li>
+        <li><a href="../amazonPay/index.html">Amazon Pay</a></li>
+        <li><a href="../computers/index.html">Computers</a></li>
+        <li><a href="../books/index.html">Books</a></li>
+        <li><a href="../beautyAndPersonalCare/index.html">Beauty & Personal Care</a></li>
+        <li><a href="../coupons/index.html">Coupons</a></li>
+      </ul>
+    </nav>
+
+    <section id="menuAll" class="displayNone">
+      <div class="masterWrapperMenuAll">
+        <h2 class="displayNone">Navigation Menu All Items</h2>
+        <div class="helloSignIn">
+          <div><img src="../Assests/Common/Images/pageHeaderAndFooter/person.png" alt="person"></div>
+          <div class="text">Hello, <a href="../signIn/index.html">sign in</a></div>
+          <div id="closeMenu"><i class="fa-regular fa-xmark"></i></div>
+        </div>
+  
+        <div class="wrapperMenuItems">
+          <div>
+            <h3>Trending</h3>
+            <ul>
+              <li><a href="../homepage/index.html">Homepage</a></li>
+              <li><a href="../sell/index.html">Sell on Amazon</a></li>
+              <li><a href="../prime/index.html">Amazon Prime</a></li>
+              <li><a href="../miniTV/index.html">Amazon miniTV</a></li>
+              <li><a href="../todaysDeals/index.html">Today's Deals</a></li>
+              <li><a href="../bestSellers/index.html">Best Sellers</a></li>
+              <li><a href="../mobiles/index.html">Mobiles</a></li>
+              <li><a href="../customerService/index.html">Customer Service</a></li>
+            </ul>
+          </div>
+          <hr>
+    
+          <div>
+            <h3>Digital Content And Devices</h3>
+            <ul>
+              <li><a href="../echoAndAlexa/index.html"><span>Echo &amp; Alexa</span><i class="fa-solid fa-chevron-right"></i></a></li>
+              <li><a href="../fireTV/index.html"><span>Fire TV</span><i class="fa-solid fa-chevron-right"></i></a></li>
+              <li><a href="../kindleE-Reader/index.html"><span>Kindle E-Readers &amp; eBooks</span><i class="fa-solid fa-chevron-right"></i></a></li>
+              <li><a href="../audibleAudiobooks/index.html"><span>Audible Audiobooks</span><i class="fa-solid fa-chevron-right"></i></a></li>
+              <li><a href="../amazonPrimeVideo/index.html"><span>Amazon Prime Video</span><i class="fa-solid fa-chevron-right"></i></a></li>
+              <li><a href="../amazonPrimeMusic/index.html"><span>Amazon Prime Music</span><i class="fa-solid fa-chevron-right"></i></a></li>
+            </ul>
+          </div>
+          <hr>
+    
+          <div>
+            <h3>Shop By Category</h3>
+            <ul>          
+              <li><a href="../mobilesComputers/index.html"><span>Mobiles, Computers</span><i class="fa-solid fa-chevron-right"></i></a></li>          
+              <li><a href="../tvAppliancesElectronics/index.html"><span>TV, Appliances, Electronics</span><i class="fa-solid fa-chevron-right"></i></a></li>          
+              <li><a href="../mensFashion/index.html"><span>Men's Fashion</span><i class="fa-solid fa-chevron-right"></i></a></li>          
+              <li><a href="../womensFashion/index.html"><span>Women's Fashion</span><i class="fa-solid fa-chevron-right"></i></a></li>          
+              <li><a href="#"><span><span>See All</span>&emsp;<i class="fa-solid fa-chevron-down"></i></span></a></li>          
+            </ul>
+          </div>
+          <hr>
+    
+          <div>
+            <h3>Programs &amp; Features</h3>
+            <ul>          
+              <li><a href="../amazonPay/index.html"><span>Amazon Pay</span></a></li>          
+              <li><a href="../giftCardsAndMobileRecharges/index.html"><span>Gift Cards & Mobile Recharges</span><i class="fa-solid fa-chevron-right"></i></a></li>          
+              <li><a href="../amazonLaunchpad/index.html"><span>Amazon Launchpad</span></a></li>          
+              <li><a href="../handloomAndHandicrafts/index.html"><span>Handloom and Handicrafts</span></a></li>          
+              <li><a href="#"><span><span>See All</span>&emsp;<i class="fa-solid fa-chevron-down"></i></span></a></li>          
+            </ul>
+          </div>
+          <hr>
+    
+          <div>
+            <h3>Help &amp; Settings</h3>
+            <ul>          
+              <li><a href="../amazonPay/index.html"><span>Your Account</span></a></li>             
+              <li><a href="../amazonPay/index.html"><span>Customer Service</span></a></li>             
+              <li><a href="../amazonPay/index.html"><span>Sign in</span></a></li>             
+            </ul>
+          </div>         
+        </div>
+      </div>
+
+
+
+    </section>
+
+  <!-- Will be common (assigned to Abhishek kumar)-->
+  <!-- <nav id="primaryHeaderNavigation">
+      <h2 class="displayNone">Primary Header Navigation</h2>
+      <ul>        
+        <li><a href="sell.html">Sell</a></li>
+        <li><a href="amazonPrime.html">Prime</a></li>
+        <li><a href="yourAccount.html">Your Account</a></li>
+        <li><a href="amazonPay.html">Amazon Pay</a></li>
+        <li><a href="customerService.html">Customer Service</a></li>
+      </ul>
+    </nav>   -->
+
+  <!--
+     #6/6 Teammate, Your code starts from here 
+  -->
+  <main>
+    <h2 class="info">Homepage (index.html)</h2> <!-- ofcourse you can delete it! -->
+
+
+
+
+  </main>
+  <!--
+     Your code Ends here 
+  -->
+
+
+  <!-- 
+    Footer Section Designed by Savita Mam 
+  -->
+  <footer id="pageFooter">
+    <h2 class="displayNone">Page Footer</h2>
+    <!-- whenver user clicks on this backToTop user will be moved to top of the page -->      
+      <a class="footer-top" href="#backToTop">Back to top</a>            
+
+    <div class="footer-main">
+      <div class="links">
+          <h3>Get to Know Us</h3><br>
+          <ul>
+              <li><a href="../aboutUs/index.html">About us</a></li>
+              <li><a href="../Careers/index.html">Careers</a></li>
+              <li><a href="../pressReleases/index.html">Press releases</a></li>
+              <li><a href="../amazonScience/index.html">Amazon Science</a></li>
+          </ul>
+      </div>
+      <div class="links">
+          <h3>Connect with us</h3><br>
+          <ul>
+              <li><a href="https://www.facebook.com/AmazonIN">Facebook</a></li>
+              <li><a href="https://twitter.com/AmazonIN">Twitter</a></li>
+              <li><a href="https://www.instagram.com/amazondotin/">Instagram</a></li>
+          </ul>
+
+      </div>
+      <div class="links">
+          <h3>Make money with us</h3><br>
+          <ul>
+              <li><a href="../sellOnAmazon/index.html">Sell on Amazon</a></li>
+              <li><a href="../sellUnderAmazonAccelerator/index.html">Sell under Amazon Accelerator</a></li>
+              <li><a href="../protectAndBuildYourBrand/index.html">Protect and Build Your Brand</a></li>
+              <li><a href="../amazomGlobalSelling/index.html">Amazon Global Selling</a></li>
+              <li><a href="../becomeAnAffiliate/index.html">Become an Affiliate</a></li>
+              <li><a href="../fulfillmentByAmazon/index.html">Fulfilment by Amazon</a></li>
+              <li><a href="../advertiseYourProducts/index.html">Advertise Your Products</a></li>
+              <li><a href="../amazonPayOnMerchants/index.html">Amazon Pay on Merchants</a></li>
+          </ul>
+      </div>
+      <div class="links">
+          <h3>Let us Help You</h3><br>
+          <ul>
+              <li><a href="../covid19AndAmazon/index.html">COVID-19 and Amazon</a></li>
+              <li><a href="../yourAccount/index.html">Your account</a></li>
+              <li><a href="../returnsCenter/index.html">Returns Centre</a></li>
+              <li><a href="../100PercentPurchaseProtection/index.html">100% Purchase Protection</a></li>
+              <li><a href="../downloadTheAmazonApp/index.html">Amazon App Download</a></li>
+              <li><a href="../help/index.html">Help</a></li>
+          </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="footer-main-sec">
+        <div class="wrapperLogoAndLangsButton">
+            <div class="amazonLogo">
+              <a href="../homepage/index.html">
+                <img src="../Assests/Common/Images/pageHeaderAndFooter/logo.png" alt="Amazon Logo">
+              </a>
+            </div>
+            <div class="button">                
+              <i class="fa-light fa-globe"></i>
+              <select>
+                  <option value="english">English</option>
+                  <option value="hindi">हिंदी</option>
+                  <option value="lang3">தமிழ்</option>
+                  <option value="lagn3">తెలుగు</option>
+                  <option value="marathi">मराठी</option>
+              </select>              
+            </div>
+        </div>
+    
+
+        <div>
+          <ul class="countries">
+            <li> <a href="https://www.amazon.com.au/ref=footer_au">Australia</a></li>
+            <li><a href="https://www.amazon.com.br/ref=footer_br">Brazil</a></li>
+            <li><a href="https://www.amazon.ca/ref=footer_ca">Canada</a></li>
+            <li><a href="https://www.amazon.cn/ref=footer_cn">China</a></li>
+            <li><a href="https://www.amazon.fr/ref=footer_fr"> France</a></li>
+            <li><a href="https://www.amazon.de/ref=footer_de">Germany</a></li>
+            <li><a href="https://www.amazon.it/ref=footer_it">Italy</a></li>
+            <li><a href="https://www.amazon.co.jp/ref=footer_jp">Japan</a></li>
+            <li><a href="https://www.amazon.com.mx/ref=footer_mx">Mexico</a></li>
+            <li><a href="https://www.amazon.nl/ref=footer_nl">Netherlands</a></li>
+            <li><a href="https://www.amazon.pl/ref=footer_pl">Poland</a></li>
+            <li><a href="https://www.amazon.sg/ref=footer_sg">Singapore</a></li>
+            <li><a href="https://www.amazon.es/ref=footer_es">Spain</a></li>
+            <li><a href="https://www.amazon.com.tr/ref=footer_tr">Turkey</a></li>
+            <li><a href="https://www.amazon.ae/ref=footer_ae">United Arab Emirates</a></li>
+            <li><a href="https://www.amazon.co.uk/ref=footer_uk">United Kingdom</a></li>
+            <li><a href="https://www.amazon.com/ref=footer_us">United States</a></li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="lists">
+          <div class="links">
+            <a href="https://www.abebooks.com/">
+              <span>AbeBooks</span>
+              <span>Books, art &amp;collectibles<br></span>
+            </a>
+          </div>
+          <div class="links">
+            <a href="https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter">
+              <span>Amazon Web Services</span>
+              <span>Scalable Cloud<br>Computing Services</span>
+            </a>
+          </div>
+          <div class="links">
+            <a href="https://www.audible.in/">
+              <span>Audible</span>
+              <span>Download<br>AudioBooks</span>
+            </a>
+          </div>
+          <div class="links">
+            <a href="https://www.imdb.com/">
+              <span>IMDb</span>
+              <span>Movies, TV<br>&amp; Celebrities</span>
+            </a>
+          </div>
+          <div class="links">
+            <a href="https://www.shopbop.com/">
+              <span>Shopbop</span>
+              <span>Designer<br>Fashion Brands</span>
+            </a>
+          </div>
+          <div class="links">
+            <a href="../AmazonBusiness/index.html">
+              <span>Amazon Business</span>
+              <span>Everything for<br>Your Business</span>
+            </a>
+          </div>
+          <div class="links">
+            <a href="../prime/index.html">
+              <span>Prime Now</span>
+              <span>2-Hour Delivery<br>on Everyday items</span>
+            </a>
+          </div>
+          <div class="links">
+            <a href="../primeMusic/index.html">
+              <span>Amazon Prime Music</span>
+              <span>100 million songs, ad-free<br>Over 15 million podcasts episodes</span>
+            </a>
+          </div>
+
+      </div>
+
+      <div class="last-links">
+          <ul>
+              <li><a href="../conditionsOfUseAndSale/index.html">Conditions of Use & Sale</a></li>
+              <li><a href="../privacyBasedAds/index.html">Privacy Notice</a></li>
+              <li><a href="../internetBasedAds/index.html">Interest-Based Ads</a></li>
+          </ul>
+          <p>&copy; 1996-2023, Amazon.com, Inc. or its affiliates</p>
+      </div>
+    </div>
+</footer>
+<!-- footer section designed by savita patidar -->
+
+
+  <script>
+    /***
+     * Written By: Abhishek kumar
+     * Purpose: to show Menu items when menu is clicked, close the menu when x button is pressed
+     */
+    document.addEventListener('DOMContentLoaded', function () {
+      // Fetchign items
+        let showMenuItems = document.getElementById('showMenuItems');
+        let menuAll = document.getElementById('menuAll');
+        let navMenuAlternateActionButton = document.getElementById('navMenuAlternateActionButton');
+        let closeMenu = document.getElementById('closeMenu');
+      // Attaching event listerners
+        showMenuItems.addEventListener('click', function(){          
+          menuAll.classList.remove('displayNone');
+        });
+        navMenuAlternateActionButton.addEventListener('click', function(){          
+          menuAll.classList.remove('displayNone');
+        });
+
+        closeMenu.addEventListener('click', function(){
+          menuAll.classList.add('displayNone');
+        });
+
+
+      });
+      
+  </script>
+
+  </body>
+</html>

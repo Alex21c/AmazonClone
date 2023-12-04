@@ -19,7 +19,9 @@
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"  rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   <!-- Common Header and footer section CSS -->
   <link rel="stylesheet" href="../Assests/Common/CSS/headerAndFooterV2.css">
   <link rel="stylesheet" href="../Assests/fontAwesomeProIcons/fontAwesomeIcons.css">
@@ -33,224 +35,237 @@
 <body>
 
 
-  
-  <h1 class="displayNone">Homepage</h1> <!-- #5/6 Kindly replace homepage with the name of the page teammate designing-->
+
+  <h1 class="displayNone">Homepage</h1>
+  <!-- #5/6 Kindly replace homepage with the name of the page teammate designing-->
   <!-- Common Page Header Section Begins     -->
-      <div id="backToTop"></div>
-      <!-- Will be common (assigned to Abhishek kumar)-->
-      <header id="pageHeader">
-        <div class="wrapperLogoAndAlternateNav">
-          <div id="navMenuAlternateActionButton">
-            <i class="fa-regular fa-bars"></i>
-          </div>
-          <a href="../homepage/index.html">
-            <img src="../Assests/Common/Images/pageHeaderAndFooter/logo.png" alt="Amazon Logo">
-            <span>.in</span>
-          </a>
+  <div id="backToTop"></div>
+  <!-- Will be common (assigned to Abhishek kumar)-->
+  <header id="pageHeader">
+    <div class="wrapperLogoAndAlternateNav">
+      <div id="navMenuAlternateActionButton">
+        <i class="fa-regular fa-bars"></i>
+      </div>
+      <a href="../homepage/index.html">
+        <img src="../Assests/Common/Images/pageHeaderAndFooter/logo.png" alt="Amazon Logo">
+        <span>.in</span>
+      </a>
+    </div>
+
+    <div class="deliveringTo">
+      <div class="mapIcon">
+        <i class="fa-sharp fa-regular fa-location-dot"></i>
+      </div>
+      <div class="deliveryAddress">
+        <div>Delivering to Mumbai 400001</div>
+        <div>Update Location</div>
+      </div>
+    </div>
+
+    <form method="GET" action="index.html" class="searchBoxHeader">
+      <select name="url" class="categories">
+        <option selected="selected" value="All">All</option>
+        <option value="alexa-skills">Alexa Skills</option>
+        <option value="amazon-devices">Amazon Devices</option>
+        <option value="fashion">Amazon Fashion</option>
+        <option value="nowstore">Amazon Fresh</option>
+        <option value="amazon-pharmacy">Amazon Pharmacy</option>
+        <option value="appliances">Appliances</option>
+        <option value="mobile-apps">Apps &amp; Games</option>
+        <option value="audible">Audible Audiobooks</option>
+        <option value="baby">Baby</option>
+        <option value="beauty">Beauty</option>
+        <option value="stripbooks">Books</option>
+        <option value="automotive">Car &amp; Motorbike</option>
+        <option value="apparel">Clothing &amp; Accessories</option>
+        <option value="collectibles">Collectibles</option>
+        <option value="computers">Computers &amp; Accessories</option>
+        <option value="electronics">Electronics</option>
+        <option value="furniture">Furniture</option>
+        <option value="lawngarden">Garden &amp; Outdoors</option>
+        <option value="gift-cards">Gift Cards</option>
+        <option value="grocery">Grocery &amp; Gourmet Foods</option>
+        <option value="hpc">Health &amp; Personal Care</option>
+        <option value="kitchen">Home &amp; Kitchen</option>
+        <option value="industrial">Industrial &amp; Scientific</option>
+        <option value="jewelry">Jewellery</option>
+        <option value="digital-text">Kindle Store</option>
+        <option value="luggage">Luggage &amp; Bags</option>
+        <option value="luxury-beauty">Luxury Beauty</option>
+        <option value="dvd">Movies &amp; TV Shows</option>
+        <option value="popular">Music</option>
+        <option value="mi">Musical Instruments</option>
+        <option value="office-products">Office Products</option>
+        <option value="pets">Pet Supplies</option>
+        <option value="instant-video">Prime Video</option>
+        <option value="shoes">Shoes &amp; Handbags</option>
+        <option value="software">Software</option>
+        <option value="sporting">Sports, Fitness &amp; Outdoors</option>
+        <option value="specialty-aps-sns">Subscribe &amp; Save</option>
+        <option value="home-improvement">Tools &amp; Home Improvement</option>
+        <option value="toys">Toys &amp; Games</option>
+        <option value="under-ten-dollars">Under ₹500</option>
+        <option value="videogames">Video Games</option>
+        <option value="watches">Watches</option>
+      </select>
+      <div class="searchInput">
+        <input type="search" name="search" placeholder="Search Amazon.in">
+      </div>
+      <div class="submitBtn">
+        <input type="submit" value="Go">
+        <i class="fa-regular fa-magnifying-glass"></i>
+      </div>
+    </form>
+    <div class="wrapperLang">
+      <div class="wrapperFlagImg"><img src="../Assests/Common/Images/pageHeaderAndFooter/indiaFlagV2.png"
+          alt="India Flag"></div>
+      <div>
+        <span class="langEn">EN</span>
+        <i class="fa-sharp fa-solid fa-caret-down"></i>
+      </div>
+    </div>
+
+    <div class="wrapperHeaderKindOfHeading helloSignIn">
+      <div>Hello, sign in</div>
+      <div>
+        <span>Account & Lists</span>
+        <i class="fa-solid fa-caret-down"></i>
+      </div>
+    </div>
+    <div class="alternateSignIn">
+      <a href="../signIn/index.html">
+        <span>Sign in</span>
+        <i class="fa-regular fa-user"></i>
+      </a>
+    </div>
+
+    <div class="wrapperHeaderKindOfHeading returnsAndOrders">
+      <div>Returns</div>
+      <div>& Orders</div>
+    </div>
+
+    <div class="shoppingCart">
+      <div>
+        <img src="../Assests/Common/Images/pageHeaderAndFooter/cart.png" alt="Shopping Cart">
+      </div>
+      <div class="labelCart">Cart</div>
+      <div class="noOfItemsInCart">0</div>
+    </div>
+  </header>
+
+  <nav id="primaryHeaderNavigation">
+    <h2 class="displayNone">Primary Navigation</h2>
+    <ul>
+      <li class="allItemsMenu"><a href="#" id="showMenuItems"><i class="fa-regular fa-bars"></i><span>All</span></a>
+      </li>
+      <li><a href="../homepage/index.html">Home</a></li>
+      <li><a href="../sell/index.html">Sell</a></li>
+      <li><a href="../prime/index.html">Prime <i class="fa-sharp fa-solid fa-caret-down"></i></a></li>
+      <li><a href="../miniTV/index.html">Amazon miniTV</a></li>
+      <li><a href="../bestSellers/index.html">Best Sellers</a></li>
+      <li><a href="../todaysDeals/index.html">Today's Deals</a></li>
+      <li><a href="../mobiles/index.html">Mobiles</a></li>
+      <li><a href="../customerService/index.html">Customer Service</a></li>
+      <li><a href="../fresh/index.html">Fresh</a></li>
+      <li><a href="../electronics/index.html">Electronics</a></li>
+      <li><a href="../newReleases/index.html">New Releases</a></li>
+      <li><a href="../homeAndKitchen/index.html">Home &amp; Kitchen</a></li>
+      <li><a href="../giftIdeas/index.html">Gift Ideas</a></li>
+      <li><a href="../fashion/index.html">Fashion</a></li>
+      <li><a href="../amazonPay/index.html">Amazon Pay</a></li>
+      <li><a href="../computers/index.html">Computers</a></li>
+      <li><a href="../books/index.html">Books</a></li>
+      <li><a href="../beautyAndPersonalCare/index.html">Beauty & Personal Care</a></li>
+      <li><a href="../coupons/index.html">Coupons</a></li>
+    </ul>
+  </nav>
+
+  <section id="menuAll" class="displayNone">
+    <div class="masterWrapperMenuAll">
+      <h2 class="displayNone">Navigation Menu All Items</h2>
+      <div class="helloSignIn">
+        <div><img src="../Assests/Common/Images/pageHeaderAndFooter/person.png" alt="person"></div>
+        <div class="text">Hello, <a href="../signIn/index.html">sign in</a></div>
+        <div id="closeMenu"><i class="fa-regular fa-xmark"></i></div>
+      </div>
+
+      <div class="wrapperMenuItems">
+        <div>
+          <h3>Trending</h3>
+          <ul>
+            <li><a href="../homepage/index.html">Homepage</a></li>
+            <li><a href="../sell/index.html">Sell on Amazon</a></li>
+            <li><a href="../prime/index.html">Amazon Prime</a></li>
+            <li><a href="../miniTV/index.html">Amazon miniTV</a></li>
+            <li><a href="../todaysDeals/index.html">Today's Deals</a></li>
+            <li><a href="../bestSellers/index.html">Best Sellers</a></li>
+            <li><a href="../mobiles/index.html">Mobiles</a></li>
+            <li><a href="../customerService/index.html">Customer Service</a></li>
+          </ul>
         </div>
-  
-        <div class="deliveringTo">
-          <div class="mapIcon">
-            <i class="fa-sharp fa-regular fa-location-dot"></i>
-          </div>
-          <div class="deliveryAddress">
-            <div>Delivering to Mumbai 400001</div>
-            <div>Update Location</div>
-          </div>
+        <hr>
+
+        <div>
+          <h3>Digital Content And Devices</h3>
+          <ul>
+            <li><a href="../echoAndAlexa/index.html"><span>Echo &amp; Alexa</span><i
+                  class="fa-solid fa-chevron-right"></i></a></li>
+            <li><a href="../fireTV/index.html"><span>Fire TV</span><i class="fa-solid fa-chevron-right"></i></a></li>
+            <li><a href="../kindleE-Reader/index.html"><span>Kindle E-Readers &amp; eBooks</span><i
+                  class="fa-solid fa-chevron-right"></i></a></li>
+            <li><a href="../audibleAudiobooks/index.html"><span>Audible Audiobooks</span><i
+                  class="fa-solid fa-chevron-right"></i></a></li>
+            <li><a href="../amazonPrimeVideo/index.html"><span>Amazon Prime Video</span><i
+                  class="fa-solid fa-chevron-right"></i></a></li>
+            <li><a href="../amazonPrimeMusic/index.html"><span>Amazon Prime Music</span><i
+                  class="fa-solid fa-chevron-right"></i></a></li>
+          </ul>
         </div>
-  
-        <form method="GET" action="index.html" class="searchBoxHeader">
-          <select name="url" class="categories">
-            <option selected="selected" value="All">All</option>
-            <option value="alexa-skills">Alexa Skills</option>
-            <option value="amazon-devices">Amazon Devices</option>
-            <option value="fashion">Amazon Fashion</option>
-            <option value="nowstore">Amazon Fresh</option>
-            <option value="amazon-pharmacy">Amazon Pharmacy</option>
-            <option value="appliances">Appliances</option>
-            <option value="mobile-apps">Apps &amp; Games</option>
-            <option value="audible">Audible Audiobooks</option>
-            <option value="baby">Baby</option>
-            <option value="beauty">Beauty</option>
-            <option value="stripbooks">Books</option>
-            <option value="automotive">Car &amp; Motorbike</option>
-            <option value="apparel">Clothing &amp; Accessories</option>
-            <option value="collectibles">Collectibles</option>
-            <option value="computers">Computers &amp; Accessories</option>
-            <option value="electronics">Electronics</option>
-            <option value="furniture">Furniture</option>
-            <option value="lawngarden">Garden &amp; Outdoors</option>
-            <option value="gift-cards">Gift Cards</option>
-            <option value="grocery">Grocery &amp; Gourmet Foods</option>
-            <option value="hpc">Health &amp; Personal Care</option>
-            <option value="kitchen">Home &amp; Kitchen</option>
-            <option value="industrial">Industrial &amp; Scientific</option>
-            <option value="jewelry">Jewellery</option>
-            <option value="digital-text">Kindle Store</option>
-            <option value="luggage">Luggage &amp; Bags</option>
-            <option value="luxury-beauty">Luxury Beauty</option>
-            <option value="dvd">Movies &amp; TV Shows</option>
-            <option value="popular">Music</option>
-            <option value="mi">Musical Instruments</option>
-            <option value="office-products">Office Products</option>
-            <option value="pets">Pet Supplies</option>
-            <option value="instant-video">Prime Video</option>
-            <option value="shoes">Shoes &amp; Handbags</option>
-            <option value="software">Software</option>
-            <option value="sporting">Sports, Fitness &amp; Outdoors</option>
-            <option value="specialty-aps-sns">Subscribe &amp; Save</option>
-            <option value="home-improvement">Tools &amp; Home Improvement</option>
-            <option value="toys">Toys &amp; Games</option>
-            <option value="under-ten-dollars">Under ₹500</option>
-            <option value="videogames">Video Games</option>
-            <option value="watches">Watches</option>
-          </select>
-          <div class="searchInput">
-            <input type="search" name="search" placeholder="Search Amazon.in">
-          </div>
-          <div class="submitBtn">
-            <input type="submit" value="Go">
-            <i class="fa-regular fa-magnifying-glass"></i>
-          </div>
-        </form>
-        <div class="wrapperLang">
-          <div class="wrapperFlagImg"><img src="../Assests/Common/Images/pageHeaderAndFooter/indiaFlagV2.png" alt="India Flag"></div>
-          <div>
-            <span class="langEn">EN</span>
-            <i class="fa-sharp fa-solid fa-caret-down"></i>
-          </div>
+        <hr>
+
+        <div>
+          <h3>Shop By Category</h3>
+          <ul>
+            <li><a href="../mobilesComputers/index.html"><span>Mobiles, Computers</span><i
+                  class="fa-solid fa-chevron-right"></i></a></li>
+            <li><a href="../tvAppliancesElectronics/index.html"><span>TV, Appliances, Electronics</span><i
+                  class="fa-solid fa-chevron-right"></i></a></li>
+            <li><a href="../mensFashion/index.html"><span>Men's Fashion</span><i
+                  class="fa-solid fa-chevron-right"></i></a></li>
+            <li><a href="../womensFashion/index.html"><span>Women's Fashion</span><i
+                  class="fa-solid fa-chevron-right"></i></a></li>
+            <li><a href="#"><span><span>See All</span>&emsp;<i class="fa-solid fa-chevron-down"></i></span></a></li>
+          </ul>
         </div>
-  
-        <div class="wrapperHeaderKindOfHeading helloSignIn">
-          <div>Hello, sign in</div>
-          <div>
-            <span>Account & Lists</span>
-            <i class="fa-solid fa-caret-down"></i>
-          </div>
+        <hr>
+
+        <div>
+          <h3>Programs &amp; Features</h3>
+          <ul>
+            <li><a href="../amazonPay/index.html"><span>Amazon Pay</span></a></li>
+            <li><a href="../giftCardsAndMobileRecharges/index.html"><span>Gift Cards & Mobile Recharges</span><i
+                  class="fa-solid fa-chevron-right"></i></a></li>
+            <li><a href="../amazonLaunchpad/index.html"><span>Amazon Launchpad</span></a></li>
+            <li><a href="../handloomAndHandicrafts/index.html"><span>Handloom and Handicrafts</span></a></li>
+            <li><a href="#"><span><span>See All</span>&emsp;<i class="fa-solid fa-chevron-down"></i></span></a></li>
+          </ul>
         </div>
-        <div class="alternateSignIn">
-          <a href="../signIn/index.html">
-            <span>Sign in</span>
-            <i class="fa-regular fa-user"></i>
-          </a>
+        <hr>
+
+        <div>
+          <h3>Help &amp; Settings</h3>
+          <ul>
+            <li><a href="../amazonPay/index.html"><span>Your Account</span></a></li>
+            <li><a href="../amazonPay/index.html"><span>Customer Service</span></a></li>
+            <li><a href="../amazonPay/index.html"><span>Sign in</span></a></li>
+          </ul>
         </div>
-  
-        <div class="wrapperHeaderKindOfHeading returnsAndOrders">
-          <div>Returns</div>
-          <div>& Orders</div>
-        </div>
-  
-        <div class="shoppingCart">
-          <div>
-            <img src="../Assests/Common/Images/pageHeaderAndFooter/cart.png" alt="Shopping Cart">
-          </div>
-          <div class="labelCart">Cart</div>
-          <div class="noOfItemsInCart">0</div>
-        </div>
-      </header>
-  
-      <nav id="primaryHeaderNavigation">
-        <h2 class="displayNone">Primary Navigation</h2>
-        <ul>
-          <li class="allItemsMenu"><a href="#" id="showMenuItems"><i class="fa-regular fa-bars"></i><span>All</span></a></li>
-          <li><a href="../homepage/index.html">Home</a></li>
-          <li><a href="../sell/index.html">Sell</a></li>
-          <li><a href="../prime/index.html">Prime <i class="fa-sharp fa-solid fa-caret-down"></i></a></li>
-          <li><a href="../miniTV/index.html">Amazon miniTV</a></li>
-          <li><a href="../bestSellers/index.html">Best Sellers</a></li>
-          <li><a href="../todaysDeals/index.html">Today's Deals</a></li>
-          <li><a href="../mobiles/index.html">Mobiles</a></li>
-          <li><a href="../customerService/index.html">Customer Service</a></li>
-          <li><a href="../fresh/index.html">Fresh</a></li>
-          <li><a href="../electronics/index.html">Electronics</a></li>
-          <li><a href="../newReleases/index.html">New Releases</a></li>
-          <li><a href="../homeAndKitchen/index.html">Home &amp; Kitchen</a></li>
-          <li><a href="../giftIdeas/index.html">Gift Ideas</a></li>
-          <li><a href="../fashion/index.html">Fashion</a></li>
-          <li><a href="../amazonPay/index.html">Amazon Pay</a></li>
-          <li><a href="../computers/index.html">Computers</a></li>
-          <li><a href="../books/index.html">Books</a></li>
-          <li><a href="../beautyAndPersonalCare/index.html">Beauty & Personal Care</a></li>
-          <li><a href="../coupons/index.html">Coupons</a></li>
-        </ul>
-      </nav>
-  
-      <section id="menuAll" class="displayNone">
-        <div class="masterWrapperMenuAll">
-          <h2 class="displayNone">Navigation Menu All Items</h2>
-          <div class="helloSignIn">
-            <div><img src="../Assests/Common/Images/pageHeaderAndFooter/person.png" alt="person"></div>
-            <div class="text">Hello, <a href="../signIn/index.html">sign in</a></div>
-            <div id="closeMenu"><i class="fa-regular fa-xmark"></i></div>
-          </div>
-    
-          <div class="wrapperMenuItems">
-            <div>
-              <h3>Trending</h3>
-              <ul>
-                <li><a href="../homepage/index.html">Homepage</a></li>
-                <li><a href="../sell/index.html">Sell on Amazon</a></li>
-                <li><a href="../prime/index.html">Amazon Prime</a></li>
-                <li><a href="../miniTV/index.html">Amazon miniTV</a></li>
-                <li><a href="../todaysDeals/index.html">Today's Deals</a></li>
-                <li><a href="../bestSellers/index.html">Best Sellers</a></li>
-                <li><a href="../mobiles/index.html">Mobiles</a></li>
-                <li><a href="../customerService/index.html">Customer Service</a></li>
-              </ul>
-            </div>
-            <hr>
-      
-            <div>
-              <h3>Digital Content And Devices</h3>
-              <ul>
-                <li><a href="../echoAndAlexa/index.html"><span>Echo &amp; Alexa</span><i class="fa-solid fa-chevron-right"></i></a></li>
-                <li><a href="../fireTV/index.html"><span>Fire TV</span><i class="fa-solid fa-chevron-right"></i></a></li>
-                <li><a href="../kindleE-Reader/index.html"><span>Kindle E-Readers &amp; eBooks</span><i class="fa-solid fa-chevron-right"></i></a></li>
-                <li><a href="../audibleAudiobooks/index.html"><span>Audible Audiobooks</span><i class="fa-solid fa-chevron-right"></i></a></li>
-                <li><a href="../amazonPrimeVideo/index.html"><span>Amazon Prime Video</span><i class="fa-solid fa-chevron-right"></i></a></li>
-                <li><a href="../amazonPrimeMusic/index.html"><span>Amazon Prime Music</span><i class="fa-solid fa-chevron-right"></i></a></li>
-              </ul>
-            </div>
-            <hr>
-      
-            <div>
-              <h3>Shop By Category</h3>
-              <ul>          
-                <li><a href="../mobilesComputers/index.html"><span>Mobiles, Computers</span><i class="fa-solid fa-chevron-right"></i></a></li>          
-                <li><a href="../tvAppliancesElectronics/index.html"><span>TV, Appliances, Electronics</span><i class="fa-solid fa-chevron-right"></i></a></li>          
-                <li><a href="../mensFashion/index.html"><span>Men's Fashion</span><i class="fa-solid fa-chevron-right"></i></a></li>          
-                <li><a href="../womensFashion/index.html"><span>Women's Fashion</span><i class="fa-solid fa-chevron-right"></i></a></li>          
-                <li><a href="#"><span><span>See All</span>&emsp;<i class="fa-solid fa-chevron-down"></i></span></a></li>          
-              </ul>
-            </div>
-            <hr>
-      
-            <div>
-              <h3>Programs &amp; Features</h3>
-              <ul>          
-                <li><a href="../amazonPay/index.html"><span>Amazon Pay</span></a></li>          
-                <li><a href="../giftCardsAndMobileRecharges/index.html"><span>Gift Cards & Mobile Recharges</span><i class="fa-solid fa-chevron-right"></i></a></li>          
-                <li><a href="../amazonLaunchpad/index.html"><span>Amazon Launchpad</span></a></li>          
-                <li><a href="../handloomAndHandicrafts/index.html"><span>Handloom and Handicrafts</span></a></li>          
-                <li><a href="#"><span><span>See All</span>&emsp;<i class="fa-solid fa-chevron-down"></i></span></a></li>          
-              </ul>
-            </div>
-            <hr>
-      
-            <div>
-              <h3>Help &amp; Settings</h3>
-              <ul>          
-                <li><a href="../amazonPay/index.html"><span>Your Account</span></a></li>             
-                <li><a href="../amazonPay/index.html"><span>Customer Service</span></a></li>             
-                <li><a href="../amazonPay/index.html"><span>Sign in</span></a></li>             
-              </ul>
-            </div>         
-          </div>
-        </div>
-  
-  
-  
-      </section>
+      </div>
+    </div>
+
+
+
+  </section>
 
 
 
@@ -328,13 +343,726 @@
             <div class="products-section">
               <div class="side-btn">
                 <div class="btn">
-                  <i class="fa-solid fa-angle-left" style="color: #616161;"></i>
+                  <i class="fa-solid fa-angle-left"></i>
                 </div>
               </div>
               <div class="products">
                 <div class="product">
-                  
+                  <span>#1</span>
+                  <img src="./images/r1i1.jpg" alt="product1">
+                  <p>Boldfit Shoe Bag for Travel & Storage Travel Organizer for Women & Men Travel Accessories Shoe
+                    Organizer Shoe Bags…
+                  </p>
+                  <div class="rating">
+                    <img src="./images/4.5star.png" alt="rating">
+                    <span>4,025</span>
+                  </div>
+                  <div class="price">
+                    <span>₹199.00</span>
+                  </div>
                 </div>
+
+                <div class="product">
+                  <span>#2</span>
+                  <img src="./images/r1i2.jpg" alt="product2">
+                  <p>Boldfit Shoe Bag for Travel & Storage Travel Organizer for Women & Men Travel Accessories Shoe
+                    Organizer Shoe Bags…
+                  </p>
+                  <div class="rating">
+                    <img src="./images/4star.png" alt="rating">
+                    <span>22,675</span>
+                  </div>
+                  <div class="price">
+                    <span>₹279.00</span>
+                  </div>
+                </div>
+
+                <div class="product">
+                  <span>#3</span>
+                  <img src="./images/r1i3.jpg" alt="product3">
+                  <p>Boldfit Shoe Bag for Travel & Storage Travel Organizer for Women & Men Travel Accessories Shoe
+                    Organizer Shoe Bags…
+                  </p>
+                  <div class="rating">
+                    <img src="./images/4star.png" alt="rating">
+                    <span>7,178</span>
+                  </div>
+                  <div class="price">
+                    <span>₹339.00</span>
+                  </div>
+
+                </div>
+                <div class="product">
+                  <span>#4</span>
+                  <img src="./images/r1i4.jpg" alt="product4">
+                  <p>Boldfit Shoe Bag for Travel & Storage Travel Organizer for Women & Men Travel Accessories Shoe
+                    Organizer Shoe Bags…
+                  </p>
+                  <div class="rating">
+                    <img src="./images/4star.png" alt="rating">
+                    <span>57,048</span>
+                  </div>
+                  <div class="price">
+                    <span>₹899.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="side-btn">
+                <div class="btn">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="seller-products-section1">
+            <div class="products-section1-heading">
+              <div class="section1-heading">
+                <h2>Bestsellers in Car & Motorbike</h2>
+                <a href="#">See More</a>
+              </div>
+              <div class="products-section1-sider">
+                Page 1 of 5
+              </div>
+            </div>
+            <div class="products-section">
+              <div class="side-btn">
+                <div class="btn">
+                  <i class="fa-solid fa-angle-left"></i>
+                </div>
+              </div>
+              <div class="products">
+                <div class="product">
+                  <span>#1</span>
+                  <img src="./images/r2i1.jpg" alt="product1">
+                  <p>SOFTSPUN Microfiber Cloth - 4 pcs - 40x40 cms - 340 GSM Grey- Thick Lint & Streak-Free Multipurpose Cloths - Automotive Microfibre…
+                  </p>
+                  <div class="rating">
+                    <img src="./images/4.5star.png" alt="rating">
+                    <span>79,352</span>
+                  </div>
+                  <div class="price">
+                    <span>₹299.00</span>
+                  </div>
+                </div>
+
+                <div class="product">
+                  <span>#2</span>
+                  <img src="./images/r2i2.jpg" alt="product2">
+                  <p>Godrej aer O – Hanging Car Air Freshener | Car Accessories | Musk After Smoke (7.5g)
+                  </p>
+                  <div class="rating">
+                    <img src="./images/4star.png" alt="rating">
+                    <span>185</span>
+                  </div>
+                  <div class="price">
+                    <span>₹89.00</span>
+                  </div>
+                </div>
+
+                <div class="product">
+                  <span>#3</span>
+                  <img src="./images/r3i3.jpg" alt="product3">
+                  <p>ShineXPro Microfiber Car Cleaning Cloth - OG Soft 500 GSM Extra Large (35x75 CM) Microfiber Cloth for Car and Bike - Suede Edging…
+                  </p>
+                  <div class="rating">
+                    <img src="./images/4.5star.png" alt="rating">
+                    <span>9,098</span>
+                  </div>
+                  <div class="price">
+                    <span>₹499.00</span>
+                  </div>
+
+                </div>
+                <div class="product">
+                  <span>#4</span>
+                  <img src="./images/r2i4.jpg" alt="product4">
+                  <p>Godrej aer Twist – Car Air Freshener | Car Accessories | Cool Surf Blue (45g)
+                  </p>
+                  <div class="rating">
+                    <img src="./images/4star.png" alt="rating">
+                    <span>42,617</span>
+                  </div>
+                  <div class="price">
+                    <span>₹361.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="side-btn">
+                <div class="btn">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="seller-products-section1">
+            <div class="products-section1-heading">
+              <div class="section1-heading">
+                <h2>Bestsellers in Beauty</h2>
+                <a href="#">See More</a>
+              </div>
+              <div class="products-section1-sider">
+                Page 1 of 5
+              </div>
+            </div>
+            <div class="products-section">
+              <div class="side-btn">
+                <div class="btn">
+                  <i class="fa-solid fa-angle-left"></i>
+                </div>
+              </div>
+              <div class="products">
+                <div class="product">
+                  <span>#1</span>
+                  <img src="./images/r3i1.jpg" alt="product1">
+                  <p>Dettol Liquid Handwash Refill – Skincare Hand Wash- 1500ml | pH Balanced | 10x Better Germ Protection
+                  </p>
+                  <div class="rating">
+                    <img src="./images/4.5star.png" alt="rating">
+                    <span>57,957</span>
+                  </div>
+                  <div class="price">
+                    <span>₹191.00</span>
+                  </div>
+                </div>
+
+                <div class="product">
+                  <span>#2</span>
+                  <img src="./images/r3i2.jpg" alt="product2">
+                  <p>Dettol Original Germ Protection Bathing Soap Bar (600gm) | Kills 99.99% germs, 125gm + 20% Extra Free, Pack of 4
+                  </p>
+                  <div class="rating">
+                    <img src="./images/4.5star.png" alt="rating">
+                    <span>37,139</span>
+                  </div>
+                  <div class="price">
+                    <span>₹224.00</span>
+                  </div>
+                </div>
+
+                <div class="product">
+                  <span>#3</span>
+                  <img src="./images/r3i3.jpg" alt="product3">
+                  <p>Pears Pure & Gentle Soap Bar (Combo Pack of 8) - With Glycerin for Soft, Glowing Skin & Body, Paraben-Free Body Soaps For…
+                  </p>
+                  <div class="rating">
+                    <img src="./images/4.5star.png" alt="rating">
+                    <span>44,437</span>
+                  </div>
+                  <div class="price">
+                    <span>₹394.00</span>
+                  </div>
+
+                </div>
+                <div class="product">
+                  <span>#4</span>
+                  <img src="./images/r3i4.jpg" alt="product4">
+                  <p>Cetaphil Face Wash Gentle Skin Cleanser for Dry to Normal, Sensitive Skin, 125 ml Hydrating Face Wash with Niacinamide,…
+                  </p>
+                  <div class="rating">
+                    <img src="./images/4.5star.png" alt="rating">
+                    <span>18,380</span>
+                  </div>
+                  <div class="price">
+                    <span>₹327.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="side-btn">
+                <div class="btn">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="seller-products-section1">
+            <div class="products-section1-heading">
+              <div class="section1-heading">
+                <h2>Bestsellers in Bags, Wallet and Luggage</h2>
+                <a href="#">See More</a>
+              </div>
+              <div class="products-section1-sider">
+                Page 1 of 5
+              </div>
+            </div>
+            <div class="products-section">
+              <div class="side-btn">
+                <div class="btn">
+                  <i class="fa-solid fa-angle-left"></i>
+                </div>
+              </div>
+              <div class="products">
+                <div class="product">
+                  <span>#1</span>
+                  <img src="./images/r4i1.jpg" alt="product1">
+                  <p>BigBasket E-Gift Card - Flat 2% off - Redeemable online
+                  </p>
+                  <div class="rating">
+                    <img src="./images/4.5star.png" alt="rating">
+                    <span>1,987</span>
+                  </div>
+                  <div class="price">
+                    <span>₹500.00</span>
+                  </div>
+                </div>
+
+                <div class="product">
+                  <span>#2</span>
+                  <img src="./images/r4i2.jpg" alt="product2">
+                  <p>JK Easy Copier Paper | A4 Size | 70 GSM | 500 Sheets | White Paper, 1 Ream | For Laserjet & Inkjet Printer | Fast Drying | Both Side Print |…
+                  </p>
+                  <div class="rating">
+                    <img src="./images/4.5star.png" alt="rating">
+                    <span>9,226</span>
+                  </div>
+                  <div class="price">
+                    <span>₹355.00</span>
+                  </div>
+                </div>
+
+                <div class="product">
+                  <span>#3</span>
+                  <img src="./images/r4i3.jpg" alt="product3">
+                  <p>KADAM (LABEL) Pakka Rang Fabric Dye Colour | 25G Pack | Includes Dyfix Color Fixer | Permanent Fabric Dyes For Old Faded Jeans…
+                  </p>
+                  <div class="rating">
+                    <img src="./images/4star.png" alt="rating">
+                    <span>412</span>
+                  </div>
+                  <div class="price">
+                    <span>₹251.00</span>
+                  </div>
+
+                </div>
+                <div class="product">
+                  <span>#1</span>
+                  <img src="./images/r4i4.jpg" alt="product4">
+                  <p>Scotch Double Sided Tape by 3M (1m holds 4.5Kgs) for indoor hanging applications (Photo frames, Mirrors, Key Holders, Car…)
+                  </p>
+                  <div class="rating">
+                    <img src="./images/4star.png" alt="rating">
+                    <span>19,503</span>
+                  </div>
+                  <div class="price">
+                    <span>₹145.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="side-btn">
+                <div class="btn">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="seller-products-section1">
+            <div class="products-section1-heading">
+              <div class="section1-heading">
+                <h2>Bestsellers in Books</h2>
+                <a href="#">See More</a>
+              </div>
+              <div class="products-section1-sider">
+                Page 1 of 5
+              </div>
+            </div>
+            <div class="products-section">
+              <div class="side-btn">
+                <div class="btn">
+                  <i class="fa-solid fa-angle-left"></i>
+                </div>
+              </div>
+              <div class="products">
+                <div class="product">
+                  <span>#1</span>
+                  <img src="./images/r5i1.jpg" alt="product1">
+                  <p>My First Library: Boxset of 10 Board Books for Kids
+                  </p>
+                  <div class="category">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Wonder House Books</span>
+                  </div>
+                  <div class="rating">
+                    <img src="./images/4.5star.png" alt="rating">
+                    <span>74,044</span>
+                  </div>
+                  <div class="price">
+                    <span>₹399.00</span>
+                  </div>
+                </div>
+
+                <div class="product">
+                  <span>#2</span>
+                  <img src="./images/r5i2.jpg" alt="product2">
+                  <p>Atomic Habits
+                  </p>
+                  <div class="category">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>James Clear</span>
+                  </div>
+                  <div class="rating">
+                    <img src="./images/4.5star.png" alt="rating">
+                    <span>86,616</span>
+                  </div>
+                  <div class="price">
+                    <span>₹471.00</span>
+                  </div>
+                </div>
+
+                <div class="product">
+                  <span>#3</span>
+                  <img src="./images/r5i3.jpg" alt="product3">
+                  <p>Acts of God
+                  </p>
+                  <div class="category">
+                    <span>Kanan Gill
+                      Paperback
+                    </span>
+                  </div>
+                  <div class="price">
+                    <span>₹359.00</span>
+                  </div>
+
+                </div>
+                <div class="product">
+                  <span>#4</span>
+                  <img src="./images/r5i4.jpg" alt="product4">
+                  <p>PROFESSIONAL'S AIBE Exam 22 book Bare Acts set without…
+                  </p>
+                  <div class="category">
+                    <span>Professional's</span>
+                  </div>
+                  <div class="rating">
+                    <img src="./images/4star.png" alt="rating">
+                    <span>37</span>
+                  </div>
+                  <div class="price">
+                    <span>₹1,535.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="side-btn">
+                <div class="btn">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="seller-products-section1">
+            <div class="products-section1-heading">
+              <div class="section1-heading">
+                <h2>Bestsellers in Bags, Wallet and Luggage</h2>
+                <a href="#">See More</a>
+              </div>
+              <div class="products-section1-sider">
+                Page 1 of 5
+              </div>
+            </div>
+            <div class="products-section">
+              <div class="side-btn">
+                <div class="btn">
+                  <i class="fa-solid fa-angle-left"></i>
+                </div>
+              </div>
+              <div class="products">
+                <div class="product">
+                  <span>#1</span>
+                  <img src="./images/r6i1.jpg" alt="product1">
+                  <p>DOCTOR EXTRA SOFT Flexible Memory Foam Women's Shoes for Walking Gym Training,Casual, Sports,Slip-On,Lightweight Lace…
+                  </p>
+                  <div class="rating">
+                    <img src="./images/4star.png" alt="rating">
+                    <span>2,098</span>
+                  </div>
+                  <div class="price">
+                    <span>₹899.00</span>
+                  </div>
+                </div>
+
+                <div class="product">
+                  <span>#2</span>
+                  <img src="./images/r6i2.jpg" alt="product2">
+                  <p>DOCTOR EXTRA SOFT Doctor Ortho Slippers for Women.
+                  </p>
+                  <div class="rating">
+                    <img src="./images/4star.png" alt="rating">
+                    <span>50,876</span>
+                  </div>
+                  <div class="price">
+                    <span>₹399.00</span>
+                  </div>
+                </div>
+
+                <div class="product">
+                  <span>#1</span>
+                  <img src="./images/r6i3.jpg" alt="product3">
+                  <p>Red Tape Casual Sneaker Shoes for Men | Stylish and Comfortable
+                  </p>
+                  <div class="rating">
+                    <img src="./images/4star.png" alt="rating">
+                    <span>136</span>
+                  </div>
+                  <div class="price">
+                    <span>₹1,119.00</span>
+                  </div>
+
+                </div>
+                <div class="product">
+                  <span>#1</span>
+                  <img src="./images/r6i4.jpg" alt="product4">
+                  <p>ASIAN Men's Wonder-13 Sports Running Shoes…
+                  </p>
+                  <div class="rating">
+                    <img src="./images/4star.png" alt="rating">
+                    <span>93,551</span>
+                  </div>
+                  <div class="price">
+                    <span>₹599.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="side-btn">
+                <div class="btn">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about">
+            <h3>About Bestsellers</h3>
+            <p>These frequently updated lists contain bestselling items.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="seller-section2">
+        <div class="seller-section2-box">
+          <div class="seller-section2-heading">
+            <h3>Inspired by your browsing history</h3>
+            <p>Page 1 to 7</p>
+          </div>
+          <div class="seller-section2-items">
+            <div class="side-btn2">
+              <div class="btn2">
+                <i class="fa-solid fa-angle-left"></i>
+              </div>
+            </div>
+            <div class="seller-section2-item">
+              <img src="./images/r7i1.jpg" alt="item image">
+              <p>GoSriKi Women's Cotton Blend Straight Printed Kurta with Pant & Dupatta (Brush-Peach-GS)
+                </p>
+              <div class="price">
+                <img src="./images/3.5star.png" alt="rating">
+                <span>744</span>
+              </div>
+              <div class="price">
+                <span>₹799.00</span>
+              </div>
+            </div>
+            <div class="seller-section2-item">
+              <img src="./images/r7i2.jpg" alt="item image">
+              <p>GoSriKi Women's Organza Straight Solid Kurta with Pant & Dupatta</p>
+              <div class="price">
+                <img src="./images/3.5star.png" alt="rating">
+                <span>346</span>
+              </div>
+              <div class="price">
+                <span>₹689.00-₹699.00</span>
+              </div>
+            </div>
+            <div class="seller-section2-item">
+              <img src="./images/r7i3.jpg" alt="item image">
+              <p>GoSriKi Women Kurta with Palazzo & Dupatta
+                
+                </p>
+              <div class="price">
+                <img src="./images/4star.png" alt="rating">
+                <span>744</span>
+              </div>
+              <div class="price">
+                <span>₹689.00-₹759.00</span>
+              </div>
+            </div>
+            <div class="seller-section2-item">
+              <img src="./images/r7i4.jpg" alt="item image">
+              <p>GoSriKi Women's Cotton Blend Straight Printed Kurta with Pant & Dupatta (Nirupa Maroon-GS)
+                </p>
+              <div class="price">
+                <img src="./images/4star.png" alt="rating">
+                <span>474</span>
+              </div>
+              <div class="price">
+                <span>₹689.00</span>
+              </div>
+            </div>
+            <div class="seller-section2-item">
+              <img src="./images/r7i5.jpg" alt="item image">
+              <p>GoSriKi Women's Cotton Blend Anarkali Floral Printed Kurta with Pant & Dupatta
+                </p>
+              <div class="price">
+                <img src="./images/3.5star.png" alt="rating">
+                <span>422</span>
+              </div>
+              <div class="price">
+                <span>₹689.00</span>
+              </div>
+            </div>
+            <div class="seller-section2-item">
+              <img src="./images/r7i6.jpg" alt="item image">
+              <p>Vaamsi Women Kurta Set
+                </p>
+              <div class="price">
+                <img src="./images/4star.png" alt="rating">
+                <span>134</span>
+              </div>
+              <div class="price">
+                <span>₹999.00</span>
+              </div>
+            </div>
+            <div class="seller-section2-item">
+              <img src="./images/r7i7.jpg" alt="item image">
+              <p>GoSriKi Women's Cotton Blend Straight Chikankari Embroidered Kurta (Zainab-Green-GS)
+                </p>
+              <div class="price">
+                <img src="./images/3.5star.png" alt="rating">
+                <span>133</span>
+              </div>
+              <div class="price">
+                <span>₹489.00-₹599.00</span>
+              </div>
+            </div>
+            <div class="side-btn">
+              <div class="btn">
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="seller-section2-box">
+          <div class="seller-section2-heading">
+            <h3>Customers who viewed items in your browsing history also viewed</h3>
+            <p>Page 1 to 6</p>
+          </div>
+          <div class="seller-section2-items">
+            <div class="side-btn2">
+              <div class="btn2">
+                <i class="fa-solid fa-angle-left"></i>
+              </div>
+            </div>
+            <div class="seller-section2-item">
+              <img src="./images/r8i1.jpg" alt="item image">
+              <p>Stylum Women's Woven designed Cotton Blend Straight Kurta Pant Dupatta Set
+                </p>
+              <div class="price">
+                <img src="./images/4star.png" alt="rating">
+                <span>10</span>
+              </div>
+              <div class="price">
+                <span>₹699.00-₹949.00</span>
+              </div>
+            </div>
+            <div class="seller-section2-item">
+              <img src="./images/r8i2.jpg" alt="item image">
+              <p>Shasmi Women's Heavy Chikku Colour Net Embroidered Fancy phulkari work Dupatta for women (Barsat Dupatta)
+                </p>
+              <div class="price">
+                <img src="./images/3.5star.png" alt="rating">
+                <span>10</span>
+              </div>
+              <div class="price">
+                <span>₹679.00</span>
+              </div>
+            </div>
+            <div class="seller-section2-item">
+              <img src="./images/r8i3.jpg" alt="item image">
+              <p>Shasmi Women's Heavy Black Colour Net Embroidered Fancy Phulkari Work Dupatta For Women (Chakri Dupatta)
+                </p>
+              <div class="price">
+                <img src="./images/4.5star.png" alt="rating">
+                <span>16</span>
+              </div>
+              <div class="price">
+                <span>₹679.00</span>
+              </div>
+            </div>
+            <div class="seller-section2-item">
+              <img src="./images/r8i4.jpg" alt="item image">
+              <p>Shasmi Women's Heavy Black Colour Net Embroidered Fancy Phulkari Work Dupatta For Women (Football 2 Black Dupatta)
+              <div class="price">
+                <img src="./images/5star.png" alt="rating">
+                <span>10</span>
+              </div>
+              <div class="price">
+                <span>₹448.00</span>
+              </div>
+            </div>
+            <div class="seller-section2-item">
+              <img src="./images/r8i5.jpg" alt="item image">
+              <p>GoSriKi Women's Organza Floral Anarkali Printed Kurta with Pant & Dupatta (BHUJ-GS)</p>
+              <div class="price">
+                <img src="./images/3star.png" alt="rating">
+                <span>12</span>
+              </div>
+              <div class="price">
+                <span>₹799.00</span>
+              </div>
+            </div>
+            <div class="seller-section2-item">
+              <img src="./images/r8i6.jpg" alt="item image">
+              <p>M P STORE Women's Heavy Net Fancy Festival Phulkari White Dupatta For Women
+                </p>
+              <div class="price">
+                <img src="./images/4.5star.png" alt="rating">
+                <span>41</span>
+              </div>
+              <div class="price">
+                <span>₹399.00-₹499.00</span>
+              </div>
+            </div>
+            <div class="seller-section2-item">
+              <img src="./images/r8i7.jpg" alt="item image">
+              <p>Stylum Women's Self Design Striped Cotton Blend Straight Kurta Pant Set (Orange)
+                </p>
+              <div class="price">
+                <img src="./images/4.5star.png" alt="rating">
+                <span>95</span>
+              </div>
+              <div class="price">
+                <span>₹499.00</span>
+              </div>
+            </div>
+            <div class="side-btn">
+              <div class="btn">
+                <i class="fa-solid fa-angle-right"></i>
               </div>
             </div>
           </div>
@@ -527,24 +1255,24 @@
      */
     document.addEventListener('DOMContentLoaded', function () {
       // Fetchign items
-        let showMenuItems = document.getElementById('showMenuItems');
-        let menuAll = document.getElementById('menuAll');
-        let navMenuAlternateActionButton = document.getElementById('navMenuAlternateActionButton');
-        let closeMenu = document.getElementById('closeMenu');
+      let showMenuItems = document.getElementById('showMenuItems');
+      let menuAll = document.getElementById('menuAll');
+      let navMenuAlternateActionButton = document.getElementById('navMenuAlternateActionButton');
+      let closeMenu = document.getElementById('closeMenu');
       // Attaching event listerners
-        showMenuItems.addEventListener('click', function(){          
-          menuAll.classList.remove('displayNone');
-        });
-        navMenuAlternateActionButton.addEventListener('click', function(){          
-          menuAll.classList.remove('displayNone');
-        });
+      showMenuItems.addEventListener('click', function () {
+        menuAll.classList.remove('displayNone');
+      });
+      navMenuAlternateActionButton.addEventListener('click', function () {
+        menuAll.classList.remove('displayNone');
+      });
 
-        closeMenu.addEventListener('click', function(){
-          menuAll.classList.add('displayNone');
-        });
+      closeMenu.addEventListener('click', function () {
+        menuAll.classList.add('displayNone');
+      });
 
 
-      });      
+    });      
   </script>
 
 

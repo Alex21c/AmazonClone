@@ -39,8 +39,10 @@ main {
 /* sell-section1  */
 
 
-h2 {
+.sell-section1 .sell-section1-content h2 {
   font-size: 3.2vmin;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -70,7 +72,7 @@ h2 {
   background-color: #FF9900;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 2vmin;
+  font-size: 2.2vmin;
   border: none;
   cursor: pointer;
   box-shadow: 1px 1px 20px 1px #f2f2f2;
@@ -121,7 +123,7 @@ h2 {
 
 }
 
-.sell-hero-section1 h1 {
+.sell-hero-section1 h3 {
   font-size: 6.8vmin;
   width: 96%;
   margin-bottom: 2rem;
@@ -188,7 +190,7 @@ h2 {
   /* margin-bottom: 2.3vmin; */
 }
 
-.cards-section .cards .card .card-content span {
+.cards-section .cards .card .card-content h3 {
   /* margin-bottom: 2.3vmin; */
   display: inline-block;
   font-size: 4.6vmin;
@@ -219,7 +221,7 @@ h2 {
 }
 
 
-.cards-section .cards-heading h1 {
+.cards-section .cards-heading h2 {
   font-size: 6.4vmin;
   font-weight: bolder
 }
@@ -305,7 +307,7 @@ h2 {
   margin: 1.6vmin 0;
 }
 
-.testimonial-content h3 {
+.testimonial-content .testimonial-name {
   font-size: 3.4vmin;
   margin: 1.6vmin 0;
   font-weight: bolder;
@@ -330,6 +332,16 @@ h2 {
   align-items: center;
   justify-content: center;
   margin: 6vmin 0;
+}
+
+
+.middle-section1 p{
+  font-size: 2.2vmin;
+  font-weight: 700;
+}
+
+.middle-section1 i{
+  margin-left: 1.4vmin;
 }
 
 .middle-section1:hover {
@@ -359,6 +371,11 @@ h2 {
   padding: 3.4vmin 0;
   border-top: 1px solid black;
   cursor: pointer;
+}
+
+.middle-section2-content {
+  font-weight: 700;
+  font-size: 2.2vmin;
 }
 
 .middle-section2-content i {
@@ -414,7 +431,7 @@ h2 {
   flex-direction: column;
 }
 
-.bottom-content h1 {
+.bottom-content h2 {
   font-size: 9vmin;
   margin-bottom: 3vmin;
 }
@@ -422,7 +439,7 @@ h2 {
 .bottom-content p {
   font-size: 2.8vmin;
   margin-bottom: 3vmin;
-  width: 48%;
+  width: 45%;
 }
 
 .bottom-content .sell-btn button {
@@ -439,12 +456,23 @@ h2 {
 
 /* for responsiveness  */
 
-@media (max-width: 1450px) {
+@media (max-width: 1525px) {
   .sell-section2 .cards-section .cards{
     align-items: center;
     justify-content: space-around;
   }
 }
+
+@media (max-width: 500px) {
+  .sell-section2 .cards-section .cards .card{
+    height: 45vmin;
+  }
+
+  .sell-review .review-item .review-content iframe{
+    height: 50vmin;
+  }
+}
+
 
 @media (max-width: 965px) {
   .sell-section2 .cards-section .cards {
@@ -453,7 +481,7 @@ h2 {
     padding: 10vmin;
   }
 
-  .cards-section .cards-heading h1 {
+  .cards-section .cards-heading h2 {
     text-align: center;
   }
 

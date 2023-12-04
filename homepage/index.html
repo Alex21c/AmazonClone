@@ -27,7 +27,9 @@
   <body>
     <h1 class="displayNone">Homepage</h1> <!-- #5/6 Kindly replace homepage with the name of the page teammate designing-->
     <div id="backToTop"></div>
-    <!-- Will be common (assigned to Abhishek kumar)-->
+    <!-- 
+      Page Header Will be common (assigned to Abhishek kumar)
+    -->
     <header id="pageHeader">
       <div class="wrapperLogoAndAlternateNav">
         <div id="navMenuAlternateActionButton">
@@ -138,10 +140,12 @@
         <div class="noOfItemsInCart">0</div>
       </div>
     </header>
-
+    <!--
+      Page Header Primary Navigation
+    -->
     <nav id="primaryHeaderNavigation">
       <h2 class="displayNone">Primary Navigation</h2>
-      <ul>
+      <ul id="theHeaderNavMenu">
         <li class="allItemsMenu"><a href="#" id="showMenuItems"><i class="fa-regular fa-bars"></i><span>All</span></a></li>
         <li><a href="../homepage/index.html">Home</a></li>
         <li><a href="../sell/index.html">Sell</a></li>
@@ -164,7 +168,34 @@
         <li><a href="../coupons/index.html">Coupons</a></li>
       </ul>
     </nav>
+   <script>
+       document.addEventListener('DOMContentLoaded', makeSureHeaderNavigationItemIsNotPartiallyShown); 
+       window.addEventListener('resize', makeSureHeaderNavigationItemIsNotPartiallyShown);
 
+       function makeSureHeaderNavigationItemIsNotPartiallyShown(){
+        let theHeaderNavMenu = document.getElementById('theHeaderNavMenu');
+        let liElements = theHeaderNavMenu.querySelectorAll("li");
+        // console.log(liElements);
+        liElements.forEach(
+          function(li) {
+            let right = li.getBoundingClientRect().right;
+            if(right >= window.innerWidth){
+              //  console.log(li.getBoundingClientRect());
+              li.style.opacity = 0;
+            }else if(right-20 <= window.innerWidth){
+              li.style.opacity = 1;
+            }
+          }
+        );
+      }
+       
+   </script>
+
+
+
+    <!-- 
+      Header Navigation Menu Secondary  
+    -->
     <section id="menuAll" class="displayNone">
       <div class="masterWrapperMenuAll">
         <h2 class="displayNone">Navigation Menu All Items</h2>
@@ -242,28 +273,1363 @@
 
     </section>
 
-  <!-- Will be common (assigned to Abhishek kumar)-->
-  <!-- <nav id="primaryHeaderNavigation">
-      <h2 class="displayNone">Primary Header Navigation</h2>
-      <ul>        
-        <li><a href="sell.html">Sell</a></li>
-        <li><a href="amazonPrime.html">Prime</a></li>
-        <li><a href="yourAccount.html">Your Account</a></li>
-        <li><a href="amazonPay.html">Amazon Pay</a></li>
-        <li><a href="customerService.html">Customer Service</a></li>
-      </ul>
-    </nav>   -->
+ 
 
   <!--
-     #6/6 Teammate, Your code starts from here 
+     Page Main Section
   -->
-  <main>
-    <h2 class="info">Homepage (index.html)</h2> <!-- ofcourse you can delete it! -->
+   <main>
+    <div id="wrapperMainContent">
+
+      <section id="aboveHero">
+        <div>
+          <h2>Revamp your home in style</h2>
+          <div>
+            <div>
+              <div><img src="Images/revampYourHomeInStyle/cushionCoversAndBedsheets.jpg" alt="cushionCoversAndBedsheets" loading="lazy"></div>
+              <h3>Cushion covers, bedsheets & more</h3>
+            </div>
+            <div>
+              <div><img src="Images/revampYourHomeInStyle/homedecoration.jpg" alt="homedecoration" loading="lazy"></div>
+              <h3>Home decoration</h3>            
+            </div>
+            <div>
+              <div><img src="Images/revampYourHomeInStyle/homeStorage.jpg" alt="homeStorage" loading="lazy"></div>
+              <h3>Home storage</h3>            
+            </div>
+            <div>
+              <div><img src="Images/revampYourHomeInStyle/lightingSolutions.jpg" alt="Lighting solutions" loading="lazy"></div>
+              <h3>Lighting solutions</h3>            
+            </div>
+          </div>
+          <a href="#">Explore all</a>
+        </div>
+
+        <div>
+          <h2>Up to 60% off | Styles for men</h2>
+          <div>
+            <div>
+              <div><img src="Images/upTo60PercentOffStylesForMen/clothing.jpg" alt="Clothing" loading="lazy"></div>
+              <h3>Clothing</h3>
+            </div>
+            <div>
+              <div><img src="Images/upTo60PercentOffStylesForMen/footwear.jpg" alt="Footwear" loading="lazy"></div>
+              <h3>Footwear</h3>
+            </div>
+            <div>
+              <div><img src="Images/upTo60PercentOffStylesForMen/watches.jpg" alt="Watches" loading="lazy"></div>
+              <h3>Watches</h3>
+            </div>
+            <div>
+              <div><img src="Images/upTo60PercentOffStylesForMen/bagsAndWallets.jpg" alt="Bags & wallets" loading="lazy"></div>
+              <h3>Bags & wallets</h3>
+            </div>
+          </div>
+          <a href="#">See all offers</a>
+        </div>
+
+        <div>
+          <h2>Up to 75% off | Headphones</h2>
+          <div>
+            <div>
+              <div><img src="Images/upTo75PercentOffHeadphones/boat.jpg" alt="Up to 75% off | boAt" loading="lazy"></div>
+              <h3>Up to 75% off | boAt</h3>
+            </div>
+            <div>
+              <div><img src="Images/upTo75PercentOffHeadphones/boult.jpg" alt="Up to 75% off | boult" loading="lazy"></div>
+              <h3>Up to 75% off | boult</h3>
+            </div>
+            <div>
+              <div><img src="Images/upTo75PercentOffHeadphones/noise.jpg" alt="Up to 75% off | Noise" loading="lazy"></div>
+              <h3>Up to 75% off | Noise</h3>
+            </div>
+            <div>
+              <div><img src="Images/upTo75PercentOffHeadphones/zebronics.jpg" alt="Up to 75% off | Zebronics" loading="lazy"></div>
+              <h3>Up to 75% off | Zebronics</h3>
+            </div>
+          </div>
+
+          <a href="#">See all offers</a>
+        </div>
+
+        <div>
+          <h2>Appliances for your home | Up to 55% off</h2>
+          <div>
+            <div>
+              <div><img src="Images/appliancesForYourHomeUpTo55PercentOff/airConditioners.jpg" alt="Air conditioners" loading="lazy"></div>
+              <h3>Air conditioners</h3>
+            </div>
+            <div>
+              <div><img src="Images/appliancesForYourHomeUpTo55PercentOff/refrigerators.jpg" alt="Refrigerators" loading="lazy"></div>
+              <h3>Refrigerators</h3>
+            </div>
+            <div>
+              <div><img src="Images/appliancesForYourHomeUpTo55PercentOff/microwaves.jpg" alt="Microwaves" loading="lazy"></div>
+              <h3>Microwaves</h3>
+            </div>
+            <div>
+              <div><img src="Images/appliancesForYourHomeUpTo55PercentOff/washingMachines.jpg" alt="Washing machines" loading="lazy"></div>
+              <h3>Washing machines</h3>
+            </div>
+          </div>
+          <a href="#">See more</a>
+        </div>
+
+        <div>
+          <h2>Starting ₹99 | Home improvement needs</h2>
+          <div>
+
+            <div>
+              <div><img src="Images/startingRupees99HomeImprovementNeeds/spinMopsWipesAndMore.jpg" alt="Spin mops, wipes & more" loading="lazy"></div>
+              <h3>Spin mops, wipes & more</h3>
+            </div>
+            <div>
+              <div><img src="Images/startingRupees99HomeImprovementNeeds/bathroomHardwareAndAccessories.jpg" alt="Bathroom hardware & accessories" loading="lazy"></div>
+              <h3>Bathroom hardware & accessories</h3>
+            </div>
+            <div>
+              <div><img src="Images/startingRupees99HomeImprovementNeeds/hammersScrewdriversAndMore.jpg" alt="Hammers, screwdrivers & more" loading="lazy"></div>
+              <h3>Hammers, screwdrivers & more</h3>
+            </div>
+            <div>
+              <div><img src="Images/startingRupees99HomeImprovementNeeds/extensionBoardsPlugsAndMore.jpg" alt="Extension boards, plugs & more" loading="lazy"></div>
+              <h3>Extension boards, plugs & more</h3>
+            </div>
+          </div>
+
+          <a href="#">Explore all</a>
+        </div>
+
+        <div>
+          <h2>Toys & games for your kids | Amazon Brands</h2>
+          <div>
+            <div>
+              <div><img src="Images/toysAndGamesForYourKids/startingRupees299BikesTrikesAndRide.jpg" alt="Starting ₹299 | Bikes, trikes & ride-ons" loading="lazy"></div>
+              <h3>Starting ₹299 | Bikes, trikes & ride-ons</h3>
+            </div>
+            <div>
+              <div><img src="Images/toysAndGamesForYourKids/StartingRupees149SportsAndOutdoor.jpg" alt="Starting ₹149 | Sport & outdoor" loading="lazy"></div>
+              <h3>Starting ₹149 | Sport & outdoor</h3>
+            </div>
+            <div>
+              <div><img src="Images/toysAndGamesForYourKids/StartingRupees235SoftToys.jpg" alt="Starting ₹235 | Soft toys" loading="lazy"></div>
+              <h3>Starting ₹235 | Soft toys</h3>
+            </div>
+            <div>
+              <div><img src="Images/toysAndGamesForYourKids/StartingRupees199PuzzleAndGames.jpg" alt="Starting ₹199 | Puzzles & games" loading="lazy"></div>
+              <h3>Starting ₹199 | Puzzles & games</h3>
+            </div>
+          </div>
+          
+          <a href="#">See more</a>
+        </div>        
+
+        <div>
+          <h2>Up to 60% off | Amazon Brands & more</h2>
+          <div>
+            <div>
+              <div><img src="Images/upTo60PercentOffAmazonBrandsAndMore/upto60PercentOffRacksAndHolders.jpg" alt="Up to 60% off | Racks & holders" loading="lazy"></div>
+              <h3>Up to 60% off | Racks & holders</h3>
+            </div>
+            <div>
+              <div><img src="Images/upTo60PercentOffAmazonBrandsAndMore/startingRupees279StorageContainers.jpg" alt="Starting ₹279 | Storage containers" loading="lazy"></div>
+              <h3>Starting ₹279 | Storage containers</h3>
+            </div>
+            <div>
+              <div><img src="Images/upTo60PercentOffAmazonBrandsAndMore/minimum40PercentOffCookwares.jpg" alt="Minimum 40% off | Cookwares" loading="lazy"></div>
+              <h3>Minimum 40% off | Cookwares</h3>
+            </div>
+            <div>
+              <div><img src="Images/upTo60PercentOffAmazonBrandsAndMore/startingRupees139Waterbottles.jpg" alt="Starting ₹139 | Waterbottles" loading="lazy"></div>
+              <h3>Starting ₹139 | Waterbottles</h3>
+            </div>
+          </div>
+          
+          
+          <a href="#">See more</a>
+        </div>        
+
+        <div>
+          <h2>Up to 60% off | Styles for women</h2>
+          <div>
+            <div>
+              <div><img src="Images/upto60PercentOffStylesForWomen/womensClothing.jpg" alt="Women's Clothing" loading="lazy"></div>
+              <h3>Women's Clothing</h3>
+            </div>
+            <div>
+              <div><img src="Images/upto60PercentOffStylesForWomen/footwearPlusHandbags.jpg" alt="Footwear+Handbags" loading="lazy"></div>
+              <h3>Footwear+Handbags</h3>
+            </div>
+            <div>
+              <div><img src="Images/upto60PercentOffStylesForWomen/Watches.jpg" alt="Watches" loading="lazy"></div>
+              <h3>Watches</h3>
+            </div>
+            <div>
+              <div><img src="Images/upto60PercentOffStylesForWomen/fashiionJewellery.jpg" alt="Fashion jewellery" loading="lazy"></div>
+              <h3>Fashion jewellery</h3>
+            </div>
+          </div>
+
+          
+          
+          <a href="#">See all offers</a>
+        </div>        
+      </section>
+
+      <section id="todaysDeals">
+        <div>
+          <h2>Today's Deals</h2>
+          <a href="#">See all deals</a>
+        </div>
+        <div>
+          <div>
+            <div>
+              <img src="Images/TodaysDeals/greatDealsOnHealthAndSports.jpg" alt="greatDealsOnHealthAndSports">
+            </div>
+            <div>
+              <span>Up to 25% off</span>
+              <span>Deal of the Day</span>
+            </div>
+            <h3>Great Deals on Health and Sports Supplements</h3>
+          </div>
+
+          <div>
+            <div>
+              <img src="Images/TodaysDeals/travelAdaptersAndElectronic.jpg" alt="Travel Adapters And Electronic Accessories">
+            </div>
+            <div>
+              <span>Up to 95% off</span>
+              <span>Deal of the Day</span>
+            </div>
+            <h3>Travel Adapters And Electronic Accessories</h3>
+          </div>
+
+          <div>
+            <div>
+              <img src="Images/TodaysDeals/cookwarePotsAndPansFromTopBrands.jpg" alt="Cookware, Pots & Pans from Top Brands">
+            </div>
+            <div>
+              <span>Up to 55% off</span>
+              <span>Deal of the Day</span>
+            </div>
+            <h3>Cookware, Pots & Pans from Top Brands</h3>
+          </div>
+
+          <div>
+            <div>
+              <img src="Images/TodaysDeals/dealsOfTheDayForBestSellingBooks.jpg" alt="Deal of The Day for Best Selling Books">
+            </div>
+            <div>
+              <span>Up to 40% off</span>
+              <span>Deal of the Day</span>
+            </div>
+            <h3>Deal of The Day for Best Selling Books</h3>
+          </div>
+
+          <div>
+            <div>
+              <img src="Images/TodaysDeals/wallpaperStarting149.jpg" alt="Wallpapers Starting 149 from wolpin">
+            </div>
+            <div>
+              <span>Up to 87% off</span>
+              <span>Deal of the Day</span>
+            </div>
+            <h3>Wallpapers Starting 149 from wolpin</h3>
+          </div>
+
+          <div>
+            <div>
+              <img src="Images/TodaysDeals/bestPricesOnDoctorExtraSoft.jpg" alt="Best prices on Doctor Extra Soft">
+            </div>
+            <div>
+              <span>Up to 67% off</span>
+              <span>Deal of the Day</span>
+            </div>
+            <h3>Best prices on Doctor Extra Soft</h3>
+          </div>
+
+          <div>
+            <div>
+              <img src="Images/TodaysDeals/bestOffersOnPumaFootwear.jpg" alt="Best Offers on PUMA Footwear & Clothing">
+            </div>
+            <div>
+              <span>Up to 67% off</span>
+              <span>Deal of the Day</span>
+            </div>
+            <h3>Best Offers on PUMA Footwear & Clothing</h3>
+          </div>
+
+          <div>
+            <div>
+              <img src="Images/TodaysDeals/comodeAccessoriesFromElegant.jpg" alt="Comode Accessories From Elegant Casa">
+            </div>
+            <div>
+              <span>Up to 55% off</span>
+              <span>Deal of the Day</span>
+            </div>
+            <h3>Comode Accessories From Elegant Casa</h3>
+          </div>
+
+          <div>
+            <div>
+              <img src="Images/TodaysDeals/bestSellingCasualWearForMen.jpg" alt="Best Selling Casual Wear for Men">
+            </div>
+            <div>
+              <span>Up to 87% off</span>
+              <span>Deal of the Day</span>
+            </div>
+            <h3>Best Selling Casual Wear for Men</h3>
+          </div>
+
+          <div>
+            <div>
+              <img src="Images/TodaysDeals/trendyTotesAndBags.jpg" alt="Trendy Totes & Bags">
+            </div>
+            <div>
+              <span>Up to 65% off</span>
+              <span>Deal of the Day</span>
+            </div>
+            <h3>Trendy Totes & Bags</h3>
+          </div>
+
+          <div>
+            <div>
+              <img src="Images/TodaysDeals/wallpapersStarting149FromWolpin.jpg" alt="Wallpapers Starting 149 from wolpin">
+            </div>
+            <div>
+              <span>Up to 87% off</span>
+              <span>Deal of the Day</span>
+            </div>
+            <h3>Wallpapers Starting 149 from wolpin</h3>
+          </div>
+
+          <div>
+            <div>
+              <img src="Images/TodaysDeals/indiasFirstSmartHybridPillow.jpg" alt="India's first Smart Hybrid Pillow">
+            </div>
+            <div>
+              <span>Up to 50% off</span>
+              <span>Deal of the Day</span>
+            </div>
+            <h3>India's first Smart Hybrid Pillow</h3>
+          </div>
+
+          <div>
+            <div>
+              <img src="Images/TodaysDeals/bathHardwareAccessories.jpg" alt="Bath hardware accessories and Curtain Brackets">
+            </div>
+            <div>
+              <span>Up to 70% off</span>
+              <span>Deal of the Day</span>
+            </div>
+            <h3>Bath hardware accessories and Curtain Brackets</h3>
+          </div>
+
+          <div>
+            <div>
+              <img src="Images/TodaysDeals/bestOffersOnGardeningTools.jpg" alt="Best offers on Gardening Tools">
+            </div>
+            <div>
+              <span>Up to 65% off</span>
+              <span>Deal of the Day</span>
+            </div>
+            <h3>Best offers on Gardening Tools</h3>
+          </div>
+
+          <div>
+            <div>
+              <img src="Images/TodaysDeals/amazingBestDealsByBullmer.jpg" alt="Amazing Best Deals by BULLMER">
+            </div>
+            <div>
+              <span>₹744 and under</span>
+              <span>Deal of the Day</span>
+            </div>
+            <h3>Amazing Best Deals by BULLMER</h3>
+          </div>
+
+          <div>
+            <div>
+              <img src="Images/TodaysDeals/NewBalanceXStepAwant.jpg" alt="New Balance, xstep, Awant">
+            </div>
+            <div>
+              <span>Up to 67% off</span>
+              <span>Deal of the Day</span>
+            </div>
+            <h3>New Balance, xstep, Awant</h3>
+          </div>
+
+          <div>
+            <div>
+              <img src="Images/TodaysDeals/AmazingBestDealsByAxlon.jpg" alt="Amazing Best Deals by AXLON">
+            </div>
+            <div>
+              <span>Up to 87% off</span>
+              <span>Deal of the Day</span>
+            </div>
+            <h3>Amazing Best Deals by AXLON</h3>
+          </div>
+
+          <div>
+            <div>
+              <img src="Images/TodaysDeals/greatOffersOnCreatineSuppliments.jpg" alt="Great Offers on Creatine suppliments by MuscleBlaze">
+            </div>
+            <div>
+              <span>Up to 45% off</span>
+              <span>Deal of the Day</span>
+            </div>
+            <h3>Great Offers on Creatine suppliments by MuscleBlaze</h3>
+          </div>
+
+
+        </div> <!-- END OF Wrapper Div-->
+      </section> <!-- End of section#todaysDeals-->
+
+      <section id="kitchenAndDiningProducts">
+        <div>
+          <h2>Kitchen & dining products</h2>
+          <a href="#">See all offers</a>
+        </div>
+        <div>
+          <div>
+            <img src="Images/kitchenAndDiningProducts/measuringCupAndSpoonForSpices.jpg" alt="measuringCupAndSpoonForSpices" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/kitchenAndDiningProducts/digitalClock.jpg" alt="digitalClock" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/kitchenAndDiningProducts/pans.jpg" alt="pans" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/kitchenAndDiningProducts/vegetablesStorageBags.jpg" alt="vegetablesStorageBags" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/kitchenAndDiningProducts/weighingMachine.jpg" alt="weighingMachine" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/kitchenAndDiningProducts/garlicGingerCutter.jpg" alt="garlicGingerCutter" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/kitchenAndDiningProducts/servingTray.jpg" alt="servingTray" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/kitchenAndDiningProducts/diningTablePlaceMats.jpg" alt="diningTablePlaceMats" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/kitchenAndDiningProducts/foodTong.jpg" alt="foodTong" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/kitchenAndDiningProducts/dosaFllipWooden.jpg" alt="dosaFllipWooden" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/kitchenAndDiningProducts/standingRackForKitchen.jpg" alt="standingRackForKitchen" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/kitchenAndDiningProducts/bastingBrush.jpg" alt="bastingBrush" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/kitchenAndDiningProducts/servingBowls.jpg" alt="servingBowls" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/kitchenAndDiningProducts/gasSaverJali.jpg" alt="gasSaverJali" loading="lazy">
+          </div>
+
+        </div><!-- End of wrapper div-->
+      </section> <!-- End of section#kitchenAndDiningProducts-->
+
+      <section id="upto60PercentOffCarAndBikeAccessoriesAndMore">
+        <div>
+          <h2>Up to 60% off | Car & bike accessories & more</h2>
+          <a href="#">See all offers</a>
+        </div>
+        <div>
+          <div>
+            <img src="Images/upto60PercentOffCarAndBikeAccessoriesAndMore/pressureWasherCleaner.jpg" alt="pressureWasherCleaner" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/upto60PercentOffCarAndBikeAccessoriesAndMore/carTyreInflator.jpg" alt="carTyreInflator" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/upto60PercentOffCarAndBikeAccessoriesAndMore/presserWasherForCar.jpg" alt="presserWasherForCar" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/upto60PercentOffCarAndBikeAccessoriesAndMore/helpmetForMen.jpg" alt="helpmetForMen" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/upto60PercentOffCarAndBikeAccessoriesAndMore/portableTyreInflator.jpg" alt="portableTyreInflator" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/upto60PercentOffCarAndBikeAccessoriesAndMore/hepaFilter.jpg" alt="hepaFilter" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/upto60PercentOffCarAndBikeAccessoriesAndMore/airFreshner.jpg" alt="airFreshner" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/upto60PercentOffCarAndBikeAccessoriesAndMore/carDuster.jpg" alt="carDuster" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/upto60PercentOffCarAndBikeAccessoriesAndMore/leatherCleaner.jpg" alt="leatherCleaner" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/upto60PercentOffCarAndBikeAccessoriesAndMore/carWashShampoo.jpg" alt="carWashShampoo" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/upto60PercentOffCarAndBikeAccessoriesAndMore/engineOil.jpg" alt="engineOil" loading="lazy">
+          </div>
+
+        </div><!-- End of wrapper div-->
+      </section> <!-- End of section#upto60PercentOffCarAndBikeAccessoriesAndMore-->
+
+      <section>
+        <div>
+          <h2>Customers' Most-Loved products</h2>
+          <div>
+            <div>
+              <img src="Images/customersMostLovedProducts/brassBells.jpg" alt="brassBells" loading="lazy">
+            </div>
+            <div>
+              <img src="Images/customersMostLovedProducts/flourMillCover.jpg" alt="flourMillCover" loading="lazy">
+            </div>
+            <div>
+              <img src="Images/customersMostLovedProducts/toaster.jpg" alt="toaster" loading="lazy">
+            </div>
+            <div>
+              <img src="Images/customersMostLovedProducts/wallDecor.jpg" alt="wallDecor" loading="lazy">
+            </div>
+          </div>
+          <a href="#">Explore more</a>
+        </div>
+
+        <div>
+          <h2>Under ₹499 | Pocket-friendly fashion</h2>
+          <div>
+            <div><img src="Images/underRupees499PocketFriendlyFashion/clothing.jpg" alt="Clothing" loading="lazy"></div>
+            <h3>Clothing</h3>
+          </div>
+          <div>
+            <div><img src="Images/underRupees499PocketFriendlyFashion/backpacks.jpg" alt="Backpacks" loading="lazy"></div>
+            <h3>Backpacks</h3>
+          </div>
+          <div>
+            <div><img src="Images/underRupees499PocketFriendlyFashion/footwear.jpg" alt="Footwear" loading="lazy"></div>
+            <h3>Footwear</h3>
+          </div>
+          <div>
+            <div><img src="Images/underRupees499PocketFriendlyFashion/viewAll.jpg" alt="viewAll" loading="lazy"></div>
+            <h3>View all</h3>
+          </div>
+
+          <a href="#">See all offers</a>
+        </div>
+
+        <div>
+          <h2>Bestsellers in Women's Indian Clothing</h2>
+          <div>
+            <div>
+              <img src="Images/bestSellersInWomensIndianClothing/regularWomenKurtaSet.jpg" alt="regularWomenKurtaSet" loading="lazy">
+            </div>
+            <div>
+              <img src="Images/bestSellersInWomensIndianClothing/womensBlendedShapewear.jpg" alt="womensBlendedShapewear" loading="lazy">
+            </div>
+            <div>
+              <img src="Images/bestSellersInWomensIndianClothing/printedStraightKurtaWithPant.jpg" alt="printedStraightKurtaWithPant" loading="lazy">
+            </div>
+            <div>
+              <img src="Images/bestSellersInWomensIndianClothing/embroideredStraightKurta.jpg" alt="embroideredStraightKurta" loading="lazy">
+            </div>
+          </div>        
+        </div>
+
+        <div>
+          <h2>Birthday store</h2>
+          <div>
+            <div><img src="Images/birthdayStore/giftForMen.jpg" alt="Gift for men" loading="lazy"></div>
+            <h3>Gift for men</h3>
+          </div>
+          <div>
+            <div><img src="Images/birthdayStore/giftForWomen.jpg" alt="Gift for women" loading="lazy"></div>
+            <h3>Gift for women</h3>
+          </div>
+          <div>
+            <div><img src="Images/birthdayStore/giftForBoys.jpg" alt="Gift for boys" loading="lazy"></div>
+            <h3>Gift for boys</h3>
+          </div>
+          <div>
+            <div><img src="Images/birthdayStore/giftForGirls.jpg" alt="Gift for girls" loading="lazy"></div>
+            <h3>Gift for girls</h3>
+          </div>
+
+          <a href="#">See more</a>
+        </div>
+      </section>
+      <section>
+        <a href="../homepage/index.html">
+          <img src="Images/homeFurnishings.jpg" alt="homeFurnishings" loading="lazy">
+        </a>
+      </section>
+      <section id="newLaunchesFromWomenLedBusinesses">
+        <div>
+          <h2>New launches from women-led businesses</h2>
+          <a href="#">See all offers</a>
+        </div>
+        <div>
+          <div>
+            <img src="Images/newLaunchesFromWomenLedBusinesses/womensOfficeBag.jpg" alt="womensOfficeBag" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/newLaunchesFromWomenLedBusinesses/fileFolder.jpg" alt="fileFolder" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/newLaunchesFromWomenLedBusinesses/lotusFlowerWoodenCutout.jpg" alt="lotusFlowerWoodenCutout" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/newLaunchesFromWomenLedBusinesses/babyCastingFrame.jpg" alt="babyCastingFrame" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/newLaunchesFromWomenLedBusinesses/ledMooshak.jpg" alt="ledMooshak" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/newLaunchesFromWomenLedBusinesses/womensOfficeShoulderBag.jpg" alt="womensOfficeShoulderBag" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/newLaunchesFromWomenLedBusinesses/pichwaiCowCutouts.jpg" alt="pichwaiCowCutouts" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/newLaunchesFromWomenLedBusinesses/goldenJingleBells.jpg" alt="goldenJingleBells" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/newLaunchesFromWomenLedBusinesses/kitchenBathroomShelfHolder.jpg" alt="kitchenBathroomShelfHolder" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/newLaunchesFromWomenLedBusinesses/liverDetoxSuppliment.jpg" alt="liverDetoxSuppliment" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/newLaunchesFromWomenLedBusinesses/preboiticsPowder.jpg" alt="preboiticsPowder" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/newLaunchesFromWomenLedBusinesses/wallHooks.jpg" alt="wallHooks" loading="lazy">
+          </div>
+
+
+        </div><!-- End of wrapper div-->
+      </section> <!-- End of section#newLaunchesFromWomenLedBusinesses-->      
+
+      <section id="bestSellersInComputersAndAccessories">
+        <div>
+          <h2>Best Sellers in Computers & Accessories</h2>
+        </div>
+        <div>
+          <div>
+            <img src="Images/bestSellersInComputersAndAccessories/reWritableLcdWritingTabletPad.jpg" alt="reWritableLcdWritingTabletPad" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestSellersInComputersAndAccessories/typeCCable.jpg" alt="typeCCable" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestSellersInComputersAndAccessories/laptopStand.jpg" alt="laptopStand" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestSellersInComputersAndAccessories/logitechWirelessMouse.jpg" alt="logitechWirelessMouse" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestSellersInComputersAndAccessories/8pinUSBCable.jpg" alt="8pinUSBCable" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestSellersInComputersAndAccessories/hp64GbPenDrive.jpg" alt="hp64GbPenDrive" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestSellersInComputersAndAccessories/spiralChargerCableProtector.jpg" alt="spiralChargerCableProtector" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestSellersInComputersAndAccessories/softBrushKeyboardCleaner.jpg" alt="softBrushKeyboardCleaner" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestSellersInComputersAndAccessories/wifiRangeExtender.jpg" alt="wifiRangeExtender" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestSellersInComputersAndAccessories/miniLaptopTableForBed.jpg" alt="miniLaptopTableForBed" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestSellersInComputersAndAccessories/canonInkCartridge47BK.jpg" alt="canonInkCartridge47BK" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestSellersInComputersAndAccessories/wifiRouterBroadbandModem.jpg" alt="wifiRouterBroadbandModem" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestSellersInComputersAndAccessories/backpack.jpg" alt="backpack" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestSellersInComputersAndAccessories/multiportChargingCable.jpg" alt="multiportChargingCable" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestSellersInComputersAndAccessories/redGearMousemat.jpg" alt="redGearMousemat" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestSellersInComputersAndAccessories/hpInkCartridge680BK.jpg" alt="hpInkCartridge680BK" loading="lazy">
+          </div>
+    
+
+
+        </div><!-- End of wrapper div-->
+      </section> <!-- End of section#bestSellersInComputersAndAccessories-->      
+
+      <section>
+        <h2 class="displayNone">New Series Crushed watch for free amazon miniTV</h2>
+        <a href="../miniTV/index.html">
+          <img src="Images/watchedCrushedSeriesOnMiniTV.jpeg" alt="New Series Crushed watch for free amazon miniTV" loading="lazy">
+        </a>
+      </section>
+
+      <section>
+        <div>
+          <h2>Essentials for Expecting Mothers</h2>
+          <div>
+            <div>
+              <img src="Images/EssentialsForExpectingMothers/pregnancySupplements.jpg" alt="Pregnancy supplements" loading="lazy">
+            </div>
+            <h3>Pregnancy supplements</h3>
+          </div>
+          <div>
+            <div>
+              <img src="Images/EssentialsForExpectingMothers/maternitySleepAndLoungewear.jpg" alt="Maternity Sleep & Loungewear" loading="lazy">
+            </div>
+            <h3>Maternity Sleep & Loungewear</h3>
+          </div>
+          <div>
+            <div>
+              <img src="Images/EssentialsForExpectingMothers/maternityPillows.jpg" alt="Maternity pillows" loading="lazy">
+            </div>
+            <h3>Maternity pillows</h3>
+          </div>
+          <div>
+            <div>
+              <img src="Images/EssentialsForExpectingMothers/maternitySkinCare.jpg" alt="Maternity Skin care" loading="lazy">
+            </div>
+            <h3>Maternity Skin care</h3>
+          </div>
+
+          <a href="#">See more</a>
+        </div>  
+        
+        <div>
+          <h2>Customers’ Most-Loved Fashion for you</h2>
+          <div>
+            <div>
+              <img src="Images/CustomersMostLovedFashionForYou/tShirtsWomensAndGirls.jpg" alt="tShirtsWomensAndGirls" loading="lazy">
+            </div>
+            <div>
+              <img src="Images/CustomersMostLovedFashionForYou/lightMeter.jpg" alt="lightMeter" loading="lazy">
+            </div>
+            <div>
+              <img src="Images/CustomersMostLovedFashionForYou/tShirtMen.jpg" alt="tShirtMen" loading="lazy">
+            </div>
+            <div>
+              <img src="Images/CustomersMostLovedFashionForYou/pumaWomensShoe.jpg" alt="pumaWomensShoe" loading="lazy">
+            </div>
+
+          </div>
+          <a href="#">Explore more</a>
+        </div>
+
+        <div>
+          <h2>Hack: Crimes online | Watch only on miniTV</h2>
+          <div><img src="Images/hackCrimesOnlineWatchOnlyOnminiTV/hackCrimesOnline.jpg" alt="watch hackCrimesOnline" loading="lazy"></div>
+          <div><a href="../miniTV/index.html">Watch more FREE content | only on miniTV</a></div>
+        </div>
+        
+        <div>
+          <h2>One stop shop for all your wedding shopping</h2>
+          <div>
+            <div>
+              <img src="Images/oneStopShopForAllYourWeddingShopping/shopForHer.jpg" alt="Shop for her" loading="lazy">
+            </div>
+            <h3>Shop for her</h3>
+          </div>
+          <div>
+            <div>
+              <img src="Images/oneStopShopForAllYourWeddingShopping/shopForHim.jpg" alt="Shop for him" loading="lazy">
+            </div>
+            <h3>Shop for him</h3>
+          </div>
+          <div>
+            <div>
+              <img src="Images/oneStopShopForAllYourWeddingShopping/poojaEssentials.jpg" alt="Pooja essentials" loading="lazy">
+            </div>
+            <h3>Pooja essentials</h3>
+          </div>
+          <div>
+            <div>
+              <img src="Images/oneStopShopForAllYourWeddingShopping/exploreTheStore.jpg" alt="Explore the store" loading="lazy">
+            </div>
+            <h3>Explore the store</h3>
+          </div>
+  
+
+          <a href="#">See more</a>
+        </div>          
+      </section>
+
+      <section id="BestsellingPicksFromFashion">
+        <div>
+          <h2>Bestselling picks from Fashion</h2>
+          <a href="#">See all offers</a>
+        </div>
+        <div>
+          <div>
+            <img src="Images/BestsellingPicksFromFashion/dryFitRoundNeckTShirtsForWomen.jpg" alt="dryFitRoundNeckTShirtsForWomen" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/BestsellingPicksFromFashion/2PieceSportsBraWithHighWaistLeggi.jpg" alt="2PieceSportsBraWithHighWaistLeggi" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/BestsellingPicksFromFashion/2PieceSportsBraWithHighWaistLeggi2.jpg" alt="2PieceSportsBraWithHighWaistLeggi2" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/BestsellingPicksFromFashion/mensSportsTshirt.jpg" alt="mensSportsTshirt" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/BestsellingPicksFromFashion/kurti.jpg" alt="kurti" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/BestsellingPicksFromFashion/woolenCapPlusMuffler.jpg" alt="woolenCapPlusMuffler" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/BestsellingPicksFromFashion/kneeLengthDressYellow.jpg" alt="kneeLengthDressYellow" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/BestsellingPicksFromFashion/kneeLengthDressSkyBlue.jpg" alt="kneeLengthDressSkyBlue" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/BestsellingPicksFromFashion/kneeLengthDressNavyBlue.jpg" alt="kneeLengthDressNavyBlue" loading="lazy">
+          </div>
+        
+
+
+        </div><!-- End of wrapper div-->
+      </section> <!-- End of section#BestsellingPicksFromFashion--> 
+      
+            
+      <section>
+        <div>
+          <h2>Try Prime today</h2>
+          <div>
+            <div>
+              <img src="Images/tryPrimeToday/free1DayDelivery.jpg" alt="FREE 1-day delivery" loading="lazy">
+            </div>
+            <h3>FREE 1-day delivery</h3>
+          </div>
+          <div>
+            <div>
+              <img src="Images/tryPrimeToday/latestMoviesAndTvShows.jpg" alt="Movies and TV shows" loading="lazy">
+            </div>
+            <h3>Movies and TV shows</h3>
+          </div>
+          <div>
+            <div>
+              <img src="Images/tryPrimeToday/adFreeMusic.jpg" alt="Ad-free music" loading="lazy">
+            </div>
+            <h3>Ad-free music</h3>
+          </div>
+          <div>
+            <div>
+              <img src="Images/tryPrimeToday/getUnlimited5PercentCashback.jpg" alt="Get unlimited 5% cashback on shopping" loading="lazy">
+            </div>
+            <h3>Get unlimited 5% cashback on shopping</h3>
+          </div>
+     
+
+          <a href="../prime/index.html">Enjoy all the benefits of Prime</a>
+        </div>  
+        
+        <div>
+          <h2>Best Sellers in Sports, Fitness & Outdoors</h2>
+          <div>
+            <div>
+              <img src="Images/BestSellerInSportsFitnessAndOutdoors/yogaMat.jpg" alt="yogaMat" loading="lazy">
+            </div>
+            <div>
+              <img src="Images/BestSellerInSportsFitnessAndOutdoors/dumbells.jpg" alt="dumbells" loading="lazy">
+            </div>
+            <div>
+              <img src="Images/BestSellerInSportsFitnessAndOutdoors/handGripStrengthener.jpg" alt="handGripStrengthener" loading="lazy">
+            </div>
+            <div>
+              <img src="Images/BestSellerInSportsFitnessAndOutdoors/exerciseMat.jpg" alt="exerciseMat" loading="lazy">
+            </div>
+
+          </div>
+          <a href="#">Explore more</a>
+        </div>
+
+        <div>
+          <h2>Best Sellers in Beauty</h2>
+          <div>
+            <div>
+              <img src="Images/BestSellerInBeauty/liquidHandwash.jpg" alt="liquidHandwash" loading="lazy">
+            </div>
+            <div>
+              <img src="Images/BestSellerInBeauty/faceWash.jpg" alt="faceWash" loading="lazy">
+            </div>
+            <div>
+              <img src="Images/BestSellerInBeauty/bodySoap.jpg" alt="bodySoap" loading="lazy">
+            </div>
+            <div>
+              <img src="Images/BestSellerInBeauty/bathingSoap.jpg" alt="bathingSoap" loading="lazy">
+            </div>            
+          </div>
+          
+        </div><!-- End of div Best Sellers in Beauty-->  
+        <div>
+          <h2>Best Sellers in Books</h2>
+          <div>
+            <img src="Images/BestSellersInBooks/booksCollectionFullSize.jpg" alt="booksCollectionFullSize" loading="lazy">
+          </div>
+          <div>My First Library: Boxset of 10 Board Books for Kids</div>
+          <div>
+            <span>₹399.00</span> <span>M.R.P:</span> <span>₹749.00</span>
+          </div>
+          <div>
+            <div>
+              <img src="Images/BestSellersInBooks/boxsetOf10BoardBooks.jpg" alt="boxsetOf10BoardBooks" loading="lazy">
+            </div>
+            <div>
+              <img src="Images/BestSellersInBooks/bookAtomicHabbit.jpg" alt="bookAtomicHabbit" loading="lazy">
+            </div>
+            <div>
+              <img src="Images/BestSellersInBooks/bookDontBeleiveEverythingYouThink.jpg" alt="bookDontBeleiveEverythingYouThink" loading="lazy">
+            </div>
+            <div>
+              <img src="Images/BestSellersInBooks/coloringBooksForKids.jpg" alt="coloringBooksForKids" loading="lazy">
+            </div>
+
+          </div>
+        </div>      
+      </section>
+
+      <section id="bestsellersFromWomenOwnedBusinesses">
+        <div>
+          <h2>Bestsellers from women owned businesses</h2>
+          <a href="#">See all offers</a>
+        </div>
+        <div>
+          <div>
+            <img src="Images/bestsellersFromWomenOwnedBusinesses/wallShelvesKitchenBathroom.jpg" alt="wallShelvesKitchenBathroom" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestsellersFromWomenOwnedBusinesses/hairVitamins.jpg" alt="hairVitamins" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestsellersFromWomenOwnedBusinesses/feelGoodSkinHealthyHair.jpg" alt="feelGoodSkinHealthyHair" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestsellersFromWomenOwnedBusinesses/hairOil.jpg" alt="hairOil" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestsellersFromWomenOwnedBusinesses/plantProtein.jpg" alt="plantProtein" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestsellersFromWomenOwnedBusinesses/organicGhee.jpg" alt="organicGhee" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestsellersFromWomenOwnedBusinesses/jamunStrips.jpg" alt="jamunStrips" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestsellersFromWomenOwnedBusinesses/sleepAid.jpg" alt="sleepAid" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestsellersFromWomenOwnedBusinesses/coffeeBooster.jpg" alt="coffeeBooster" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestsellersFromWomenOwnedBusinesses/bringMeBliss.jpg" alt="bringMeBliss" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestsellersFromWomenOwnedBusinesses/mangoButter.jpg" alt="mangoButter" loading="lazy">
+          </div>
+          <div>
+            <img src="Images/bestsellersFromWomenOwnedBusinesses/vitaminD3B12Suppliments.jpg" alt="vitaminD3B12Suppliments" loading="lazy">
+          </div>
+          
+        
+
+
+        </div><!-- End of wrapper div-->
+      </section> <!-- End of section#bestsellersFromWomenOwnedBusinesses--> 
 
 
 
+    </div> <!-- End of div#wrapperMainContent-->
+  </main> 
 
-  </main>
+  <section id="inspiredByYourBrowsingHistory">
+    <h2>Inspired by your browsing history</h2>
+    <div>
+
+      <div>
+        <div>
+          <img src="Images/inspiredByYourBrowsingHistory/HIMALAYAN-ORIGINS-UnisexCoconutOil.jpg" alt="HIMALAYAN-ORIGINS-UnisexCoconutOil" loading="lazy">
+        </div>
+        <div>
+          <a href="#">HIMALAYAN ORIGINS Unisex Coconut Oil Natural Shampoo Bar, for Normal Hair and Dry Hair, Sulphate and Paraben Free - 75 gm</a>
+        </div>
+        <div>
+          <span class="rating-4-stars"></span>
+          <a href="#">111</a>
+        </div>
+        <div>
+          <span>₹445.00</span>
+          <span>(₹593.33/100 g)</span>
+        </div>
+        <div>
+          <span>Get it by</span>
+          <span>Sunday, December 31</span>
+        </div>
+        <div>
+          FREE Delivery over ₹499. Fulfilled by Amazon.
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <img src="Images/inspiredByYourBrowsingHistory/himalayanOriginsNaturalHibiscusHairOil.jpg" alt="himalayanOriginsNaturalHibiscusHairOil" loading="lazy">
+        </div>
+        <div>
+          <a href="#">HIMALAYAN ORIGINS Natural Hibiscus Hair Oil (Gudhal oil), Chemical And Paraben Free - 100 ml (Pack of 1)</a>
+        </div>
+        <div>
+          <span class="rating-4AndHalf-stars"></span>
+          <a href="#">341</a>
+        </div>
+        <div>
+          <span>₹449.00</span>
+          <span>(₹449.00/100 ml)</span>
+        </div>
+        <div>
+          <span>Get it by</span>
+          <span>Sunday, December 31</span>
+        </div>
+        <div>
+          FREE Delivery over ₹499. Fulfilled by Amazon.
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <img src="Images/inspiredByYourBrowsingHistory/naturalHandmadeBarSoapForMen.jpg" alt="Matural All Natural Handmade Bar Soap For Men, Freshly Cut Aloe With Goodness Of Aloe Vera, Bergamot, And Shea Butter - 120 Gm (Pack Of 3)" loading="lazy">
+        </div>
+        <div>
+          <a href="#">Matural All Natural Handmade Bar Soap For Men, Freshly Cut Aloe With Goodness Of Aloe Vera, Bergamot, And Shea Butter - 120 Gm (Pack Of 3)</a>
+        </div>
+        <div>
+          <span class="rating-3-stars"></span>
+          <a href="#">171</a>
+        </div>
+        <div>
+          <span>₹369.00</span>
+        </div>
+        <div>
+          <span>Get it by</span>
+          <span>Sunday, December 31</span>
+        </div>
+        <div>
+          FREE Delivery over ₹499. Fulfilled by Amazon.
+        </div>
+      </div>    
+
+      <div>
+        <div>
+          <img src="Images/inspiredByYourBrowsingHistory/bambooToothbrushSoft.jpg" alt="BELSORR ALL NATURAL BAMBOO TOOTHBRUSH SOFT WITH TONGUE CLEANER AND BEES WAX COATING ADULT(PACK OF FOUR)" loading="lazy">
+        </div>
+        <div>
+          <a href="#">BELSORR ALL NATURAL BAMBOO TOOTHBRUSH SOFT WITH TONGUE CLEANER AND BEES WAX COATING ADULT(PACK OF FOUR)</a>
+        </div>
+        <div>
+          <span class="rating-2-stars"></span>
+          <a href="#">561</a>
+        </div>
+        <div>
+          <span>₹199.00</span>
+          <span>(₹49.75/count)</span>
+        </div>
+        <div>
+          ₹40.00 shipping 
+        </div>
+      </div>    
+
+      <div>
+        <div>
+          <img src="Images/inspiredByYourBrowsingHistory/cottonSummerScarf.jpg" alt="ICW Women's Premium Wrinkle Ironless Crinkled Cotton Summer Scarf Stoles Shawl head scarves for girls" loading="lazy">
+        </div>
+        <div>
+          <a href="#">ICW Women's Premium Wrinkle Ironless Crinkled Cotton Summer Scarf Stoles Shawl head scarves for girls</a>
+        </div>
+        <div>
+          <span class="rating-3AndHalf-stars"></span>
+          <a href="#">331</a>
+        </div>
+        <div>
+          <span>₹399.00</span>          
+        </div>
+        <div>
+          <span>Get it by</span>
+          <span>Monday, December 11</span>
+        </div>
+        <div>
+          FREE Delivery over ₹499. Fulfilled by Amazon.
+        </div>
+      </div>    
+
+      <div>
+        <div>
+          <img src="Images/inspiredByYourBrowsingHistory/breadKnife.jpg" alt="Cartini Godrej Classic Bread Knife, 355 mm, Black, Stainless Steel" loading="lazy">
+        </div>
+        <div>
+          <a href="#">Cartini Godrej Classic Bread Knife, 355 mm, Black, Stainless Steel</a>
+        </div>
+        <div>
+          <span class="rating-2AndHalf-stars"></span>
+          <a href="#">1376</a>
+        </div>
+        <div>
+          <span>₹210.00</span>
+        </div>
+        <div>
+          <span>Get it by</span>
+          <span>Wednesday, December 20</span>
+        </div>
+        <div>
+          FREE Delivery over ₹499. Fulfilled by Amazon.
+        </div>
+      </div>    
+
+      <div>
+        <div>
+          <img src="Images/inspiredByYourBrowsingHistory/tamarindfaceMask.jpg" alt="Nat Habit Fresh Tamarind Kasturi Ksheer Lepa Face Mask For Quick Detan & Brightening, Cleans Spots & Marks, Zero Chemicals & Preservatives (40g, Pack of 1)" loading="lazy">
+        </div>
+        <div>
+          <a href="#">Nat Habit Fresh Tamarind Kasturi Ksheer Lepa Face Mask For Quick Detan & Brightening, Cleans Spots & Marks, Zero Chemicals & Preservatives (40g, Pack of 1)</a>
+        </div>
+        <div>
+          <span class="rating-4AndHalf-stars"></span>
+          <a href="#">544</a>
+        </div>
+        <div>
+          <span>9% off</span>
+          <span>Deal of the Day</span>
+        </div>
+        <div>
+          <span>₹177.00</span>
+          <span>(₹442.50/100 g)</span>          
+        </div>
+        <div>
+          <span>M.R.P:</span>
+          <span style="text-decoration: line-through;">₹195.00</span>
+        </div>
+        <div>
+          <span>Get it by</span>
+          <span>Thursday, December 28</span>
+        </div>
+        <div>
+          FREE Delivery over ₹499. Fulfilled by Amazon.
+        </div>
+      </div>    
+
+      <div>
+        <div>
+          <img src="Images/inspiredByYourBrowsingHistory/drainBasinBasketFilter.jpg" alt="Decorcrafts Stainless Steel Sink Strainer Kitchen Drain Basin Basket Filter Stopper Drainer/Jali (4-inch/10 cm)" loading="lazy">
+        </div>
+        <div>
+          <a href="#">Decorcrafts Stainless Steel Sink Strainer Kitchen Drain Basin Basket Filter Stopper Drainer/Jali (4-inch/10 cm)</a>
+        </div>
+        <div>
+          <span class="rating-4AndHalf-stars"></span>
+          <a href="#">3013</a>
+        </div>
+        <div>
+          <span>#1 Best Seller</span>
+          <span>in</span>
+          <a href="#">Drain Stainers</a>
+        </div>
+        <div>
+          <span>₹99.00</span>
+        </div>
+        <div>
+          FREE Delivery
+        </div>
+      </div>    
+
+      <div>
+        <div>
+          <img src="Images/inspiredByYourBrowsingHistory/hairButterWithCoconutOil.jpg" alt="HIMALAYAN ORIGINS Jatamansi and Bhringraj Hair Butter with Coconut Oil Shea butter Kokum Butter Anti Frizz Pre Wash Conditioner Mask, Sulphate and Paraben Free 100% Natural, 50g" loading="lazy">
+        </div>
+        <div>
+          <a href="#">HIMALAYAN ORIGINS Jatamansi and Bhringraj Hair Butter with Coconut Oil Shea butter Kokum Butter Anti Frizz Pre Wash Conditioner Mask, Sulphate and Paraben Free 100% Natural, 50g</a>
+        </div>
+        <div>
+          <span class="rating-4-stars"></span>
+          <a href="#">25</a>
+        </div>
+        <div>
+          <span>₹645.00</span>
+          <span>(₹1,290.00/100 g)</span>
+        </div>
+        <div>
+          <span>Get it by</span>
+          <span>Monday, December 25</span>
+        </div>
+        <div>
+          FREE Delivery by Amazon.
+        </div>
+      </div>    
+
+      <div>
+        <div>
+          <img src="Images/inspiredByYourBrowsingHistory/amlaShikakaiOrganicShampooBar.jpg" alt="Rustic Art Amla Shikakai Organic Shampoo Bar | Methi, Ginger, Mango Butter | Reduces hair fall, detangles | Sulphate & Paraben Free, Natural & Organic | 75 Gm" loading="lazy">
+        </div>
+        <div>
+          <a href="#">Rustic Art Amla Shikakai Organic Shampoo Bar | Methi, Ginger, Mango Butter | Reduces hair fall, detangles | Sulphate & Paraben Free, Natural & Organic | 75 Gm</a>
+        </div>
+        <div>
+          <span class="rating-4-stars"></span>
+          <a href="#">181</a>
+        </div>
+        <div>
+          <span>₹370.00</span>
+          <span>(₹493.33/100 g)</span>
+        </div>
+        <div>
+          <span>M.R.P:</span>
+          <span style="text-decoration: line-through;">₹380.00</span>
+        </div>        
+        <div>
+          <span>Get it by</span>
+          <span>Saturday, December 23</span>
+        </div>
+        <div>
+          FREE Delivery over ₹499. Fulfilled by Amazon.
+        </div>
+      </div>    
+
+      <div>
+        <div>
+          <img src="Images/inspiredByYourBrowsingHistory/hairFallControlShampoo.jpg" alt="Pallava | Hair Fall Control Shampoo | For Men & Women - Suitable For Oily Hair Scalp, Sulphate & Paraben Free 200mL" loading="lazy">
+        </div>
+        <div>
+          <a href="#">Pallava | Hair Fall Control Shampoo | For Men & Women - Suitable For Oily Hair Scalp, Sulphate & Paraben Free 200mL</a>
+        </div>
+        <div>
+          <span class="rating-3AndHalf-stars"></span>
+          <a href="#">268</a>
+        </div>
+        <div>
+          <span>9% off</span>
+          <span>Deal of the Day</span>
+        </div>        
+        <div>
+          <span>₹315.00</span>
+          <span>(₹157.50/100 ml)</span>
+        </div>
+        <div>
+          <span>M.R.P:</span>
+          <span style="text-decoration: line-through;">₹399.00</span>
+        </div>         
+        <div>
+          <span>Get it by</span>
+          <span>Tuesday, December 19</span>
+        </div>
+        <div>
+          FREE Delivery over ₹499. Fulfilled by Amazon.
+        </div>
+      </div>    
+
+      <div>
+        <div>
+          <img src="Images/inspiredByYourBrowsingHistory/plumcleansingBalm.jpg" alt="Plum E-Luminence Simply Supple Cleansing Balm" loading="lazy">
+        </div>
+        <div>
+          <a href="#">Plum E-Luminence Simply Supple Cleansing Balm</a>
+        </div>
+        <div>
+          <span class="rating-4-stars"></span>
+          <a href="#">1,515</a>
+        </div>
+        <div>
+          <span>₹399.00</span>
+          <span>(₹443.33/100 g)</span>
+        </div>
+        <div>
+          <span>Get it by</span>
+          <span>Wednesday, December 27</span>
+        </div>
+        <div>
+          FREE Delivery over ₹499. Fulfilled by Amazon.
+        </div>
+      </div>    
+
+      <div>
+        <div>
+          <img src="Images/inspiredByYourBrowsingHistory/waterproofTravelSoapBoxCaseHolder.jpg" alt="HOUSEHOLD CULTURE Useful Portable Waterproof Travel Soap Box Case Holder | Plastic Soap Case Box Holder Dish Container for Bathroom Outdoors Travel Home Use (multicolour)" loading="lazy">
+        </div>
+        <div>
+          <a href="#">HOUSEHOLD CULTURE Useful Portable Waterproof Travel Soap Box Case Holder | Plastic Soap Case Box Holder Dish Container for Bathroom Outdoors Travel Home Use (multicolour)</a>
+        </div>
+        <div>
+          <span class="rating-3-stars"></span>
+          <a href="#">868</a>
+        </div>
+        <div>
+          <span>₹219.00</span>
+        </div>
+        <div>
+          FREE Delivery
+        </div>
+      </div>    
+
+      <div>
+        <div>
+          <img src="Images/inspiredByYourBrowsingHistory/frizzControllingShampoo.jpg" alt="The Switch Fix - Frizz Controlling Shampoo Bar For Dry And Frizzy Hair | Mylky Way - 85 g" loading="lazy">
+        </div>
+        <div>
+          <a href="#">The Switch Fix - Frizz Controlling Shampoo Bar For Dry And Frizzy Hair | Mylky Way - 85 g</a>
+        </div>
+        <div>
+          <span class="rating-3AndHalf-stars"></span>
+          <a href="#">31</a>
+        </div>
+        <div>
+          <span>₹459.00</span>
+          <span>(₹68.00/count)</span>
+        </div>
+        <div>
+          <span>Get it by</span>
+          <span>Friday, December 29</span>
+        </div>
+        <div>
+          FREE Delivery over ₹499. Fulfilled by Amazon.
+        </div>
+        <div>
+          Only 2 left in stock.
+        </div>
+      </div>    
+
+
+    </div> <!-- div wrapper closed here-->
+    
+    
+  </section>
+
+  <section id="seePersonalizedRecommendations">
+    <h2>See personalized recommendations</h2>
+    <div>
+      <a href="../signIn/index.html">Sign in</a>
+    </div>
+    <div>
+      <span>New customer?</span>
+      <a href="../createAccount/index.html">Start here.</a>
+    </div>
+
+  </section>
+
+
+
   <!--
      Your code Ends here 
   -->

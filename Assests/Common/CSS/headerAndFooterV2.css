@@ -33,6 +33,7 @@
 
  --maxResolutionSupported: 240rem; /* 240x16px = 3840px width */
  
+ 
 }
 *, ::before, ::after{
  padding:0;

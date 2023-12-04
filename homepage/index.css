@@ -1,5 +1,44 @@
-:root {
-  --color-white: #FFFFFF; /* variables for colors and properties if you wish to create any, you can */
+/*** 
+ * index.css
+ * Author: Abhishek kumar
+ * purpose: to style homepage of our website
+ *
+ */
+ :root {
+  --color-light-black: #111111;
+  --color-light-black2: #131921;
+  --color-black3: #131A22;
+  --color-black4: #333333;
+ 
+ --color-white: white;
+ --color-light-gray: #cccccc;
+ --color-light-gray2: #eaeded;
+ --color-light-gray3: #dddddd;
+ --color-light-gray4: #3a4553;
+ --color-light-gray5: #e6e6e6;
+ --color-light-gray6: #d5dbdb;
+ --color-light-gray7: #E3E6E6;
+
+
+ --color-orange: #f3a847;
+ --color-orange-2: #f08804;
+ --color-orange-light: #febd69;
+ 
+
+ --color-grayishBlue: #37475A;
+ --color-grayishBlue-2: #485769;
+
+
+ --color-navBarPrimaryHeader: #232f3e;
+ --border-radius: .3rem;
+ --color-caretDown: #a7acb2;
+ --transition-timing: .3s;
+ --transition-timing-2: .2s;
+
+ --maxResolutionSupported: 240rem; /* 240x16px = 3840px width */
+ --maxWidthOfMainContentWrapperDiv: 100rem;
+
+ --rating-stars-nextStrip: -19px;
 }
 *, ::before, ::after{
   padding:0;
@@ -17,5 +56,82 @@ body{
 }
 
 /***
- * Yours CSS Code begins from here 
+ * Page Main Section
  */
+main{
+  background-color: var(--color-light-gray7);
+}
+main div#wrapperMainContent{
+  /* background-color: lightgreen; */
+  max-width: var(--maxWidthOfMainContentWrapperDiv);
+  background-image: url(Images/heroSection/outdoorAndSportsToys.jpg);
+  background-repeat: no-repeat;
+  margin: auto;
+  padding-top:30rem;
+  padding-left:2rem;
+  padding-right: 2rem;
+  display: none;
+}
+
+/***
+ * section#aboveHero 
+ */
+ main div#wrapperMainContent section#aboveHero {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, 25rem);
+  gap:1rem;
+}
+main div#wrapperMainContent section#aboveHero>div {
+
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+}
+main div#wrapperMainContent section#aboveHero>div>div {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap:1rem;
+ }
+
+
+ /***
+  * section#inspiredByYourBrowsingHistory 
+  */
+section#inspiredByYourBrowsingHistory,
+section#seePersonalizedRecommendations{
+  display: none;
+}
+ section#inspiredByYourBrowsingHistory span.rating-2-stars,
+ section#inspiredByYourBrowsingHistory span.rating-2AndHalf-stars,
+ section#inspiredByYourBrowsingHistory span.rating-4-stars,
+ section#inspiredByYourBrowsingHistory span.rating-3-stars,
+ section#inspiredByYourBrowsingHistory span.rating-3AndHalf-stars,
+ section#inspiredByYourBrowsingHistory span.rating-4AndHalf-stars{
+  background-image: url(Images/inspiredByYourBrowsingHistory/ratings.png);
+  min-width: 90px;
+  min-height: 21px;
+  background-repeat: no-repeat;
+  background-position-y: var(--rating-stars-nextStrip);
+  display:inline-block;
+  /* background-color: yellow; */
+ }
+ section#inspiredByYourBrowsingHistory span.rating-3-stars{
+  background-position-y: calc(var(--rating-stars-nextStrip) * 3);
+ }
+ section#inspiredByYourBrowsingHistory span.rating-3AndHalf-stars{
+  background-position-y: calc(var(--rating-stars-nextStrip) * 4);
+ }
+ section#inspiredByYourBrowsingHistory span.rating-4AndHalf-stars{
+  background-position-y: calc(var(--rating-stars-nextStrip) * 2);
+ }
+ section#inspiredByYourBrowsingHistory span.rating-4-stars{
+  background-position-y: calc(var(--rating-stars-nextStrip) * 1);
+ }
+ section#inspiredByYourBrowsingHistory span.rating-2-stars{
+  background-position-y: calc(var(--rating-stars-nextStrip) * 5);
+ }
+ section#inspiredByYourBrowsingHistory span.rating-2AndHalf-stars{
+  background-position-y: calc(var(--rating-stars-nextStrip) * 6);
+ }

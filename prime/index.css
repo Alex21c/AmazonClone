@@ -31,38 +31,40 @@ body{
   min-height: 335px;
  }
 
- .hero-section .image img{
+ .hero-section img{
   width: 50vw;
  }
 
  .hero-section .para {
   background-color: #325b87;
   color: #FFFFFF;
-  padding: 1rem 0px 0px 1rem;
+  padding: 1rem;
   object-fit: cover;
  }
 
  .hero-section .para img{
-  height: 2rem;
+  height: 2.5rem;
+  width: 10rem;
  }
 
- .hero-section .para h1{
-  padding: 10px 0px 0px 0px;
-  font-weight: 400;
+ .hero-section .para h2 {
+  padding: 1.2rem 0px 0px 0px;
+  font-weight: 700;
   line-height: 2rem;
  }
 
  .hero-section .para span b{
-  font-size: medium;
+  font-size: 15px;
   letter-spacing: 1px;
+  line-height: 1rem;
   display: block;
-  padding-bottom: 10px;
+  padding-bottom: 1.2rem;
  }
 
  .hero-section .para button {
    background-color: #FFD814;
-   font-size: large;
-   padding: 10px;
+   font-size: 1.2rem;
+   padding: 1rem;
    text-align: center;
    border-radius: 5px;
    border: 1px solid #FCD200;
@@ -78,7 +80,7 @@ body{
  .hero-section .para > span {
   display: block;
   font-size: small;
-  padding: 1rem 0px 0px 0px;
+  padding: 1.2rem 0px 0px 0px;
  }
 
  .hero-section .para  span > a {
@@ -92,246 +94,109 @@ body{
   flex-grow: 0;
  }
 
- .main .block-1 {
+ .main .section {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-bottom: 3rem;
 
  }
 
  .main .heading {
      text-align: center;
      font-size: 1.75rem;
-     padding: 2rem 0px;
+     padding: 2.5rem 0px;
  }
 
- .main .block-1 .image img{
+ .main .section .image img{
   width: 50vw;
-  padding: 1rem;
+  padding-right: 1rem;
  }
 
- .main .block-1 .content {
-    width: 50vw;
+ .main .section .content {
+    width: 80vw;
+    padding-right: 1rem;
  }
 
- .main .block-1 .content>h2{
-    font-weight: 500;
+ .main .section .content>h3 {
+    font-weight: 700;
+    font-size: 25px;
+    padding-bottom: 0.5rem;
  }
 
- .main .block-1 .content>p{
+ .main .section .content > p{
   color: #565959;
   font: 18px Arial;
-  line-height: 24px;
+  line-height: 1.5rem;
 }
 
-.main .block-1 .content a {
+.main .section .content a {
   text-decoration: none;
   color: #0066c0;
   font-size: small;
 }
-
-.main .block-2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 3rem 0px 0px 0px;
- }
-
-.main .block-2 .image img{
-  width: 50vw;
-  padding: 1rem;
- }
-
- .main .block-2 .content {
-    width: 50vw;
- }
-
- .main .block-2 .content>h2{
-    font-weight: 500;
- }
-
- .main .block-2 .content>p{
-  color: #565959;
-  font: 18px Arial;
-  line-height: 24px;
+.main .section .content h3>img {
+  width: 6rem
 }
-
-.main .block-2 .content a {
-  text-decoration: none;
-  color: #0066c0;
-  font-size: small;
-}
-.main .block-3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 3rem 0px 0px 0px;
-
- }
-
-.main .block-3 .image img{
-  width: 50vw;
-  padding: 1rem;
- }
-
- .main .block-3 .content {
-    width: 50vw;
- }
-
- .main .block-3 .content>h2{
-    font-weight: 500;
- }
-
- .main .block-3 .content>p{
-  color: #565959;
-  font: 18px Arial;
-  line-height: 24px;
-}
-
-.main .block-3 .content a {
-  text-decoration: none;
-  color: #0066c0;
-  font-size: small;
-}
-.main .block-4 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 3rem 0px 0px 0px;
-
- }
-.main .block-4 .image img{
-  width: 50vw;
-  padding: 1rem;
- }
-
- .main .block-4 .content {
-    width: 50vw;
- }
-
- .main .block-4 .content>h2{
-    font-weight: 500;
- }
-
- .main .block-4 .content>p{
-  color: #565959;
-  font: 18px Arial;
-  line-height: 24px;
-}
-
-.main .block-4 .content a {
-  text-decoration: none;
-  color: #0066c0;
-  font-size: small;
-}
-
-.main .block-5 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 3rem 0px 0px 0px;
-
- }
-
-.main .block-5 .image img{
-  width: 50vw;
-  padding: 1rem;
- }
-
- .main .block-5 .content {
-    width: 50vw;
- }
-
- .main .block-5 .content>h2{
-    font-weight: 500;
- }
-
- .main .block-5 .content>p{
-  color: #565959;
-  font: 18px Arial;
-  line-height: 24px;
-}
-
-.main .block-5 .content a {
-  text-decoration: none;
-  color: #0066c0;
-  font-size: small;
-}
-.main .block-6 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 3rem 0px 0px 0px;
-
- }
-
-.main .block-6 .image img{
-  width: 50vw;
-  padding: 1rem;
- }
-
- .main .block-6 .content {
-    width: 50vw;
- }
-
- .main .block-6 .content>h2{
-    font-weight: 500;
- }
-
- .main .block-6 .content>p{
-  color: #565959;
-  font: 18px Arial;
-  line-height: 24px;
-}
-
-.main .block-6 .content a {
-  text-decoration: none;
-  color: #0066c0;
-  font-size: small;
-}
-
-.main .block-7 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 3rem 0px 0px 0px;
- }
-.main .block-7 .image img{
-  width: 50vw;
-  padding: 1rem;
- }
-
- .main .block-7 .content {
-    width: 50vw;
-    padding: 2rem 6rem 2rem 1rem;
- }
-
- .main .block-7 .content h2>img {
-     width: 6rem;
-     text-align: center;
- }
- .main .block-7 .content p > img {
-  width: 3.5rem;
-  text-align: center;
-}
-
-
- .main .block-7 .content>h2{
-    font-weight: 500;
-}
-
- .main .block-7 .content>p{
-  color: #565959;
-  font: 18px Arial;
-  line-height: 24px;
+.main .section .content p>img {
+  width: 4rem
 }
 
 main .main hr {
   padding-bottom: 6rem;
 }
-/* 
-@media screen and (max-width:480px) {
-  .hero-section .image img {
-    
+
+@media screen and (max-width:450px){
+   .hero-section {
+    display: flex;
+    flex-direction: column;
+   }
+   .hero-section img {
+    width: 92vw;
+   }
+   .hero-section .para h2 {
+    font-size: medium;
   }
-} */
+  .hero-section .para span>b {
+   font-size: small;
+ }
+ .hero-section .para button {
+   font-size: small;
+   padding: 0.75rem;
+ }
+ .main .heading {
+  font-size: medium;
+ }
+ .main .section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ .main .section .content > p  {
+   font-size: 13px;
+   line-height: 1.2rem;
+   letter-spacing: 1px;
+  }
+ .main .section .content > h3  {
+  font-size: medium;
+ }
+ .main .section .content a {
+  font-size: 12px;
+ }
+.main .section .image img {
+  width: 100vw;
+  padding: 0.5rem;
+ }
+}
+@media screen and (max-width:350px){
+  .hero-section img {
+    width: 90vw;
+   }
+}
+
+@media screen and (max-width:280px){
+  .hero-section img {
+    width: 88vw;
+   }
+}

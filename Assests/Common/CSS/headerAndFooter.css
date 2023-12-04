@@ -359,8 +359,7 @@ footer p {
   padding-top: 6px;
 }
 
-/***
- * Some Media Queries 
+ /* Some Media Queries 
  */
 /* @media screen and (max-width:900px){
   nav#primaryHeaderNavigation ul li a,
@@ -386,5 +385,5 @@ footer p {
   footer#pageFooter{
     padding:5rem 5%;
   }
-} */
+}*/
 

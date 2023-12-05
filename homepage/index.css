@@ -5,6 +5,7 @@
  *
  */
  :root {
+  --color-pink: #CC0C39;
   --colorGreenishBlue : #007185;
 
   --color-light-black: #111111;
@@ -21,11 +22,16 @@
  --color-light-gray5: #e6e6e6;
  --color-light-gray6: #d5dbdb;
  --color-light-gray7: #E3E6E6;
+ --color-light-gray8: #888C8C;
+ --color-light-gray9: #565959;
 
+ 
 
  --color-orange: #f3a847;
  --color-orange-2: #f08804;
+ --color-orange-3: #C45500;
  --color-orange-light: #febd69;
+ 
  
 
  --color-grayishBlue: #37475A;
@@ -50,6 +56,8 @@
  --cardHeight: 27rem;
  --card-subCardWidth: 10rem;
  --card-subCardHeight: 8rem;
+ --cardDealOrOfferMinimumWidth: 15rem;
+ --cardDealOrOfferMaxHeight: 18rem;
 }
 *, ::before, ::after{
   padding:0;
@@ -71,6 +79,7 @@ body{
  */
 main{
   background-color: var(--color-light-gray7);
+  padding-bottom: 1.5rem;
 }
 
 
@@ -92,8 +101,38 @@ main div#wrapperMainContent{
   animation-iteration-count: infinite;
   animation-timing-function: step-end;    
   background-image: url(Images/heroSection/kitchenAndOutdoor.jpg);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 
 }
+a.amazonDefaultAnchorLink,
+a.amazonDefaultAnchorLink:visited,
+main div#wrapperMainContent a,
+main div#wrapperMainContent a:visited,
+section#inspiredByYourBrowsingHistory div.recommendations a,
+section#inspiredByYourBrowsingHistory div.recommendations:visited{
+  color: var(--colorGreenishBlue);
+  text-decoration: none;
+  transition: .2s;
+}
+
+a.amazonDefaultAnchorLink:hover,
+main div#wrapperMainContent a:hover{
+  text-decoration: underline;
+  color:var(--color-orange-3);
+}
+
+
+section#inspiredByYourBrowsingHistory div.recommendations a:hover{  
+  color:var(--color-orange-3);
+}
+
+
+/***
+ * Carousel 
+ */
+
 @keyframes updateBackgroundImage {
 
   0% {  
@@ -134,11 +173,93 @@ main div#wrapperMainContent{
   }
  
 }
+/***
+ * section#todaysDeals 
+ */
 
+
+
+
+/***
+ * Common dealsOrOffers 
+ */
+ section.wrapperDealsOrOffers{
+  padding: 1rem;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+}
+section.wrapperDealsOrOffers div.sectionName{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+div.dealsOrOffers{
+  display: flex;
+  gap: 3rem;
+  /* background: yellow; */
+  padding-top: .5rem;
+  overflow-x: scroll;
+}
+
+
+div.dealsOrOffers div.dealOrOfferImgOnly{
+  width: inherit;
+  min-width: fit-content;
+  height: 14rem;
+  padding: 1rem 0;
+}
+div.dealsOrOffers div.dealOrOfferImgOnly img{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+div.dealsOrOffers div.dealOrOffer{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  /* background-color: lightgreen; */
+  min-width: var(--cardDealOrOfferMinimumWidth);
+  padding: 1rem;
+  max-height: var(--cardDealOrOfferMaxHeight);
+  border-radius: .2rem;
+  padding-top: 0;
+}
+
+div.dealsOrOffers div.dealOrOffer div.wrapperProductImg{
+  /* background-color: lightblue; */
+  width: inherit;
+  height: 14rem;
+  padding: .5rem 0;
+}
+div.dealsOrOffers div.dealOrOffer div.wrapperProductImg img{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+div.howMuchOffAndDealOfTheDay span:first-child{
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  padding: .3rem;
+  font-size: .8rem;
+  border-radius: .1rem;
+}
+div.howMuchOffAndDealOfTheDay span:last-child{
+  color:var(--color-pink);
+  font-size: .8rem;
+  font-weight: bold;
+}
+div.dealsOrOffers div.dealOrOffer h3{  
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 /***
  * Common Cards 
  */
-div.card {
+div.card,
+div.cardHavingImagesOnly {
   background-color: var(--color-white);
   width: var(--cardWidth);
   height: var(--cardHeight);
@@ -149,28 +270,27 @@ div.card {
   justify-content: space-between;
   gap: 1rem;
 }
+div.cardHavingImagesOnly {
+  
+}
 
 div.card h2{
   color:var(--color-light-black3);
 }
-div.card a,
-div.card a:visited{
-  color: var(--colorGreenishBlue);
-  text-decoration: none;
-}
-div.card a:hover{
-  text-decoration: underline;
-}
-div.card div.wrapperFourImages{
+
+div.card div.wrapperFourImages,
+div.cardHavingImagesOnly div.wrapperFourImagesNoHeadings{
   display: grid;
   grid-template-columns: repeat(2, var(--card-subCardWidth));
   grid-template-rows: repeat(2, var(--card-subCardHeight));
   gap: 1rem;
 }
+
 div.card div.wrapperFourImages>div{
   /* background-color: lightgreen; */
 }
-div.card div.wrapperFourImages>div>h3{
+div.card div.wrapperFourImages>div>h3,
+div.dealsOrOffers div.dealOrOffer h3{
   font-size: .8rem;
   color:var(--color-light-black3);
   font-weight: normal;
@@ -181,6 +301,11 @@ div.card div.wrapperFourImages>div>div{
 
 div.card div.wrapperFourImages>div>div>img{
   object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+div.cardHavingImagesOnly div.wrapperFourImagesNoHeadings>div>img{
+  object-fit: contain;
   width: 100%;
   height: 100%;
 }
@@ -217,10 +342,10 @@ main div#wrapperMainContent section#aboveHero {
   /* background-color: yellow; */
  }
  section#inspiredByYourBrowsingHistory span.rating-3-stars{
-  background-position-y: calc(var(--rating-stars-nextStrip) * 3);
+  background-position-y: calc(var(--rating-stars-nextStrip) * 3.1);
  }
  section#inspiredByYourBrowsingHistory span.rating-3AndHalf-stars{
-  background-position-y: calc(var(--rating-stars-nextStrip) * 4);
+  background-position-y: calc(var(--rating-stars-nextStrip) * 4.1);
  }
  section#inspiredByYourBrowsingHistory span.rating-4AndHalf-stars{
   background-position-y: calc(var(--rating-stars-nextStrip) * 2);
@@ -229,8 +354,175 @@ main div#wrapperMainContent section#aboveHero {
   background-position-y: calc(var(--rating-stars-nextStrip) * 1);
  }
  section#inspiredByYourBrowsingHistory span.rating-2-stars{
-  background-position-y: calc(var(--rating-stars-nextStrip) * 5);
+  background-position-y: calc(var(--rating-stars-nextStrip) * 5.3);
+  /* border: 1px solid red; */
  }
  section#inspiredByYourBrowsingHistory span.rating-2AndHalf-stars{
-  background-position-y: calc(var(--rating-stars-nextStrip) * 6);
+  background-position-y: calc(var(--rating-stars-nextStrip) * 6.2);
  }
+
+
+
+ /***
+  * Four Cards Section  
+  */
+  section.fourCards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  section.fourCards div.newSeriesHack{
+    background-color: var(--color-white);
+    width: var(--cardWidth);
+    height: var(--cardHeight);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    border-radius: .2rem;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  section.fourCards div.newSeriesHack>div>img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+/***
+ * cardBestSellerInBooks 
+ */
+
+  section.fourCards div.cardBestSellerInBooks div.fourBooks{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 5rem;
+    gap: .5rem;
+
+  }
+  section.fourCards div.cardBestSellerInBooks div.booksCollectionFullSize{
+    align-self: center;
+  }
+
+
+  section.fourCards div.cardBestSellerInBooks div.fourBooks>div:first-child{
+    box-shadow: inset 0 0 0 3px #007185;
+  }
+  section.fourCards div.cardBestSellerInBooks div.fourBooks>div{
+    border: 1px solid var(--color-light-gray8);
+    padding:.3rem;
+    border-radius: .5rem;
+    transition: .2s;
+    cursor: pointer;
+  }
+  section.fourCards div.cardBestSellerInBooks div.fourBooks>div:hover{
+    border-color: #007185;
+  }
+  section.fourCards div.cardBestSellerInBooks div.fourBooks>div>img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+  section.fourCards div.cardBestSellerInBooks div.priceInfo span.price::after{
+    content:"00";
+  }
+  section.fourCards div.cardBestSellerInBooks div.priceInfo span.price::before{
+    content:"\20B9"; /* ₹ Symbol*/
+  }
+
+  section.fourCards div.cardBestSellerInBooks div.priceInfo span.price::after,
+  section.fourCards div.cardBestSellerInBooks div.priceInfo span.price::before{
+    font-size:.8rem;
+    position: relative;
+    top: -.5rem;
+    
+  }
+  section.fourCards div.cardBestSellerInBooks div.priceInfo span.price{
+    color: var(--color-light-black3);
+    font-weight: 400;
+    font-size: 1.5rem;
+    
+  }
+  section.fourCards div.cardBestSellerInBooks div.priceInfo span.MRP{
+    color:var(--color-light-gray9);
+  }
+
+
+/***
+ * homeFurnishings & newSeriesCrushed
+ **/
+ section.homeFurnishings,
+ section.newSeriesCrushed{
+  place-self: center;
+ }
+
+
+ /***
+  * inspiredByYourBrowsingHistory 
+  */
+section#inspiredByYourBrowsingHistory{
+  display: flex;
+  flex-direction: column;
+  padding:2rem 1rem;
+  gap: 1rem;
+  
+}
+section#inspiredByYourBrowsingHistory hr{
+  border:none;
+  border-top: 1px solid var(--color-light-gray3);
+  
+}
+
+section#inspiredByYourBrowsingHistory div.recommendations{
+  display: flex;
+  gap:1rem;
+  overflow-x: scroll;
+}
+section#inspiredByYourBrowsingHistory div.recommendations div.recommendation{
+  padding:1rem .5rem;
+  /* background-color: lightblue; */
+}
+section#inspiredByYourBrowsingHistory div.recommendations div.recommendation div.wrapperRatings{
+  display: flex;
+  align-items: center;
+}
+
+section#inspiredByYourBrowsingHistory div.recommendations div.recommendation div.priceAndDeliveryInfo{
+  color:var(--color-light-black3);
+  /* background-color: lightblue; */
+  font-size: .8rem;
+  display: flex;
+  flex-direction: column;
+  gap:.3rem;
+  padding-top:.3rem;
+}
+
+section#inspiredByYourBrowsingHistory div.recommendations div.recommendation div.priceAndDeliveryInfo div.wrapperPriceAndQuantity{
+  font-size: 1.1rem;
+  font-weight: 400;
+  
+}
+
+section#inspiredByYourBrowsingHistory div.recommendations div.recommendation div.priceAndDeliveryInfo div.wrapperPriceAndQuantity span.price::before{
+  content:"\20B9"; /* ₹ Symbol*/
+  top:-.3rem;
+  position: relative;
+  font-size: .8rem;
+}
+section#inspiredByYourBrowsingHistory div.recommendations div.recommendation div.priceAndDeliveryInfo div.wrapperPriceAndQuantity span.pricePerMlOrGram{
+  font-size: .8rem;
+  
+}
+section#inspiredByYourBrowsingHistory div.recommendations div.recommendation div.priceAndDeliveryInfo div.expectedDelivery span.Day{
+  font-weight: 600;
+}
+
+.no1BestSeller{
+  background-color:var(--color-orange-3);
+  color:var(--color-white);
+  padding: 0.3rem;
+  clip-path: polygon(100% 0%, 91% 50%, 100% 100%, 0 99%, 0% 50%, 0 0);
+  padding-right: 1rem;
+  display: inline-block;
+  border-top-left-radius: .2rem;
+  border-bottom-left-radius: .2rem;
+}

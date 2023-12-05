@@ -1,7 +1,7 @@
 Abhishek Kumar
 
 Techstack used 
-		HTML5, CSS3, FontawesomeIcons, Google Fonts
+		HTML5, CSS3, FontawesomeIcons, Google Fonts, Clippy (clip-path)
 
 Important tags used
   1. focus-within
@@ -52,6 +52,17 @@ Important tags used
     }
   10. for transition from one image to another this animation timing function works better this carousel
     animation-timing-function: step-end;      
+  11. this is how to add three dots for long long heading inside card
+    div.dealsOrOffers div.dealOrOffer h3{  
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }  
+  12. Box shadow inset can be used to highlight current item, 
+      box-shadow: inset 0 0 0 3px #007185;
+  13. Used Clippy to generate clippath for the bestSeller polygon inside recommendations (Inspired by your browsing history)
+      https://bennettfeely.com/clippy/
+      clip-path: polygon(100% 0%, 91% 50%, 100% 100%, 0 99%, 0% 50%, 0 0);
 
 My Learning 
   1. there is :focus-within property which get triggers whenver user is typing something on the input field 
@@ -64,7 +75,9 @@ My Learning
   8. getBoundingClientRect() gives me the coordinates(x,y,bottom, right) of element witin the viewport, this way i get position of element within viewport, and if it outside viewport i can easily check by window.innerWidth and take measured accordingly, used this feature to handle clipping of header primary nav items.
   9. css animations can be used to design carousel
   10. step-end timing funciton,  animation stays at the initial state until the end, and then it instantly jumps to the final state. the default timing function was making some kind of blurry image transitions, keeping background of previous image over the next image, so this was fixed using step-end
-
+  11. i was working on the deals and offers card and notice the h3 heading text is occupying more than 1 lines and resulting the increase int the parent size, i want to have parent consistent size, so clip the extra h3 text and show elipsis, i found text-overflow: elipsis; useful; it works only when two other properties overflow:hidden and white-space:nowrap is set to.
+  12. in card best seller books, there was collection of 10 books big image, and same image thumbnail was there below with 3 other books images, i need to highlight that thumbnail, so i found box-shadow: inset helpful.
+  13. inside the amazon recommendations (inspired by your browsing history), there was recommendation who were best seller, and i used clippy to generate clipath for the polygon.
 
 Screenshot:
 		of webpage you designed (display where which css is used like flexbox, grid, little bit description)

@@ -22,35 +22,35 @@ body{
 
 
 
- .main-section, .links{
+ .main-section, .seller-link{
   width: 100%;
   padding: 1vmin;
   box-sizing: border-box;
  }
 
- .links ul{
+ .seller-link ul{
   display: flex;
   list-style: none;
   gap: 2.8vmin;
   padding-left: 1.2vmin;
   border-bottom: 1px solid #c5c5c5;
   box-sizing: border-box;
-  height: 20px;
+  height: 20px; 
  }
 
- .links ul li{
+ .seller-link ul li{
   font-size: 1.8vmin;
   font-weight: bold;
 
  }
 
- .links ul li:hover{
+ .seller-link ul li:hover{
   border-bottom: 2px solid #e48236;
   color: #e48236;
   cursor: pointer;
  }
 
- .links ul .best{
+ .seller-link ul .best{
   border-bottom: 2px solid #e48236;
  }
 
@@ -80,12 +80,12 @@ body{
 
  .seller-links{
   width: 196px;
-  border-right: 1px solid rgb(211, 209, 209);
  }
 
  .seller-links ul{
   padding-left: 1.1vmin;
   list-style: none;
+  border-right: 1px solid rgb(211, 209, 209);
  }
 
 
@@ -204,6 +204,7 @@ body{
 
  .products-section .products .product .rating{
   display: flex;
+  margin-top: 1vmin;
  }
 
  .products-section .products .product .rating img{
@@ -216,7 +217,7 @@ body{
   color: #007185;
   height: 100%;
   font-size: 0.75rem;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   display: flex;
  }
@@ -241,4 +242,175 @@ body{
 
  .products-section .products .product img{
   width: 100%;
+  padding-bottom: 2vmin;
+ }
+
+ .seller-products .about{
+    margin: 2rem 0;
+ }
+
+ .seller-products .about span{
+    font-size: 2vmin;
+    display: block;
+    font-weight: bold;
+    margin: 2vmin 0;
+ }
+
+ .seller-products .about p{
+    font-size: 1.6vmin;
+ }
+
+
+
+
+
+ /* seller-section2  */
+
+
+
+ .seller-section2{
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgb(211, 209, 209);
+  border-radius: 5px;
+  margin-bottom: 4vmin;
+ }
+
+ .seller-section2-box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1vmin 2vmin;
+  box-sizing: border-box;
+  margin-bottom: 4vmin;
+ }
+
+ .seller-section2-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.7vmin 0;
+ }
+
+ .seller-section2-heading h3{
+  font-size: 2.4vmin;
+ }
+
+.seller-section2-box .seller-section2-items{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: flex-start;
+}
+
+
+.seller-section2-items .seller-section2-item{
+  height: 100%;
+  flex-direction: column;
+  width: 160px;
+  cursor: pointer;
+
+}
+
+.seller-section2-items .seller-section2-item p:hover{
+  color: #e48236;
+  cursor: pointer;
+}
+
+.seller-section2-items .seller-section2-item{
+  color: #007185;
+}
+
+.seller-section2-items .seller-section2-item .rating1{
+  display: flex;
+  align-items: center;
+  padding: 1vmin 0;
+}
+
+.seller-section2-items .seller-section2-item .rating1 span{
+  color:#007185;
+  font-size: 0.7rem;
+}
+
+.seller-section2-items .seller-section2-item .price{
+  color:#000000;
+}
+
+.seller-section2-items .seller-section2-item .rating1 span:hover{
+  color:#e48236;
+  cursor: pointer;
+}
+
+ .seller-section2 .seller-section2-items .side-btn{
+  display: flex;
+  width: 3.4%;
+  height: 40vmin;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .seller-section2 .seller-section2-items .side-btn .btn{
+  position: relative;
+  top: -12%;
+  border: 1px solid rgb(211, 209, 209);
+  border-radius: 8px;
+  cursor: pointer;
+ }
+
+ .seller-section2 .seller-section2-items .side-btn .btn i{
+  height: 38px;
+  width: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 6px 1px rgb(238, 238, 238);
+ }
+
+
+
+
+
+ /* seller bottom section  */
+
+
+
+ .seller-bottom-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 3vmin auto;
+  padding-top: 4vmin;
+  border-top: 1px solid rgb(211, 209, 209);
+  width: 94%;
+ }
+
+ .seller-bottom-section .para p{
+  margin: 1vmin 0;
+ }
+
+ .seller-bottom-section .btn button{
+  width: 32vmin;
+  height: 4.2vmin;
+  background-color: #FFC941;
+  border-radius: 4px;
+  border: 1px solid rgb(196, 141, 12);
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 1.2vmin;
+ }
+
+ .seller-bottom-section .para2 p{
+  font-size: 0.8rem;
+ }
+
+ .seller-bottom-section .para2 p a{
+  margin: 1vmin;
+  text-decoration: none;
+  color: #007185;
+ }
+
+ .seller-bottom-section .para2 p a:hover{
+  color:#e48236
  }

@@ -30,6 +30,7 @@
  --color-orange: #f3a847;
  --color-orange-2: #f08804;
  --color-orange-3: #C45500;
+ --color-orange-4: #e6a400;
  --color-orange-light: #febd69;
  
  
@@ -48,7 +49,7 @@
  --maxWidthOfMainContentWrapperDiv: 100rem;
 
  --rating-stars-nextStrip: -19px;
- --homepageCarouselSpeed:55s;
+ --homepageCarouselSpeed:60s;  /* 15frames x nSec */
  
  
  
@@ -138,39 +139,50 @@ section#inspiredByYourBrowsingHistory div.recommendations a:hover{
   0% {  
     background-image: url(Images/heroSection/kitchenAndOutdoor.jpg);
   }
-  9%{  
+  7%{  
     background-image: url(Images/heroSection/bluetoothCallingSmartwatches.jpg);
   }
-  18%{  
+  14%{  
     background-image: url(Images/heroSection/monthlyGroceries.jpg);    
   }
-  27% {  
-    background-image: url(Images/heroSection/smartphones.jpg);
+  21% {  
+    background-image: url(Images/heroSection/under1499BestSellingEarbuds.jpg);
   } 
-  36%{  
+  28%{  
+    background-image: url(Images/heroSection/smartphones.jpg);
+  }
+  35%{  
     background-image: url(Images/heroSection/cosmetic.jpg);
   }
-  45%{  
+  42%{  
     background-image: url(Images/heroSection/bestSellersInSkinCare.jpg);
   }
-  54%{  
+  49%{  
     background-image: url(Images/heroSection/clothingBeautyAndMore.jpg);
   }
-  63%{  
+  56%{  
     background-image: url(Images/heroSection/topAndDresses.jpg);
   }
-  72%{  
+  63%{  
     background-image: url(Images/heroSection/tShirtsAndPolos.jpg);
   }
-  81%{  
+  70%{  
     background-image: url(Images/heroSection/outdoorAndSportsToys.jpg);
   }
-  90%{  
+  77% {      
     background-image: url(Images/heroSection/fitness.jpg);
+  }
+  84% {    
+    background-image: url(Images/heroSection/monthlyGrocerisTwo.jpg);
+  }
+  91% {  
+    background-image: url(Images/heroSection/limitedTimeKitchenOffersStartingFrom79.jpg);
   }
   100% {  
     background-image: url(Images/heroSection/kitchenAndOutdoor.jpg);
   }
+
+
  
 }
 /***
@@ -525,4 +537,34 @@ section#inspiredByYourBrowsingHistory div.recommendations div.recommendation div
   display: inline-block;
   border-top-left-radius: .2rem;
   border-bottom-left-radius: .2rem;
+}
+
+/***
+ * section#seePersonalizedRecommendations 
+ */
+ section#seePersonalizedRecommendations{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+}
+section#seePersonalizedRecommendations,
+section#seePersonalizedRecommendations h2{
+  font-size: .9rem;
+  font-weight: normal;
+  
+}
+section#seePersonalizedRecommendations div.wrapperNewCustomer{
+  font-size: .8rem;
+}
+section#seePersonalizedRecommendations a.signIn{
+  background: linear-gradient(#ffd772, #ffd978, #ffcb47, #ffc42d);
+  padding:.5rem 7rem;
+  display: block;
+  border-radius: .3rem;
+  text-decoration: none;
+  color:black;
+  border:1px solid var(--color-orange-4);
+  font-weight: 500;
+  font-size: .8rem;
 }

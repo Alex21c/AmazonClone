@@ -1,7 +1,7 @@
 Abhishek Kumar
 
 Techstack used 
-		HTML5, CSS3, FontawesomeIcons, Google Fonts, Clippy (clip-path)
+		HTML5, CSS3, Google Translate,  Google Fonts, Font Awesome Icons Library, Clippy (clip-path)
 
 Important tags used
   1. focus-within
@@ -63,6 +63,15 @@ Important tags used
   13. Used Clippy to generate clippath for the bestSeller polygon inside recommendations (Inspired by your browsing history)
       https://bennettfeely.com/clippy/
       clip-path: polygon(100% 0%, 91% 50%, 100% 100%, 0 99%, 0% 50%, 0 0);
+  14. website lang translation feature was added using google translate    
+    <div id="google_translate_element"></div>
+    <!-- Google Translate -->
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+      </script>
 
 My Learning 
   1. there is :focus-within property which get triggers whenver user is typing something on the input field 
@@ -78,6 +87,7 @@ My Learning
   11. i was working on the deals and offers card and notice the h3 heading text is occupying more than 1 lines and resulting the increase int the parent size, i want to have parent consistent size, so clip the extra h3 text and show elipsis, i found text-overflow: elipsis; useful; it works only when two other properties overflow:hidden and white-space:nowrap is set to.
   12. in card best seller books, there was collection of 10 books big image, and same image thumbnail was there below with 3 other books images, i need to highlight that thumbnail, so i found box-shadow: inset helpful.
   13. inside the amazon recommendations (inspired by your browsing history), there was recommendation who were best seller, and i used clippy to generate clipath for the polygon.
+  14. although google has officially no long provide documentation for how to integrate the google translate with our websites, my mentor Jaiten sir, shared with me the w3school link and now i added google translate to our website to transte it to difference languages.
 
 Screenshot:
 		of webpage you designed (display where which css is used like flexbox, grid, little bit description)

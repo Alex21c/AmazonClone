@@ -35,7 +35,7 @@
           <i class="fa-regular fa-bars"></i>
         </div>
         <a href="../homepage/index.html">
-          <img src="../Assests/Common/Images/pageHeaderAndFooter/logo.png" alt="Amazon Logo">
+          <img src="../Assests/Common/Images/pageHeaderAndFooter/logo.png" alt="Amazon Logo">  
           <span>.in</span>
         </a>
       </div>
@@ -100,17 +100,19 @@
           <input type="search" name="search" placeholder="Search Amazon.in">
         </div>
         <div class="submitBtn">
-          <input type="submit" value="Go">
+          <input type="submit" value="">
           <i class="fa-regular fa-magnifying-glass"></i>
         </div>
       </form>
-      <div class="wrapperLang">
-        <div class="wrapperFlagImg"><img src="../Assests/Common/Images/pageHeaderAndFooter/indiaFlagV2.png" alt="India Flag"></div>
-        <div>
-          <span class="langEn">EN</span>
-          <i class="fa-sharp fa-solid fa-caret-down"></i>
+      <a href="#google_translate_element" class="linkingToGoogle_translate_element">
+        <div class="wrapperLang">
+          <div class="wrapperFlagImg"><img src="../Assests/Common/Images/pageHeaderAndFooter/indiaFlagV2.png" alt="India Flag"></div>
+          <div>
+            <span class="langEn">EN</span>
+            <i class="fa-sharp fa-solid fa-caret-down"></i>
+          </div>
         </div>
-      </div>
+      </a>
 
       <div class="wrapperHeaderKindOfHeading helloSignIn">
         <div>Hello, sign in</div>
@@ -1251,6 +1253,68 @@
         </div><!-- End of wrapper div-->
       </section> <!-- End of section#bestsellersFromWomenOwnedBusinesses--> 
 
+      <section id="bestSellersInToysAndGames"  class="wrapperDealsOrOffers">
+        <div class="sectionName">
+          <h2>Best Sellers in Toys & Games</h2>
+          <a href="#">See all offers</a>
+        </div>
+        <div class="dealsOrOffers">
+          <div class="dealOrOfferImgOnly">
+            <img src="Images/bestSellersInToysAndGames/snowMan.jpg" alt="snowMan" loading="lazy">
+          </div>
+          <div class="dealOrOfferImgOnly">
+            <img src="Images/bestSellersInToysAndGames/scienceKit.jpg" alt="scienceKit" loading="lazy">
+          </div>
+          <div class="dealOrOfferImgOnly">
+            <img src="Images/bestSellersInToysAndGames/uno.jpg" alt="uno" loading="lazy">
+          </div>
+          <div class="dealOrOfferImgOnly">
+            <img src="Images/bestSellersInToysAndGames/juniorRing.jpg" alt="juniorRing" loading="lazy">
+          </div>
+          <div class="dealOrOfferImgOnly">
+            <img src="Images/bestSellersInToysAndGames/penguin.jpg" alt="penguin" loading="lazy">
+          </div>
+          <div class="dealOrOfferImgOnly">
+            <img src="Images/bestSellersInToysAndGames/pony.jpg" alt="pony" loading="lazy">
+          </div>
+          <div class="dealOrOfferImgOnly">
+            <img src="Images/bestSellersInToysAndGames/rabbit.jpg" alt="rabbit" loading="lazy">
+          </div>
+          <div class="dealOrOfferImgOnly">
+            <img src="Images/bestSellersInToysAndGames/penguinFemale.jpg" alt="penguinFemale" loading="lazy">
+          </div>
+          <div class="dealOrOfferImgOnly">
+            <img src="Images/bestSellersInToysAndGames/monkeyCart.jpg" alt="monkeyCart" loading="lazy">
+          </div>
+          <div class="dealOrOfferImgOnly">
+            <img src="Images/bestSellersInToysAndGames/rcCar.jpg" alt="rcCar" loading="lazy">
+          </div>
+          <div class="dealOrOfferImgOnly">
+            <img src="Images/bestSellersInToysAndGames/hotwheels.jpg" alt="hotwheels" loading="lazy">
+          </div>
+          <div class="dealOrOfferImgOnly">
+            <img src="Images/bestSellersInToysAndGames/rubcCube.jpg" alt="rubcCube" loading="lazy">
+          </div>
+          <div class="dealOrOfferImgOnly">
+            <img src="Images/bestSellersInToysAndGames/boardgame1.jpg" alt="boardgame1" loading="lazy">
+          </div>
+          <div class="dealOrOfferImgOnly">
+            <img src="Images/bestSellersInToysAndGames/dominos.jpg" alt="dominos" loading="lazy">
+          </div>
+          <div class="dealOrOfferImgOnly">
+            <img src="Images/bestSellersInToysAndGames/babyPlayingWithCubes.jpg" alt="babyPlayingWithCubes" loading="lazy">
+          </div>
+          <div class="dealOrOfferImgOnly">
+            <img src="Images/bestSellersInToysAndGames/windowArt.jpg" alt="windowArt" loading="lazy">
+          </div>
+   
+          
+        
+
+
+        </div><!-- End of wrapper div-->
+      </section> <!-- End of section#bestsellersFromWomenOwnedBusinesses--> 
+
 
 
     </div> <!-- End of div#wrapperMainContent-->
@@ -1645,11 +1709,11 @@
 
 
     <section id="seePersonalizedRecommendations">
-      <h2>See personalized recommendations</h2>
+      <h2>See personalized recommendations.</h2>
       <div>
-        <a href="../signIn/index.html">Sign in</a>
+        <a class="signIn" href="../signIn/index.html">Sign in</a>
       </div>
-      <div>
+      <div class="wrapperNewCustomer">
         <span>New customer?</span>
         <a href="../createAccount/index.html" class="amazonDefaultAnchorLink">Start here.</a>
       </div>
@@ -1726,13 +1790,14 @@
             </div>
             <div class="button">                
               <i class="fa-light fa-globe"></i>
-              <select>
+              <div id="google_translate_element"></div>
+              <!-- <select>
                   <option value="english">English</option>
                   <option value="hindi">हिंदी</option>
                   <option value="lang3">தமிழ்</option>
                   <option value="lagn3">తెలుగు</option>
                   <option value="marathi">मराठी</option>
-              </select>              
+              </select>               -->
             </div>
         </div>
     
@@ -1828,5 +1893,13 @@
 
 
   <script src="../Assests/Common/JS/headerAndFooter.js"></script>
+  <!-- Google Translate -->
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+</script>
+    
   </body>
 </html>

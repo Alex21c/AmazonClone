@@ -5,8 +5,11 @@
  *
  */
  :root {
+  --colorGreenishBlue : #007185;
+
   --color-light-black: #111111;
   --color-light-black2: #131921;
+  --color-light-black3: #0F1111;
   --color-black3: #131A22;
   --color-black4: #333333;
  
@@ -39,6 +42,14 @@
  --maxWidthOfMainContentWrapperDiv: 100rem;
 
  --rating-stars-nextStrip: -19px;
+ --homepageCarouselSpeed:55s;
+ 
+ 
+ 
+ --cardWidth: 23rem;
+ --cardHeight: 27rem;
+ --card-subCardWidth: 10rem;
+ --card-subCardHeight: 8rem;
 }
 *, ::before, ::after{
   padding:0;
@@ -61,48 +72,136 @@ body{
 main{
   background-color: var(--color-light-gray7);
 }
+
+
+/***
+ * div#wrapperMainContent 
+ */
+
 main div#wrapperMainContent{
   /* background-color: lightgreen; */
-  max-width: var(--maxWidthOfMainContentWrapperDiv);
-  background-image: url(Images/heroSection/outdoorAndSportsToys.jpg);
+  max-width: var(--maxWidthOfMainContentWrapperDiv);  
   background-repeat: no-repeat;
+  background-size: contain;
   margin: auto;
-  padding-top:30rem;
+  padding-top: 18rem;
   padding-left:2rem;
   padding-right: 2rem;
-  display: none;
+  animation-name: updateBackgroundImage;
+  animation-duration: var(--homepageCarouselSpeed);
+  animation-iteration-count: infinite;
+  animation-timing-function: step-end;    
+  background-image: url(Images/heroSection/kitchenAndOutdoor.jpg);
+
+}
+@keyframes updateBackgroundImage {
+
+  0% {  
+    background-image: url(Images/heroSection/kitchenAndOutdoor.jpg);
+  }
+  9%{  
+    background-image: url(Images/heroSection/bluetoothCallingSmartwatches.jpg);
+  }
+  18%{  
+    background-image: url(Images/heroSection/monthlyGroceries.jpg);    
+  }
+  27% {  
+    background-image: url(Images/heroSection/smartphones.jpg);
+  } 
+  36%{  
+    background-image: url(Images/heroSection/cosmetic.jpg);
+  }
+  45%{  
+    background-image: url(Images/heroSection/bestSellersInSkinCare.jpg);
+  }
+  54%{  
+    background-image: url(Images/heroSection/clothingBeautyAndMore.jpg);
+  }
+  63%{  
+    background-image: url(Images/heroSection/topAndDresses.jpg);
+  }
+  72%{  
+    background-image: url(Images/heroSection/tShirtsAndPolos.jpg);
+  }
+  81%{  
+    background-image: url(Images/heroSection/outdoorAndSportsToys.jpg);
+  }
+  90%{  
+    background-image: url(Images/heroSection/fitness.jpg);
+  }
+  100% {  
+    background-image: url(Images/heroSection/kitchenAndOutdoor.jpg);
+  }
+ 
 }
 
 /***
- * section#aboveHero 
+ * Common Cards 
  */
- main div#wrapperMainContent section#aboveHero {
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(2, 25rem);
-  gap:1rem;
-}
-main div#wrapperMainContent section#aboveHero>div {
-
+div.card {
   background-color: var(--color-white);
+  width: var(--cardWidth);
+  height: var(--cardHeight);
   display: flex;
   flex-direction: column;
+  padding: 1.5rem 1rem;
+  border-radius: .2rem;
+  justify-content: space-between;
+  gap: 1rem;
 }
-main div#wrapperMainContent section#aboveHero>div>div {
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap:1rem;
- }
+
+div.card h2{
+  color:var(--color-light-black3);
+}
+div.card a,
+div.card a:visited{
+  color: var(--colorGreenishBlue);
+  text-decoration: none;
+}
+div.card a:hover{
+  text-decoration: underline;
+}
+div.card div.wrapperFourImages{
+  display: grid;
+  grid-template-columns: repeat(2, var(--card-subCardWidth));
+  grid-template-rows: repeat(2, var(--card-subCardHeight));
+  gap: 1rem;
+}
+div.card div.wrapperFourImages>div{
+  /* background-color: lightgreen; */
+}
+div.card div.wrapperFourImages>div>h3{
+  font-size: .8rem;
+  color:var(--color-light-black3);
+  font-weight: normal;
+}
+div.card div.wrapperFourImages>div>div{
+  /* background-color: lightblue; */
+}
+
+div.card div.wrapperFourImages>div>div>img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+/***
+ * section#aboveHero 
+ */
+
+main div#wrapperMainContent section#aboveHero {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+
+
 
 
  /***
   * section#inspiredByYourBrowsingHistory 
   */
-section#inspiredByYourBrowsingHistory,
-section#seePersonalizedRecommendations{
-  display: none;
-}
+
  section#inspiredByYourBrowsingHistory span.rating-2-stars,
  section#inspiredByYourBrowsingHistory span.rating-2AndHalf-stars,
  section#inspiredByYourBrowsingHistory span.rating-4-stars,

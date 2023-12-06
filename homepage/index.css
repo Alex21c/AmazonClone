@@ -24,6 +24,7 @@
  --color-light-gray7: #E3E6E6;
  --color-light-gray8: #888C8C;
  --color-light-gray9: #565959;
+ --color-light-gray10: #565959;
 
  
 
@@ -49,7 +50,7 @@
  --maxWidthOfMainContentWrapperDiv: 100rem;
 
  --rating-stars-nextStrip: -19px;
- --homepageCarouselSpeed:60s;  /* 15frames x nSec */
+ --homepageCarouselSpeed:15s;  /* 15frames x nSec | Default is 60s */ 
  
  
  
@@ -81,7 +82,11 @@ body{
 main{
   background-color: var(--color-light-gray7);
   padding-bottom: 1.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
+
 
 
 /***
@@ -90,22 +95,17 @@ main{
 
 main div#wrapperMainContent{
   /* background-color: lightgreen; */
-  max-width: var(--maxWidthOfMainContentWrapperDiv);  
-  background-repeat: no-repeat;
-  background-size: contain;
+  max-width: var(--maxWidthOfMainContentWrapperDiv);
   margin: auto;
-  padding-top: 18rem;
+  padding-top: 20rem;
   padding-left:2rem;
   padding-right: 2rem;
-  animation-name: updateBackgroundImage;
-  animation-duration: var(--homepageCarouselSpeed);
-  animation-iteration-count: infinite;
-  animation-timing-function: step-end;    
-  background-image: url(Images/heroSection/kitchenAndOutdoor.jpg);
   display: flex;
   flex-direction: column;
   gap: 1rem;
-
+  z-index: 100;
+  position: relative;
+  width: 100%;
 }
 a.amazonDefaultAnchorLink,
 a.amazonDefaultAnchorLink:visited,
@@ -133,6 +133,24 @@ section#inspiredByYourBrowsingHistory div.recommendations a:hover{
 /***
  * Carousel 
  */
+ section#heroSection{
+  animation-name: updateBackgroundImage;
+  animation-duration: var(--homepageCarouselSpeed);
+  animation-iteration-count: infinite;
+  animation-timing-function: step-end;
+  background-image: url(Images/heroSection/kitchenAndOutdoor.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: var(--maxWidthOfMainContentWrapperDiv);
+  height: 40rem;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  align-self: center;
+
+}
+
 
 @keyframes updateBackgroundImage {
 
@@ -337,43 +355,6 @@ main div#wrapperMainContent section#aboveHero {
 
 
 
- /***
-  * section#inspiredByYourBrowsingHistory 
-  */
-
- section#inspiredByYourBrowsingHistory span.rating-2-stars,
- section#inspiredByYourBrowsingHistory span.rating-2AndHalf-stars,
- section#inspiredByYourBrowsingHistory span.rating-4-stars,
- section#inspiredByYourBrowsingHistory span.rating-3-stars,
- section#inspiredByYourBrowsingHistory span.rating-3AndHalf-stars,
- section#inspiredByYourBrowsingHistory span.rating-4AndHalf-stars{
-  background-image: url(Images/inspiredByYourBrowsingHistory/ratings.png);
-  min-width: 90px;
-  min-height: 21px;
-  background-repeat: no-repeat;
-  background-position-y: var(--rating-stars-nextStrip);
-  display:inline-block;
-  /* background-color: yellow; */
- }
- section#inspiredByYourBrowsingHistory span.rating-3-stars{
-  background-position-y: calc(var(--rating-stars-nextStrip) * 3.1);
- }
- section#inspiredByYourBrowsingHistory span.rating-3AndHalf-stars{
-  background-position-y: calc(var(--rating-stars-nextStrip) * 4.1);
- }
- section#inspiredByYourBrowsingHistory span.rating-4AndHalf-stars{
-  background-position-y: calc(var(--rating-stars-nextStrip) * 2);
- }
- section#inspiredByYourBrowsingHistory span.rating-4-stars{
-  background-position-y: calc(var(--rating-stars-nextStrip) * 1);
- }
- section#inspiredByYourBrowsingHistory span.rating-2-stars{
-  background-position-y: calc(var(--rating-stars-nextStrip) * 5.3);
-  /* border: 1px solid red; */
- }
- section#inspiredByYourBrowsingHistory span.rating-2AndHalf-stars{
-  background-position-y: calc(var(--rating-stars-nextStrip) * 6.2);
- }
 
 
 
@@ -478,7 +459,7 @@ section#inspiredByYourBrowsingHistory{
   flex-direction: column;
   padding:2rem 1rem;
   gap: 1rem;
-  
+  position: relative;
 }
 section#inspiredByYourBrowsingHistory hr{
   border:none;
@@ -490,6 +471,9 @@ section#inspiredByYourBrowsingHistory div.recommendations{
   display: flex;
   gap:1rem;
   overflow-x: scroll;
+  overflow: hidden;
+  width: 98%;
+  align-self: center;
 }
 section#inspiredByYourBrowsingHistory div.recommendations div.recommendation{
   padding:1rem .5rem;
@@ -541,6 +525,42 @@ section#inspiredByYourBrowsingHistory div.recommendations div.recommendation div
   border-bottom-left-radius: .2rem;
 }
 
+
+  section#inspiredByYourBrowsingHistory span.rating-2-stars,
+  section#inspiredByYourBrowsingHistory span.rating-2AndHalf-stars,
+  section#inspiredByYourBrowsingHistory span.rating-4-stars,
+  section#inspiredByYourBrowsingHistory span.rating-3-stars,
+  section#inspiredByYourBrowsingHistory span.rating-3AndHalf-stars,
+  section#inspiredByYourBrowsingHistory span.rating-4AndHalf-stars{
+   background-image: url(Images/inspiredByYourBrowsingHistory/ratings.png);
+   min-width: 90px;
+   min-height: 21px;
+   background-repeat: no-repeat;
+   background-position-y: var(--rating-stars-nextStrip);
+   display:inline-block;
+   /* background-color: yellow; */
+  }
+  section#inspiredByYourBrowsingHistory span.rating-3-stars{
+   background-position-y: calc(var(--rating-stars-nextStrip) * 3.1);
+  }
+  section#inspiredByYourBrowsingHistory span.rating-3AndHalf-stars{
+   background-position-y: calc(var(--rating-stars-nextStrip) * 4.1);
+  }
+  section#inspiredByYourBrowsingHistory span.rating-4AndHalf-stars{
+   background-position-y: calc(var(--rating-stars-nextStrip) * 2);
+  }
+  section#inspiredByYourBrowsingHistory span.rating-4-stars{
+   background-position-y: calc(var(--rating-stars-nextStrip) * 1);
+  }
+  section#inspiredByYourBrowsingHistory span.rating-2-stars{
+   background-position-y: calc(var(--rating-stars-nextStrip) * 5.3);
+   /* border: 1px solid red; */
+  }
+  section#inspiredByYourBrowsingHistory span.rating-2AndHalf-stars{
+   background-position-y: calc(var(--rating-stars-nextStrip) * 6.2);
+  }
+ 
+
 /***
  * section#seePersonalizedRecommendations 
  */
@@ -572,7 +592,9 @@ section#seePersonalizedRecommendations a.signIn{
 }
 
 
-/* Scroll left and right Button */
+/***
+ * Scroll left and right Button 
+ */
 button.scrollLeft, 
 button.scrollRight{
   font-size: 2rem;
@@ -581,14 +603,15 @@ button.scrollRight{
   width: 4rem;
   position: absolute;
   align-self: center;
-  opacity: .3;
-  transition: .5s;
+  opacity: 0;
+  transition: .3s;
   cursor: pointer;
+  box-shadow: 0 1px 3px #888;
+  border:none;
+  color:var(--color-light-gray10);
+  border-radius: .2rem;
 }
-button.scrollLeft:hover, 
-button.scrollRight:hover{
-  opacity: 1;
-}
+
 
 button.scrollLeft{
   left:0;
@@ -596,3 +619,154 @@ button.scrollLeft{
 button.scrollRight{
   right: 0;
 }
+
+div.dealsOrOffers:hover button.scrollLeft,
+div.dealsOrOffers:hover button.scrollRight,
+div.dealsOrOffers:active button.scrollLeft,
+div.dealsOrOffers:active button.scrollRight{
+  opacity: .5;
+  
+}
+
+div.recommendations:hover button.scrollLeft,
+div.recommendations:hover button.scrollRight,
+div.recommendations:active button.scrollLeft,
+div.recommendations:active button.scrollRight{
+  opacity: .8;
+  
+}
+
+div.dealsOrOffers:hover button.scrollLeft:hover,
+div.dealsOrOffers:hover button.scrollRight:hover,
+div.recommendations:hover button.scrollLeft:hover,
+div.recommendations:hover button.scrollRight:hover,
+div.dealsOrOffers:active button.scrollLeft:active,
+div.dealsOrOffers:active button.scrollRight:active,
+div.recommendations:active button.scrollLeft:active,
+div.recommendations:active button.scrollRight:active{
+  opacity: 1;
+  color:var(--color-black4);
+}
+
+
+
+/***
+ * MEDIA QUERIES 
+ */
+
+ @media screen and (max-width:1600px){
+  :root{
+    --maxWidthOfMainContentWrapperDiv:90rem;
+  }
+  main div#wrapperMainContent section#aboveHero{
+    grid-template-columns: repeat(3, var(--cardWidth));
+    align-self: center;
+  }
+  section.fourCards{
+    grid-template-columns: repeat(2, var(--cardWidth));
+    align-self: center;
+  }
+  main div#wrapperMainContent {
+    padding-top: 18rem;
+  }
+ }
+ @media screen and (max-width:1450px){
+  :root{
+    --maxWidthOfMainContentWrapperDiv:80rem;
+  }
+ }
+ @media screen and (max-width:1360px){
+  button.scrollLeft, 
+  button.scrollRight{
+    opacity: .3;
+  }
+ }
+ @media screen and (max-width:1330px){
+  :root{
+    --maxWidthOfMainContentWrapperDiv:100%;
+  }
+ } 
+ @media screen and (max-width:1186px){
+  main div#wrapperMainContent section#aboveHero{
+    grid-template-columns: repeat(2, var(--cardWidth));
+  }
+  section#todaysDeals div.dealsOrOffers{
+    gap:0rem;
+  }
+ }
+
+ @media screen and (max-width:1040px){
+  section.homeFurnishings a>img, 
+  section.newSeriesCrushed a>img{
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+  }
+ }
+
+ @media screen and (max-width:800px){
+  main div#wrapperMainContent section#aboveHero{
+    grid-template-columns: repeat(1, var(--cardWidth));
+  }
+  section.fourCards{
+    grid-template-columns: repeat(1, var(--cardWidth));
+  }  
+  section#heroSection{
+    background-position-x:-18rem;
+  }
+
+ }
+
+ 
+ @media screen and (max-width:450px){
+  button.scrollLeft, 
+  button.scrollRight{
+    opacity: .5;
+  }
+  section#heroSection{
+    background-position-x:-23rem;
+  }
+
+  :root{
+    --card-subCardWidth: 15rem;
+    --card-subCardHeight: 11rem;
+    --cardWidth: 20rem;
+    --cardHeight: 54rem;
+  }
+
+  div.card div.wrapperFourImages,
+  div.cardHavingImagesOnly div.wrapperFourImagesNoHeadings{    
+    grid-template-columns: repeat(1, var(--card-subCardWidth));
+    grid-template-rows: repeat(2, var(--card-subCardHeight));
+  }
+  div.card, div.cardHavingImagesOnly{
+    align-items: center;
+  }
+  div.cardHavingImagesOnly div.wrapperFourImagesNoHeadings>div>img{
+    width: initial;
+    height: initial;
+  }
+  div.cardHavingImagesOnly div.wrapperFourImagesNoHeadings{
+    justify-items: center;
+  }
+  section.fourCards div.newSeriesHack{
+    height: 24rem;
+  }
+  div.cardBestSellerInBooks{
+    height: 29rem;
+  }
+ }
+
+
+ @media screen and (max-width:340px){
+  section#heroSection{
+    background-position-x:-25rem;
+  }
+  :root{
+    --cardWidth: 18rem;
+    --cardHeight: 58rem;
+  }
+  body{
+    min-width: 320px;
+  }
+ }

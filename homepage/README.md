@@ -75,6 +75,12 @@ Important tags used
   15. I learnt new property of javascript, using it the overflow content of container(flex here) can be scrolled left and right
       container.scrollLeft += 200 //to scroll Right
       container.scrollLeft += 200 // to scroll left
+  16. :active psedo class can be used to deal with touch devices like tablet and smartphones
+      div.dealsOrOffers:active button.scrollLeft,
+      div.dealsOrOffers:active button.scrollRight{
+          opacity: .5;
+      }
+
 
 My Learning 
   1. there is :focus-within property which get triggers whenver user is typing something on the input field 
@@ -93,7 +99,7 @@ My Learning
   14. although google has officially no long provide documentation for how to integrate the google translate with our websites, my mentor Jaiten sir, shared with me the w3school link and now i added google translate to our website to transte it to difference languages.
   15. there are lots of horizontal flex in homepage having horizontal scrollbar, they were showing products and offers, and in amazon.in there are two buttons to let them scroll left and right, to achieve that functionality i found following javascript property handful, scrollLeft, if i add 200 to it, container inside content would move 200px right and vice versa
     container.scrollLeft += 200
-
+  16. for desktop and laptops :hover works good, but for touch devices like smartphones and tablets, the :active pseudo class works good, :active means whenever user presses the mouse button or tap on screen
 
 Screenshot:
 		of webpage you designed (display where which css is used like flexbox, grid, little bit description)

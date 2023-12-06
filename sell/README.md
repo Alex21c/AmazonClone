@@ -8,7 +8,7 @@ Important tags used:
   and in .css file i have use flex-box, position: absolute and relative, display: none for responsiveness and many more
 
 Techstack used 
-		HTML5, CSS3, (fontawesome animate.js clippy googleFonts)
+		HTML5, CSS3, (fontawesome clippy googleFonts)
 
 Screenshot:
     image 1 : 	![Alt text](./images/image.png)

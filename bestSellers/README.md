@@ -8,7 +8,7 @@ Important tags used:
   and in .css file i have use flex-box, position: absolute and relative, display: none for responsiveness and many more
 
 Techstack used 
-		HTML5, CSS3, (fontawesome animate.js clippy googleFonts)
+		HTML5, CSS3, (fontawesome clippy googleFonts)
 
 Screenshot:
     image 1: 	![Alt text](./images/image.png)
@@ -21,7 +21,7 @@ Screenshot:
     # for reponsiveness : in bestSeller page i have use display: none when the perticular width has been touch and add some height and width of heading tag and paragraph tag to make a font-size small
 
 Yours Learning 
-    1.HTML : The main thing i have learn in the project that how we can make a html structure because without a strong skeleton whole body is not good fit for that we need to understand how to structure navbar or cards for that we can use div under divs divs under divs for it can be properly structures
+    1.HTML : The main thing i have learn in the project that how we can make a html structure because without a strong skeleton whole body is not good fit for that we need to understand how to structure navbar or cards for that we can use div under divs divs under divs so that it can be properly structures
 
     2. Git and GitHub:  The another thing i have learn while making project is how team work on the same project at a same time with different location by using git and github. command like pulling before pushing so that our code will upadate based on that code.
 

@@ -12,7 +12,7 @@ Jaiten Sahu Sir
  1. Abhishek kumar (Captain)
     1. [Homepage](https://alex21c.github.io/AmazonClone/homepage)
  2. Vipul Damre
-    1. [Sell](https://alex21c.github.io/AmazonClone/sell)
+    1. [Sell](https://alex21c.github.io/AmazonClone/sell/README/)
     2. [Best Sellers](https://alex21c.github.io/AmazonClone/bestSellers/index.html)
  3. Savita
     1. [Prime](https://alex21c.github.io/AmazonClone/prime/README/)

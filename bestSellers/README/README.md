@@ -11,8 +11,8 @@ Techstack used
 		HTML5, CSS3, (fontawesome clippy googleFonts)
 
 Screenshots:
-    image 1: 	![Alt text](./images/image.png)
-    image 2:  ![Alt text](./images/image1.png)
+    image 1: 	![Alt text](../images/image.png)
+    image 2:  ![Alt text](../images/image1.png)
 
     -- in the above image i have use flex box for positioning like in the left side 1 div and right side 1 div, so in left div i use ul and li for links and in right div again create a div section for cards and in that cards div again create div for single card so that how i made the section of my web page
 

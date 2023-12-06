@@ -50,7 +50,7 @@
  --maxWidthOfMainContentWrapperDiv: 100rem;
 
  --rating-stars-nextStrip: -19px;
- --homepageCarouselSpeed:15s;  /* 15frames x nSec | Default is 60s */ 
+ --homepageCarouselSpeed:60s;  /* 15frames x nSec | Default is 60s */ 
  
  
  

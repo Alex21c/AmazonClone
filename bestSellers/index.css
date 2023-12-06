@@ -414,3 +414,122 @@ body{
  .seller-bottom-section .para2 p a:hover{
   color:#e48236
  }
+
+
+
+
+
+
+/* @media queries  */
+
+
+@media (max-width: 1215px) {
+  .product7{
+    display: none;
+  }
+}
+
+
+@media (max-width: 1130px) {
+  .product6{
+    display: none;
+  }
+
+  .products-section .products .item4{
+    display: none;
+  }
+}
+
+
+@media (max-width: 890px) {
+  .product5{
+    display: none;
+  }
+
+  .products-section .products .item3{
+    display: none;
+  }
+
+  .seller-section .seller-links h3{
+    font-size: 2.4vmin;
+  }
+
+  .seller-section .seller-links ul li{
+    font-size: 1.8vmin;
+  }
+}
+
+
+@media (max-width: 720px) {
+  .product4{
+    display: none;
+  }
+
+  .products-section .products .item2{
+    display: none;
+  }
+
+  .section1-heading h2{
+    font-size: 3vmin;
+  }
+
+  .section1-heading a{
+    font-size: 1.5vmin;
+  }
+
+  .products-section1-heading .products-section1-sider{
+    font-size: 1.5vmin;
+  }
+
+}
+
+
+@media (max-width: 550px) {
+  .product3{
+    display: none;
+  }
+}
+
+
+@media (max-width: 430px) {
+  .product2{
+    display: none;
+  }
+
+  .products-section .products .product{
+    width: 54vmin;
+  }
+
+  .products-section .products .product p{
+    font-size: 2.4vmin;
+  }
+
+  .products-section .products .product .rating p{
+    font-size: 2vmin;
+  }
+
+  .products-section .side-btn{
+    width: 1.4%;
+    border-radius: 1px;
+   }
+
+   .products-section .side-btn .btn i{
+    height: 22px;
+    width: 20px;
+   }
+
+   .seller-bottom-section .btn button{
+    height: 6vmin;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+

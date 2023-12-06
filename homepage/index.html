@@ -672,6 +672,9 @@
           <a href="#">See all offers</a>
         </div>
         <div class="dealsOrOffers">
+          <button class="scrollLeft"  onclick="scrollLeftCurrentDealsOrOffer(this)">
+            <i class="fa-solid fa-chevron-left"></i>            
+          </button>
           <div class="dealOrOfferImgOnly">
             <img src="Images/kitchenAndDiningProducts/measuringCupAndSpoonForSpices.jpg" alt="measuringCupAndSpoonForSpices" loading="lazy">
           </div>
@@ -714,7 +717,9 @@
           <div class="dealOrOfferImgOnly">
             <img src="Images/kitchenAndDiningProducts/gasSaverJali.jpg" alt="gasSaverJali" loading="lazy">
           </div>
-
+          <button class="scrollRight"  onclick="scrollRightCurrentDealsOrOffer(this)">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
         </div><!-- End of wrapper div-->
       </section> <!-- End of section#kitchenAndDiningProducts-->
 
@@ -764,6 +769,7 @@
           <div class="dealOrOfferImgOnly">
             <img src="Images/upto60PercentOffCarAndBikeAccessoriesAndMore/engineOil.jpg" alt="engineOil" loading="lazy">
           </div>
+          
 
         </div><!-- End of wrapper div-->
       </section> <!-- End of section#upto60PercentOffCarAndBikeAccessoriesAndMore-->
@@ -1899,7 +1905,11 @@
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
     }
-</script>
-    
+  </script>
+  
+
+  <!-- Homepage specific -->
+  <script src="index.js"></script>
+
   </body>
 </html>

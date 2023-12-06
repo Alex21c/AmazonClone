@@ -4,13 +4,13 @@ Vipul Damre
 hosted link: https://alex21c.github.io/AmazonClone/bestSellers/index.html
 
 Important tags used:
-  mostly in .html file i have used nested div tags for proper positioning
+  mostly in .html file i have used nested div tags for proper positioning and others tags like  p, span strong, h1, h2, h3, h4, ul, li etc.
   and in .css file i have use flex-box, position: absolute and relative, display: none for responsiveness and many more
 
 Techstack used 
 		HTML5, CSS3, (fontawesome clippy googleFonts)
 
-Screenshot:
+Screenshots:
     image 1: 	![Alt text](./images/image.png)
     image 2:  ![Alt text](./images/image1.png)
 

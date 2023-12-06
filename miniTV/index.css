@@ -83,7 +83,6 @@ figure>img {
     animation-name: imgslider;
     animation-duration: 30s;
     animation-iteration-count: infinite;
-    animation-delay: 3s;
 
 }
 
@@ -239,6 +238,31 @@ figure>img {
     width: 30px;
 }
 
+.topRated_imdb{
+    padding: 45px;
+    background-color: #070d0e;
+}
+
+.topRated_imdb h2{
+    padding-bottom: 40px;
+    padding-left: 40px;
+    color: #d6d6d7;
+}
+
+/*Last section of the main content*/
+.imdbrated{
+    display: flex;
+    justify-content: space-between;
+}
+.imdbrated img{
+    border-radius: 6px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imdbrated img:hover {
+    transform: scale(1.3);
+}
+
 /*css for Footer container */
 .footer_container {
     display: flex;
@@ -275,7 +299,7 @@ figure>img {
     background-color: #1a2224;
 }
 
-/*below footer*/
+/*Footer 2nd part*/
 .desc {
     display: flex;
     color: #3b4240;
@@ -287,38 +311,4 @@ figure>img {
 .items {
     font-size: 10px;
     background-color: #0f1516;
-}
-
-
-@media only screen and (max-width: 425px) {
-    .container {
-        flex-direction: column;
-        align-items: flex-start;
-        height: auto;
-    }
-
-    .left_header {
-        margin-bottom: 10px;
-    }
-
-    figure>img {
-        margin: 0;
-    }
-
-    .middle_header {
-        order: 3;
-        margin-top: 10px;
-        text-align: center;
-    }
-
-    .right_header {
-        order: 2;
-    }
-}
-
-@media only screen and (min-width: 426px) and (max-width: 900px) {
-    .middle_header>a {
-        font-size: 12px;
-        margin: 8px 10px;
-    }
 }

@@ -15,7 +15,7 @@ Jaiten Sahu Sir
     1. [Sell](https://alex21c.github.io/AmazonClone/sell)
     2. [Best Sellers](https://alex21c.github.io/AmazonClone/bestSellers/index.html)
  3. Savita
-    1. [Prime](https://alex21c.github.io/AmazonClone/prime)
+    1. [Prime](https://alex21c.github.io/AmazonClone/prime/README/)
     2. [Customer Service](https://alex21c.github.io/AmazonClone/customerService/index.html)
  4. Jitender Mangla
     1. [Customer Service](https://alex21c.github.io/AmazonClone/customerService/index.html)       

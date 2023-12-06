@@ -154,6 +154,10 @@ header#pageHeader div.wrapperLogoAndAlternateNav{
   grid-column-start: 2;
   grid-column-end: 3;
 }
+header#pageHeader a.linkingToGoogle_translate_element{
+  text-decoration: none;
+  color:white;
+}
 header#pageHeader .wrapperLogoAndAlternateNav a{
   text-decoration: none;
   color:var(--color-white);
@@ -505,6 +509,8 @@ footer#pageFooter div.footer-main-sec div.button select:focus{
 footer#pageFooter div.footer-main-sec div.button .fa-globe{
   position: absolute;
   margin: 1rem;
+  top: -0.1rem;
+  font-size: 1.5rem;
 }
 footer#pageFooter div.footer-main-sec div.wrapperLogoAndLangsButton{
  display: flex;

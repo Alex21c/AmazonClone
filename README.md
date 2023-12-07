@@ -1,10 +1,26 @@
 # Geekster Module 3 Geekathon01 by Team Amazon (Mentorship by Jaiten Sahu Sir)
 ## Project Information
-Implementing [Amazon](https://www.amazon.in/) User Interface ! 
+Implemented [Amazon.in](https://www.amazon.in/) Website User Interface ! 
 
-![AmazonClone](./Assests/LinkedInPost/thumbnail.png)
+*Amazon is a globally renowned e-commerce platform that operates as an expansive online marketplace. Established in 1994, the platform has evolved into a comprehensive digital retail space, offering an extensive array of products ranging from books and electronics to fashion, home goods, and beyond. Functioning on a marketplace model, Amazon accommodates third-party sellers, enabling them to list and sell their products alongside Amazon's proprietary offerings.*
+
+![Amazon Website User Interface Clone](./Assests/LinkedInPost/thumbnail.png)
 ## Hosted Link:
- + [AmazonClone](https://alex21c.github.io/AmazonClone/homepage/)
+ + [Amazon.in Website User Interface Clone](https://alex21c.github.io/AmazonClone/homepage/)
+
+## Tech Stack Used
+1. [HTML5](https://en.wikipedia.org/wiki/HTML5)
+2. [CSS3](https://en.wikipedia.org/wiki/CSS)
+3. [JavaScript ES6](https://en.wikipedia.org/wiki/JavaScript)
+4. [Git](https://en.wikipedia.org/wiki/Git)
+5. [AOS](https://michalsnik.github.io/aos/) - Animation on scroll
+6. [Owl carousel](https://owlcarousel2.github.io/OwlCarousel2/)
+7. [Clippy](https://bennettfeely.com/clippy/) (css clip-path maker)
+8. [Font Awesome](https://fontawesome.com/icons)
+9. [Google Fonts](https://fonts.google.com/)
+10. [Google Translate](https://translate.google.co.in/)
+11. [W3C Validator](https://validator.w3.org/)
+12. [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Mentor:
 [Jaiten Sahu](https://www.linkedin.com/in/jaiten-sahu/) Sir 

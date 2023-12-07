@@ -1,5 +1,7 @@
 Savita Patidar
 
+Hosted link : https://alex21c.github.io/AmazonClone/prime/index.html
+
 Amazon Prime Landing Page : This is a sample HTML code for an Amazon Prime landing page, showcasing the benefits and features of Amazon Prime membership. The code is styled using CSS to create a responsive and visually appealing layout.
 
 

@@ -197,7 +197,8 @@ hr {
 
 .sec-box {
   display: flex;
-  margin-left: 130px;
+  justify-content: center;
+  align-items: center;
 }
 
 .sec-box .container1 .img1{

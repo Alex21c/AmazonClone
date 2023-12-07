@@ -181,6 +181,7 @@ body{
   flex-direction: column;
   width: 225px;
   height: 100%;
+  overflow: hidden;
  }
 
  .products-section .products .product:hover{
@@ -244,6 +245,14 @@ body{
   width: 100%;
   padding-bottom: 2vmin;
  }
+
+ .products-section .products .product img:hover{
+  animation: pulse 800ms ease-in-out;
+ }
+
+ /* .products-section .products .product:hover{
+  animation: pulse 800ms ease-in-out;
+ } */
 
  .seller-products .about{
     margin: 2rem 0;
@@ -309,8 +318,13 @@ body{
   flex-direction: column;
   width: 160px;
   cursor: pointer;
-
 }
+
+.seller-section2-items .seller-section2-item:hover{
+  animation: pulse 800ms ease-in-out;
+}
+
+
 
 .seller-section2-items .seller-section2-item p:hover{
   color: #e48236;
@@ -491,6 +505,17 @@ body{
 }
 
 
+@media (max-width: 520px) {
+  .seller-links{
+    display: none;
+  }
+
+  .seller-products{
+    width: 100%;
+  }
+}
+
+
 @media (max-width: 430px) {
   .product2{
     display: none;
@@ -501,11 +526,11 @@ body{
   }
 
   .products-section .products .product p{
-    font-size: 2.4vmin;
+    font-size: 2.8vmin;
   }
 
   .products-section .products .product .rating p{
-    font-size: 2vmin;
+    font-size: 2.4vmin;
   }
 
   .products-section .side-btn{
@@ -530,6 +555,15 @@ body{
 
 
 
+/* animations  */
 
 
+@keyframes pulse {
+  from, to{
+    scale: 1;
+  }
 
+  50%{
+    scale: 1.08;
+  }
+}

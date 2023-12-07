@@ -28,6 +28,7 @@
     <!-- #4/6 Teammate, You Need to update yours style sheet here, just replace index.css  -->
 
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -280,7 +281,7 @@
         </div>
         <div class="sell-hero-section">
           <div class="sell-hero-section1">
-            <h3>Become a seller on
+            <h3 class="heading3">Become a seller on
               Amazon</h3>
             <div class="sell-btn">
               <button>Start Selling</button>
@@ -300,21 +301,21 @@
           </div>
 
           <div class="cards">
-            <div class="card">
+            <div class="card" data-aos="zoom-in-up">
               <div class="card-content">
                 <img src="images/sellCard1.svg" alt="card1-img">
                 <h3>Receive timely payments</h3>
                 <p>Amazon ensures your payments are deposited directly in your bank account within 7-14 days.</p>
               </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="zoom-in-up">
               <div class="card-content">
                 <img src="images/sellCard2.svg" alt="card2-img">
                 <h3>Reach crores of customers</h3>
                 <p>Sell to crores of engaged customer visiting Amazon.in on desktop and through our mobile app.</p>
               </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="zoom-in-up">
               <div class="card-content">
                 <img src="images/sellCard3.svg" alt="card3-img">
                 <h3>Stress-free delivery</h3>
@@ -565,6 +566,19 @@
         new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
       }
     </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://unpkg.com/scrollreveal">
+    </script>
+
+    <script>
+      ScrollReveal().reveal('.heading3');
+    </script>
+
 
 </body>
 

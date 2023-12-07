@@ -181,6 +181,7 @@ body{
   flex-direction: column;
   width: 225px;
   height: 100%;
+  overflow: hidden;
  }
 
  .products-section .products .product:hover{
@@ -243,6 +244,11 @@ body{
  .products-section .products .product img{
   width: 100%;
   padding-bottom: 2vmin;
+  animation: pulse 800ms ease-in-out;
+ }
+
+ .products-section .products .product:hover{
+  animation: pulse 800ms ease-in-out;
  }
 
  .seller-products .about{
@@ -309,7 +315,14 @@ body{
   flex-direction: column;
   width: 160px;
   cursor: pointer;
+}
 
+.seller-section2-items .seller-section2-item:hover{
+  height: 100%;
+  flex-direction: column;
+  width: 160px;
+  cursor: pointer;
+  animation: pulse 800ms ease-in-out;
 }
 
 .seller-section2-items .seller-section2-item p:hover{
@@ -530,6 +543,15 @@ body{
 
 
 
+/* animations  */
 
 
+@keyframes pulse {
+  from, to{
+    scale: 1;
+  }
 
+  50%{
+    scale: 1.08;
+  }
+}

@@ -67,7 +67,7 @@ Implemented [Amazon.in](https://www.amazon.in/) Website User Interface !
 2. [Jaiten Sahu](https://www.linkedin.com/in/jaiten-sahu/) Sir (Mentor \| Geekster Geekathon Project Module #3 \| Amazon Clone)
 3. [Akhil Sharma](https://www.linkedin.com/in/akhil-sh06/) Sir (Educator \| Geekster MERN Stack Bootcamp Module #3)
 4. [Ankit Singh](https://www.linkedin.com/in/asingh88029/) Sir (TA \| Booster Session \| Geekster MERN Stack Bootcamp Module #3)
-5. Our Success Managers: Yatharth Sir, Aanchal Parnami Mam
+5. [Yatharth Sharma](https://www.linkedin.com/in/yatharth-sharma-b28a8a1a5/) Sir, Aanchal Parnami Mam (Our Success Managers)
 
 ## Website UI
 ### 1. Homepage

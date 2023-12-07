@@ -27,7 +27,7 @@ header{
 	*grid-layout* for *header* when *screen-max-width* reaches 860px, before that **flex** was used
   4. using ***link rel=icon*** to import favicon
 ```` 
-<link rel="icon" href="favicon.svg">
+<link rel="icon" href="../Assests/Common/Images/pageHeaderAndFooter/favicon.ico">
 ````
   5. 404 page
 ````

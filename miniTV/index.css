@@ -73,7 +73,6 @@ figure>img {
 .hero_section {
     overflow: hidden;
     width: 100vw;
-    height: 45vh;
 }
 
 /* Animation properties used here */
@@ -88,7 +87,6 @@ figure>img {
 
 .crousel>img {
     width: 100vw;
-    height: 45vh;
     float: left;
 }
 
@@ -198,7 +196,6 @@ figure>img {
     justify-content: center;
     width: calc(100% - 20px);
     margin-right: 20px;
-
 }
 
 .owl-carousel .slide-content img {
@@ -238,23 +235,39 @@ figure>img {
     width: 30px;
 }
 
-.topRated_imdb{
+.topRated_imdb {
     padding: 45px;
     background-color: #070d0e;
 }
 
-.topRated_imdb h2{
+.topRated_imdb h2 {
     padding-bottom: 40px;
     padding-left: 40px;
     color: #d6d6d7;
 }
 
-/*Last section of the main content*/
-.imdbrated{
-    display: flex;
-    justify-content: space-between;
+/* Last section of the main content */
+.topRated_imdb,
+.footer_container,
+.desc {
+    padding: 20px;
 }
-.imdbrated img{
+
+.imdbrated {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.imdbrated div {
+    width: 100%;
+    max-width: calc(50% - 15px);
+    margin-bottom: 15px;
+}
+
+.imdbrated img {
+    width: 100%;
+    height: auto;
     border-radius: 6px;
     transition: transform 0.3s ease-in-out;
 }
@@ -263,7 +276,7 @@ figure>img {
     transform: scale(1.3);
 }
 
-/*css for Footer container */
+/* CSS for Footer container */
 .footer_container {
     display: flex;
     justify-content: space-between;
@@ -285,7 +298,6 @@ figure>img {
 .footer_ad img {
     margin-right: 10px;
 }
-
 
 .footer_right {
     display: flex;
@@ -312,3 +324,35 @@ figure>img {
     font-size: 10px;
     background-color: #0f1516;
 }
+
+/* Media queries for responsiveness */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .imdbrated div {
+        max-width: calc(50% - 15px);
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    
+    .imdbrated div {
+        max-width: calc(33.3333% - 15px);
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+
+    .imdbrated div {
+        max-width: calc(25% - 15px);
+    }
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    .imdbrated div {
+        max-width: calc(50% - 15px);
+    }
+}
+

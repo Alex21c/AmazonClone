@@ -23,9 +23,9 @@ form:focus-within{
       z-index:999;
     }
 ````
-  3. grid layout provides flexibilty  
-    grid-layout: for header when screen-max-width reaches 860px, before that flex was used
-  4. using link rel=icon to import favicon
+  3. **grid layout** provides flexibilty  
+	*grid-layout* for *header* when *screen-max-width* reaches 860px, before that **flex** was used
+  4. using ***link rel=icon*** to import favicon
 ```` 
     <link rel="icon" href="favicon.svg">
 ````
@@ -38,12 +38,12 @@ form:focus-within{
    <meta http-equiv="refresh" content="2;url=/AmazonClone/homepage/index.html">
 ````
   7. taking fresh offline Snapshot of dynamics website then start working on it
-  8. Solution for Haader Primary Navigation clipping issue while resizing window
+  8. Solution for ***Header Primary Navigation*** clipping issue while resizing window
 ````
 let right = li.getBoundingClientRect().right;
 window.innerWidth
 ````
-  9. animation keyframes can be used to create carousel
+  9. Animation ***keyframes*** were used for creating ***Carousel***
 ````
       main div#wrapperMainContent{
         background-repeat: no-repeat;
@@ -70,11 +70,11 @@ window.innerWidth
         }    
     }
 ````
-  10. for transition from one image to another this animation timing function works better this carousel
+  10. for transition from one image to another this ***step-end animation timing function** works better for the carousel
 ````
     animation-timing-function: step-end;
 ````
-  11. this is how to add three dots for long long heading inside card
+  11. this is how to ***added three dots(ellipsis)*** for long long heading inside card
 ````
     div.dealsOrOffers div.dealOrOffer h3{  
       overflow: hidden;
@@ -82,16 +82,16 @@ window.innerWidth
       text-overflow: ellipsis;
     }
 ````  
-  12. Box shadow inset can be used to highlight current item,
+  12. ***Box shadow inset*** can be used to highlight current item,
 ````
       box-shadow: inset 0 0 0 3px #007185;
 ````
-  13. Used Clippy to generate clippath for the bestSeller polygon inside recommendations (Inspired by your browsing history)
+  13. Used [Clippy](https://bennettfeely.com/clippy/) to generate ***clippath*** for the bestSeller polygon inside recommendations (Inspired by your browsing history)
 ````
-      https://bennettfeely.com/clippy/
+      
       clip-path: polygon(100% 0%, 91% 50%, 100% 100%, 0 99%, 0% 50%, 0 0);
 ````
-  14. website lang translation feature was added using google translate
+  14. website language translation feature was added using ***google translate***
 ````
     <div id="google_translate_element"></div>
     <!-- Google Translate -->
@@ -102,12 +102,12 @@ window.innerWidth
         }
       </script>
 ````
-  15. I learnt new property of javascript, using it the overflow content of container(flex here) can be scrolled left and right
+  15. I learnt new property ***(container.scrollLeft)*** of javascript, using it i scrolled left and right the overflow content of container(flex) 
 ````
       container.scrollLeft += 200 //to scroll Right
       container.scrollLeft += 200 // to scroll left
 ````
-  16. `:active psedo class` can be used to deal with touch devices like tablet and smartphones
+  16. ***:active psedo class*** can be used to deal with touch devices like tablet and smartphones
 ````
       div.dealsOrOffers:active button.scrollLeft,
       div.dealsOrOffers:active button.scrollRight{

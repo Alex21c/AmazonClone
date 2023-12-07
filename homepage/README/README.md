@@ -10,48 +10,49 @@
 
 ## Important tags used
 
-  1. focus-within
+### 1. focus-within
 ```css	
 form:focus-within{
 	// to change form border color whenever form is in focus
 }
 ```
   
-  2. sticky position
+### 2. sticky position
 ```css
 header{
 	position:sticky;
 	z-index:999;
 }
 ```
-  3. **grid layout** provides flexibilty  
+
+### 3. **grid layout** provides flexibilty  
 	*grid-layout* for *header* when *screen-max-width* reaches 860px, before that **flex** was used
   
-  4. using ***link rel=icon*** to import favicon
+### 4. using ***link rel=icon*** to import favicon
 
 ```html
 <link rel="icon" href="../Assests/Common/Images/pageHeaderAndFooter/favicon.ico">
 ```
   
-  5. 404 page
+### 5. 404 page
 ```html
 404.html
 ```
   
-  6. Redirect to homepage after 2 seconds of page load
+### 6. Redirect to homepage after 2 seconds of page load
 ```
 m e t a http-equiv="refresh" content="2;url=/AmazonClone/homepage/index.html"
 ```
   
-  7. taking fresh offline Snapshot of dynamics website then start working on it
+### 7. taking fresh offline Snapshot of dynamics website then start working on it
   
-  8. Solution for ***Header Primary Navigation*** clipping issue while resizing window
+### 8. Solution for ***Header Primary Navigation*** clipping issue while resizing window
 ```javascript
 let right = li.getBoundingClientRect().right;
 window.innerWidth
 ```
   
-  9. Animation ***keyframes*** were used for creating ***Carousel***
+### 9. Animation ***keyframes*** were used for creating ***Carousel***
 
 ```css
 main div#wrapperMainContent{
@@ -82,12 +83,12 @@ main div#wrapperMainContent{
 }
 ```
   
-  10. for transition from one image to another this ***step-end animation timing function** works better for the carousel
+### 10. for transition from one image to another this ***step-end animation timing function** works better for the carousel
 ```css
 animation-timing-function: step-end;
 ```
   
-  11. this is how to ***added three dots(ellipsis)*** for long long heading inside card
+### 11. this is how to ***added three dots(ellipsis)*** for long long heading inside card
 ```css
 div.dealsOrOffers div.dealOrOffer h3{  
 	overflow: hidden;
@@ -96,17 +97,17 @@ div.dealsOrOffers div.dealOrOffer h3{
 }
 ```  
   
-  12. ***Box shadow inset*** can be used to highlight current item,
+### 12. ***Box shadow inset*** can be used to highlight current item,
 ```css
 box-shadow: inset 0 0 0 3px #007185;
 ```
   
-  13. Used [Clippy](https://bennettfeely.com/clippy/) to generate ***clippath*** for the bestSeller polygon inside recommendations (Inspired by your browsing history)
+### 13. Used [Clippy](https://bennettfeely.com/clippy/) to generate ***clippath*** for the bestSeller polygon inside recommendations (Inspired by your browsing history)
 ```css
 clip-path: polygon(100% 0%, 91% 50%, 100% 100%, 0 99%, 0% 50%, 0 0);
 ```
   
-  14. website language translation feature was added using ***google translate***
+### 14. website language translation feature was added using ***google translate***
 ```html
 <div id="google_translate_element"></div>
 <!-- Google Translate -->
@@ -118,13 +119,13 @@ clip-path: polygon(100% 0%, 91% 50%, 100% 100%, 0 99%, 0% 50%, 0 0);
 	</script>
 ```
   
-  15. I learnt new property ***(container.scrollLeft)*** of javascript, using it i scrolled left and right the overflow content of container(flex) 
+### 15. I learnt new property ***(container.scrollLeft)*** of javascript, using it i scrolled left and right the overflow content of container(flex) 
 ```javascript
 container.scrollLeft += 200 //to scroll Right
 container.scrollLeft += 200 // to scroll left
 ```
   
-  16. ***:active psedo class*** can be used to deal with touch devices like tablet and smartphones
+### 16. ***:active psedo class*** can be used to deal with touch devices like tablet and smartphones
 ```css
 div.dealsOrOffers:active button.scrollLeft,
 div.dealsOrOffers:active button.scrollRight{

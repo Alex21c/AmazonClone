@@ -17,7 +17,6 @@ body {
     display: flex;
     background-color: #1a2224;
     color: #fff;
-    height: 12vh;
     padding: 10px 30px;
     justify-content: space-between;
     align-items: center;
@@ -31,10 +30,10 @@ body {
 
 /* Giving Margin to the Logo in navBar */
 figure>img {
-    margin-left: 31px;
-    margin-right: 35px;
-    height: 32px;
-    width: 157px;
+    margin-left: 3vmin;
+    margin-right: 3vmin;
+    height: 7vmin;
+    width: 28vmin;
 }
 
 /* This is for links in the navBar */
@@ -43,7 +42,7 @@ figure>img {
     color: #fff;
     text-decoration: none;
     margin: 10px 12px;
-    font-size: 14px;
+    font-size: 2vmin;
     font-weight: bold;
     padding-left: 10px;
 }
@@ -62,11 +61,11 @@ figure>img {
 
 /* This is for right icons */
 .right_header {
-    padding: 30px;
+    padding: 2vmin;
 }
 
 .right_header svg {
-    margin: 20px;
+    margin: 2vmin;
 }
 
 /* This is the hero section where crousel is happening by keyframe */
@@ -281,13 +280,24 @@ figure>img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     background-color: #0f1516;
-    padding: 20px 50px;
-    height: 28vh;
+    padding: 2vmin 5vmin;
 }
 
 .footer_left {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_left .img1{
+    height: 10vmin;
+    width: 26vmin;
+}
+
+.footer_left .img2{
+    height: 5vmin;
+    width: 46vmin;
 }
 
 .footer_ad {
@@ -295,8 +305,14 @@ figure>img {
     display: flex;
 }
 
-.footer_ad img {
-    margin-right: 10px;
+.footer_ad .footer-ad-img {
+    height: 24vmin;
+    width: 24vmin;
+}
+
+.footer_ad .footer-ad-img img{
+    height: 100%;
+    width: 100%;
 }
 
 .footer_right {
@@ -356,3 +372,50 @@ figure>img {
     }
 }
 
+
+
+@media (max-width: 200px)  and (max-width: 900px){
+    .footer_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0f1516;
+        padding: 2vmin 5vmin;
+    }
+}
+
+
+
+
+@media (max-width: 860px) {
+    .middle_header .nav-item6{
+        display: none;
+    }
+}
+
+
+@media (max-width: 775px) {
+    .middle_header .nav-item5{
+        display: none;
+    }
+}
+
+
+@media (max-width: 690px) {
+    .middle_header .nav-item4{
+        display: none;
+    }
+}
+
+
+@media (max-width: 615px) {
+    .middle_header .nav-item3{
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .middle_header .nav-item2{
+        display: none;
+    }
+}

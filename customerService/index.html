@@ -22,6 +22,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
+    <!-- AOS library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- Common Header and footer section CSS -->
   <link rel="stylesheet" href="../Assests/Common/CSS/headerAndFooterV2.css">
   <link rel="stylesheet" href="../Assests/fontAwesomeProIcons/fontAwesomeIcons.css">
@@ -316,10 +319,8 @@
 
     <div class="second-section">
       <div class="container">
-        <div class="con-img" style="background-image: url('images/Box-t3.png');"></div>
+        <div class="con-img" data-aos="fade-up" style="background-image: url('images/Box-t3.png');"></div>
         <div class="con-content">
-
-
           <h3>Your Orders </h3>
           <p>Track Packages</p>
           <p>Edit or cancel Orders</p>
@@ -327,7 +328,7 @@
       </div>
 
       <div class="container">
-        <div class="con-img"
+        <div class="con-img" data-aos="fade-up"
           style="background-image: url('https://m.media-amazon.com/images/G/31/x-locale/cs/help/images/gateway/returns-box-blue.png');">
         </div>
         <div class="con-content">
@@ -341,7 +342,7 @@
 
       </div>
       <div class="container">
-        <div class="con-img"
+        <div class="con-img" data-aos="fade-up"
           style="background-image: url('https://m.media-amazon.com/images/G/31/x-locale/cs/help/images/gateway/manage-address.png');">
         </div>
         <div class="con-content">
@@ -354,7 +355,7 @@
       </div>
 
       <div class="container">
-        <div class="con-img"
+        <div class="con-img" data-aos="fade-up"
           style="background-image: url('https://m.media-amazon.com/images/G/31/x-locale/cs/help/images/gateway/Prime_clear-bg.png');">
         </div>
         <div class="con-content">
@@ -367,7 +368,7 @@
       </div>
 
       <div class="container">
-        <div class="con-img"
+        <div class="con-img" data-aos="fade-up"
           style="background-image: url('https://m.media-amazon.com/images/G/31/x-locale/cs/help/images/gateway/Payments_clear-bg-t3.png');">
         </div>
         <div class="con-content">
@@ -380,7 +381,7 @@
       </div>
 
       <div class="container">
-        <div class="con-img"
+        <div class="con-img" data-aos="fade-up"
           style="background-image: url('https://m.media-amazon.com/images/G/31/x-locale/cs/help/images/gateway/IN-your-account.png');">
         </div>
         <div class="con-content">
@@ -397,7 +398,7 @@
     <div class="sec-box">
 
       <div class="container1">
-        <div class="img1"
+        <div class="img1" data-aos="fade-up"
           style="background-image: url('https://m.media-amazon.com/images/G/31/x-locale/cs/help/images/gateway/faq.png');">
         </div>
         <div class="content">
@@ -410,7 +411,7 @@
       </div>
 
       <div class="container1">
-        <div class="img1"
+        <div class="img1" data-aos="fade-up"
           style="background-image: url('https://m.media-amazon.com/images/G/31/x-locale/cs/help/images/gateway/family_device.png');">
         </div>
         <div class="content">
@@ -667,6 +668,10 @@
     }
   </script>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

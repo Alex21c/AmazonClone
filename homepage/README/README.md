@@ -43,7 +43,7 @@ meta http-equiv="refresh" content="2;url=/AmazonClone/homepage/index.html"
 let right = li.getBoundingClientRect().right;
 window.innerWidth
 ````
-  9. Animation ***keyframes*** were used for creating ***Carousel***
+  9. Animation ***keyframes*** were used for creating ***Carousel*** testing123
 ````
 main div#wrapperMainContent{
 	background-repeat: no-repeat;

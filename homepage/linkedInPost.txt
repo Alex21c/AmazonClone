@@ -7,7 +7,7 @@ https://alex21c.github.io/AmazonClone/homepage/
 GitHub Repository Link:
 https://github.com/Alex21c/AmazonClone
 
-Features
+Key Features:
 1. Mobile/Tablet friendly Responsive UI
 2. Google Translate
 3. Interactive components using Javascript
@@ -16,7 +16,7 @@ Features
 6. image carousel designed using CSS3 Animations
 7. flexible design using CSS3 Grids & flexbox
 
-Tech Stack Used
+Tech Stack Used:
 1. HTML5
 2. CSS3
 3. JavaScript ES6
@@ -55,9 +55,9 @@ Team Info.:
 
 Credits:
 1. Geekster 
-2. Jaiten Sahu Sir (Mentor | Geekster Geekathon Project Module #3 | Amazon Clone)
+2. Jaiten Sahu Sir (Mentor | Geekster Geekathon Project Module #3 | Amazon.in Website User Interface Clone)
 3. Akhil Sharma Sir (Educator | Geekster MERN Stack Bootcamp Module #3)
 4. Ankit Singh Sir (TA | Booster Session | Geekster MERN Stack Bootcamp Module #3)
 5. Yatharth Sharma Sir, Aanchal Parnami Mam (Our Success Managers)
 
-#mernstackbootcamp #geekster #geekathon #project #html5 #css3 #javascript #git #github #responsivewebdesign 
+#geekster #mernstackbootcamp #geekathon #project #html5 #css3 #javascript #git #github #responsivewebdesign #geekstermodule3geekathon #mernstack #amazon #alex21c

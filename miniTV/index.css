@@ -384,9 +384,6 @@ figure>img {
     }
 }
 
-
-
-
 @media (max-width: 860px) {
     .middle_header .nav-item6{
         display: none;

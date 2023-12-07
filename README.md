@@ -2,6 +2,7 @@
 ## Project Information
 Implementing [Amazon](https://www.amazon.in/) User Interface ! 
 
+![AmazonClone](./Assests/LinkedInPost/thumbnail.png)
 ## Hosted Link:
  + [AmazonClone](https://alex21c.github.io/AmazonClone/homepage/)
 

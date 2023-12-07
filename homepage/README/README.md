@@ -135,8 +135,47 @@ div.dealsOrOffers:active button.scrollRight{
     `container.scrollLeft += 200`
   16. for desktop and laptops `:hover` works good, but for touch devices like smartphones and tablets, the `:active pseudo class` works good, `:active` means whenever user presses the mouse button or tap on screen
 
+
 ## Credits
 1. [Geekster](https://www.geekster.in/)
 2. [Jaiten Sahu Sir](https://www.linkedin.com/in/jaiten-sahu/) (Mentor \| Geekster Geekathon Project Module #3 \| Amazon Clone)
 3. [Akhil Sharma Sir](https://www.linkedin.com/in/akhil-sh06/) (Educator \| Geekster MERN Stack Bootcamp Module #3)
 4. [Ankit Singh Sir](https://www.linkedin.com/in/asingh88029/) (TA \| Booster Session \| Geekster MERN Stack Bootcamp Module #3)
+
+## Screenshots
+### 01-focusWithInOnSearchBarToMakeOutlineForEntireForm.png
+![01-focusWithInOnSearchBarToMakeOutlineForEntireForm.png](./Images/01-focusWithInOnSearchBarToMakeOutlineForEntireForm.png)
+
+### 02-stickyPageHeader
+![02-stickyPageHeader](./Images/02-stickyPageHeader.png)
+
+### 03-gridLayoutProvidesFlexibility
+![03-gridLayoutProvidesFlexibility](./Images/03-gridLayoutProvidesFlexibility.png)
+
+### 04-LinkRelToImportFaviconIcon
+![imgName](./Images/04-LinkRelToImportFaviconIcon.png)
+
+### 05-404Page
+![imgName](./Images/05-404Page.png)
+
+### 08-SolutionForHeaderNavigationClippingProblem
+![imgName](./Images/08-SolutionForHeaderNavigationClippingProblem.png)
+
+### 09-animation-usingKeyframes
+![imgName](./Images/09-animation-usingKeyframes.png)
+
+### 11-added-three-dots-ellipsis
+![11-added-three-dots-ellipsis](./Images/11-added-three-dots-ellipsis.png)
+
+### 12-boxShadowInsetForHighlightingCurrentItem
+![12-boxShadowInsetForHighlightingCurrentItem](./Images/12-boxShadowInsetForHighlightingCurrentItem.png)
+
+### 13-noOneBestSeller
+![imgName](./Images/13-noOneBestSeller.png)
+
+### 14-googleTranslate
+![14-googleTranslate](./Images/14-googleTranslate.png)
+
+### 15-containerScrollLeft
+![15-containerScrollLeft](./Images/15-containerScrollLeft.png)
+

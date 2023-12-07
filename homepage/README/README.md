@@ -35,7 +35,7 @@ form:focus-within{
 ````
   6. Redirect to homepage after 2 seconds of page load
 ````
-   <meta http-equiv="refresh" content="2;url=/AmazonClone/homepage/index.html">
+   &lt;meta http-equiv="refresh" content="2;url=/AmazonClone/homepage/index.html"&gt;
 ````
   7. taking fresh offline Snapshot of dynamics website then start working on it
   8. Solution for ***Header Primary Navigation*** clipping issue while resizing window

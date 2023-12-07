@@ -1,4 +1,4 @@
-Mayank Kumar 
+Amazon MiniTV
 
 [Mayank Kumar](https://www.linkedin.com/in/mayank-kumar-baa329217/) \| [Amazon miniTV](https://alex21c.github.io/AmazonClone/miniTV/index.html/) \| [Geekster](https://www.geekster.in/) FS-14 Batch
 

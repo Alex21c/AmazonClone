@@ -29,20 +29,23 @@ Screenshots & Description :
     hero-section :-
     image1: 
     
-    ![Alt text](../images/Screenshot%202023-12-06%20183203.png)
+![Alt text](../images/Screenshot%202023-12-06%20183203.png)
     Description: In the hero section, the flex property is utilized to align the image and paragraph in a unified direction. The design is enhanced using various CSS properties to achieve an appealing layout.
 
     main-section :-
      image2:
-
-    ![Alt text](../images/Screenshot%202023-12-06%20183213.png)
+     
+![Alt text](../images/Screenshot%202023-12-06%20183213.png)
     Description: Within the main section, the flex property is again employed to ensure a cohesive layout in a single direction. Additional CSS properties are applied to enhance the visual appeal. Notably, animations are introduced using the aos library to make images more captivating.
 
     Additional Images:-
     
      These images showcase the effective use of flex properties, CSS styling, and animations to create a visually appealing and responsive Amazon Prime landing page. The design choices aim to provide an engaging user experience and highlight the key features of Amazon Prime. 
 
-     image3: ![Alt text](../images/Screenshot%202023-12-06%20183221.png)
-     image4: ![Alt text](../images/Screenshot%202023-12-07%20125815.png)
-     image5: ![Alt text](../images/Screenshot%202023-12-07%20125856.png)
-     image6: ![Alt text](../images/Screenshot%202023-12-07%20125917.png)
+image3: ![Alt text](../images/Screenshot%202023-12-06%20183221.png)
+
+image4: ![Alt text](../images/Screenshot%202023-12-07%20125815.png)
+
+image5: ![Alt text](../images/Screenshot%202023-12-07%20125856.png)
+
+image6: ![Alt text](../images/Screenshot%202023-12-07%20125917.png)

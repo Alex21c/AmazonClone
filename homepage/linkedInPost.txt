@@ -1,0 +1,40 @@
+Implemented Amazon.in Website User Interface !
+
+Hosted Link:
+https://alex21c.github.io/AmazonClone/homepage/
+
+GitHub Repository Link:
+https://github.com/Alex21c/AmazonClone
+
+README
+https://alex21c.github.io/AmazonClone/homepage/README/
+
+Key Learnings:
+ 1. How to collaborate with team members using Git | GitHub | Vs-Code | Zoom | GoogleMeet 
+ 2. Designing Fully Responsive website with modern technologies HTML5, CSS3, CSS Media Queries
+ 3. Integrating Google Web fonts, Google Translate, Font Awesome Icons 
+ 4. Designing common responsive Header & Footer template for homepage and then sharing it among all pages
+ 5. Handing 404 Errors gracefully using 404.html
+ 6. How to gracefully redirect users from 404 not found pages to homepage
+ 7. Designing Image Carousel using only CSS3 animations & keyframes 
+ 8. Properly formatting README.md along with key learnings, screenshots, and code snippets of css, html, javascript
+ 9. Scrolling hidden content of flexes using vanilla Javascript
+10. Making Header Menu active using vanilla Javascript
+11. Rearranging flex items using grid layout in desired order (for header section)
+12. Grid layout for making cards etc.
+
+Team Info.:
+1. Myself Abhishek kumar (Homepage)
+2. Vipul Damre (Sell | Best Sellers)
+3. Vaibhav Bisht (Best Sellers)
+4. Savita (Prime | Customer Service)
+5. Jitender Mangla (Customer Service)
+6. Mayank Kumar (miniTV)
+7. Chetan Kaushik (Mobiles)
+
+Credits:
+1. Geekster 
+2. Jaiten Sahu Sir (Mentor | Geekster Geekathon Project Module #3 | Amazon Clone)
+3. Akhil Sharma Sir (Educator | Geekster MERN Stack Bootcamp Module #3)
+4. Ankit Singh Sir (TA | Booster Session | Geekster MERN Stack Bootcamp Module #3)
+5. Our Success Managers: Yatharth Sir, Aanchal Parnami Mam

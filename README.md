@@ -58,3 +58,18 @@ Implemented [Amazon.in](https://www.amazon.in/) Website User Interface !
 3. [Akhil Sharma](https://www.linkedin.com/in/akhil-sh06/) Sir (Educator \| Geekster MERN Stack Bootcamp Module #3)
 4. [Ankit Singh](https://www.linkedin.com/in/asingh88029/) Sir (TA \| Booster Session \| Geekster MERN Stack Bootcamp Module #3)
 5. Our Success Managers: Yatharth Sir, Aanchal Parnami Mam
+
+## Website UI
+### 1. Homepage
+
+### 2. Sell webpage
+
+### 3. Best Sellers webpage
+
+### 4. Prime webpage
+
+### 5. miniTV webpage
+
+### 6. Mobiles webpage
+
+### 7. Custoemr Service webpage

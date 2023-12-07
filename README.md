@@ -7,7 +7,7 @@ Implementing [Amazon](https://www.amazon.in/) User Interface !
  + [AmazonClone](https://alex21c.github.io/AmazonClone/homepage/)
 
 ## Mentor:
-Jaiten Sahu Sir 
+[Jaiten Sahu](https://www.linkedin.com/in/jaiten-sahu/) Sir 
 
 ## Team Info.
  1. [Abhishek kumar](https://www.linkedin.com/in/alex21c/) (Captain)

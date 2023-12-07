@@ -5,8 +5,18 @@ Implemented [Amazon.in](https://www.amazon.in/) Website User Interface !
 *Amazon is a globally renowned e-commerce platform that operates as an expansive online marketplace. Established in 1994, the platform has evolved into a comprehensive digital retail space, offering an extensive array of products ranging from books and electronics to fashion, home goods, and beyond. Functioning on a marketplace model, Amazon accommodates third-party sellers, enabling them to list and sell their products alongside Amazon's proprietary offerings.*
 
 ![Amazon Website User Interface Clone](./Assests/LinkedInPost/thumbnail.png)
+
 ## Hosted Link:
  + [Amazon.in Website User Interface Clone](https://alex21c.github.io/AmazonClone/homepage/)
+
+## Features
+ 1. Mobile/Tablet friendly Responsive UI
+ 2. [Google Translate](https://translate.google.co.in/)
+ 3. Interactive components using Javascript
+ 4. Semantic HTML5 markup validated using [W3C Validator](https://validator.w3.org/)
+ 5. Gracefully handling 404 webpage not found
+ 6. image carousel designed using CSS3 Animations
+ 7. flexible design using CSS3 Grids & flexbox
 
 ## Tech Stack Used
 1. [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -61,15 +71,22 @@ Implemented [Amazon.in](https://www.amazon.in/) Website User Interface !
 
 ## Website UI
 ### 1. Homepage
+![Amazon Website User Interface Clone](./Assests/LinkedInPost/thumbnail.png)
 
 ### 2. Sell webpage
+![Amazon Website User Interface Clone](./README-Images/sell-webpage.png)
 
 ### 3. Best Sellers webpage
+![Amazon Website User Interface Clone](./README-Images/bestSellers-webpage.png)
 
 ### 4. Prime webpage
+![Amazon Website User Interface Clone](./README-Images/prime-webpage.png)
 
 ### 5. miniTV webpage
+![Amazon Website User Interface Clone](./README-Images/miniTV-webpage.png)
 
 ### 6. Mobiles webpage
+![Amazon Website User Interface Clone](./README-Images/mobiles-webpage.png)
 
-### 7. Custoemr Service webpage
+### 7. Customer Service webpage
+![Amazon Website User Interface Clone](./README-Images/customer-service-webpage.png)

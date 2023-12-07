@@ -29,7 +29,7 @@ header{
   
   4. using ***link rel=icon*** to import favicon
 
-```
+```html
 <link rel="icon" href="../Assests/Common/Images/pageHeaderAndFooter/favicon.ico">
 ```
   
@@ -39,7 +39,7 @@ header{
 ```
   
   6. Redirect to homepage after 2 seconds of page load
-```html
+```
 <meta http-equiv="refresh" content="2;url=/AmazonClone/homepage/index.html">
 ```
   

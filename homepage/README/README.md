@@ -19,7 +19,7 @@ form:focus-within{
   2. sticky position
 ````
 header{
-	position:sticky:
+	position:sticky;
 	z-index:999;
 }
 ````

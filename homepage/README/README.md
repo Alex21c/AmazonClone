@@ -1,4 +1,4 @@
-# [Abhishek Kumar](https://www.linkedin.com/in/alex21c/) | [Amazon Clone (HOMEPAGE)](https://alex21c.github.io/AmazonClone/homepage/) | [Geekster](https://www.geekster.in/) FS-14 Batch
+# [Abhishek Kumar](https://www.linkedin.com/in/alex21c/) \| [Amazon Clone (HOMEPAGE)](https://alex21c.github.io/AmazonClone/homepage/) \| [Geekster](https://www.geekster.in/) FS-14 Batch
 
 ## Techstack used 
 1. [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -136,6 +136,6 @@ window.innerWidth
 
 ## Credits
 1. [Geekster](https://www.geekster.in/)
-2. [Jaiten Sahu Sir](https://www.linkedin.com/in/jaiten-sahu/) (Mentor | Geekster Geekathon Project Module #3 | Amazon Clone)
-3. [Akhil Sharma Sir](https://www.linkedin.com/in/akhil-sh06/) (Educator | Geekster MERN Stack Bootcamp Module #3)
-4. [Ankit Singh Sir](https://www.linkedin.com/in/asingh88029/) (TA | Booster Session | Geekster MERN Stack Bootcamp Module #3)
+2. [Jaiten Sahu Sir](https://www.linkedin.com/in/jaiten-sahu/) (Mentor \| Geekster Geekathon Project Module #3 \| Amazon Clone)
+3. [Akhil Sharma Sir](https://www.linkedin.com/in/akhil-sh06/) (Educator \| Geekster MERN Stack Bootcamp Module #3)
+4. [Ankit Singh Sir](https://www.linkedin.com/in/asingh88029/) (TA \| Booster Session \| Geekster MERN Stack Bootcamp Module #3)

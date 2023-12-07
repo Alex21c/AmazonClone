@@ -52,6 +52,7 @@ window.innerWidth
 ```
   
   9. Animation ***keyframes*** were used for creating ***Carousel***
+
 ```css
 main div#wrapperMainContent{
 	background-repeat: no-repeat;

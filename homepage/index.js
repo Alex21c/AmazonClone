@@ -19,3 +19,6 @@
     container.scrollLeft += scrollAmount; 
     // console.log(`scrolling right by ${scrollAmount}`);
   }
+
+
+  

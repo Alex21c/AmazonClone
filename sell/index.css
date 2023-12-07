@@ -211,6 +211,10 @@ main {
   padding: 5.2vmin;
 }
 
+.cards-section .cards .card:hover{
+  animation: pulse 800ms ease-in-out;
+}
+
 .card-content {
   width: 100%;
   height: 100%;
@@ -243,6 +247,7 @@ main {
   flex-direction: column;
   margin: auto;
 }
+
 
 .review-item .review-content {
   width: 82%;
@@ -292,6 +297,10 @@ main {
   padding: 4vmin 0vmin;
   border-radius: 10px;
   box-shadow: 0.2px 0px 25px 0.2px #d4d4d4;
+}
+
+.testimonial-section:hover{
+  animation: pulse 800ms ease-in-out;
 }
 
 
@@ -492,5 +501,22 @@ main {
   .sell-bottom-section .bottom-svg .bottom-img2 {
     width: 60vmin;
     height: 37vmin;
+  }
+}
+
+
+
+
+/* animation  */
+
+
+
+@keyframes pulse {
+  from, to{
+    scale: 1;
+  }
+
+  50%{
+    scale: 1.08;
   }
 }

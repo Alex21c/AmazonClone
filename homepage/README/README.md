@@ -29,18 +29,18 @@ header{
   
   4. using ***link rel=icon*** to import favicon
 
-```html 
+```html
 <link rel="icon" href="../Assests/Common/Images/pageHeaderAndFooter/favicon.ico">
 ```
   
   5. 404 page
-```
+```html
 404.html
 ```
   
   6. Redirect to homepage after 2 seconds of page load
 ```
-meta http-equiv="refresh" content="2;url=/AmazonClone/homepage/index.html"
+<meta http-equiv="refresh" content="2;url=/AmazonClone/homepage/index.html">
 ```
   
   7. taking fresh offline Snapshot of dynamics website then start working on it

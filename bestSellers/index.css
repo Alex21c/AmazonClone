@@ -88,6 +88,10 @@ body{
   border-right: 1px solid rgb(211, 209, 209);
  }
 
+ .seller-links ul li:hover{
+  cursor: pointer;
+ }
+
 
 
  /* seller-products */

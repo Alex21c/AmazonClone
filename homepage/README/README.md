@@ -71,7 +71,7 @@ main div#wrapperMainContent{
 		background-image: url(Images/heroSection/tShirtsAndPolos.jpg);
 	}
 
-	up to
+	/*up to*/
 
 	90%{  
 		background-image: url(Images/heroSection/fitness.jpg);

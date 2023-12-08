@@ -1,11 +1,9 @@
 <!-- Name  -->
 # Vipul Damre
 
-## Amazon Clone
- (BESTSELLERS PAGE) hosted Link: [Bestsellers](https://alex21c.github.io/AmazonClone/bestSellers/index.html)
+## Amazon Clone (BESTSELLERS PAGE) hosted Link: [Bestsellers](https://alex21c.github.io/AmazonClone/bestSellers/index.html)
 
-## Linkedin Link: 
-[Vipul Damre](https://www.linkedin.com/in/vipul-damre-2237241a7/)
+## Linkedin Link: [Vipul Damre](https://www.linkedin.com/in/vipul-damre-2237241a7/)
 
 
 
@@ -61,6 +59,8 @@ Also use a animation for this bestSellers page like hovering effect can be done 
 
 3.   for reponsiveness : in bestSeller page i have use display: none when the perticular width has been touch and add some height and width of heading tag and paragraph tag to make a font-size small
 
+4. and the rest images show the responsiveness of the webpage.
+
 
 ## Key Features: 
 
@@ -72,7 +72,7 @@ Also use a animation for this bestSellers page like hovering effect can be done 
 
 ##   Yours Learning 
 
- ### 1.  HTML :
+### 1.  HTML :
 The main thing i have learn in the project that how we can make a html structure because without a strong skeleton whole body is not good fit for that we need to understand how to structure navbar or cards for that we can use div under divs divs under divs so that it can be properly structures
 
 ###  2.  Git and GitHub:

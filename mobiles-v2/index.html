@@ -276,7 +276,7 @@
       -->
 
       <nav class="mobilesNav">
-        <ul>
+        <ul id="mobilesNavMenu">
           <li><a href="#">Electronics</a></li>
           <li><a href="#">Mobile & Accessories</a></li>
           <li><a href="#">Laptop & Accessories</a></li>
@@ -289,6 +289,28 @@
           <li><a href="#">Office & Stationery</a></li>
         </ul>
       </nav>
+      <script>
+
+        document.addEventListener('DOMContentLoaded', makeSureHeaderNavigationItemIsNotPartiallyShown2); 
+          window.addEventListener('resize', makeSureHeaderNavigationItemIsNotPartiallyShown2);
+
+          function makeSureHeaderNavigationItemIsNotPartiallyShown2(){
+            let theHeaderNavMenu = document.getElementById('mobilesNavMenu');
+            let liElements = theHeaderNavMenu.querySelectorAll("li");
+            // console.log(liElements);
+            liElements.forEach(
+              function(li) {
+                let right = li.getBoundingClientRect().right;
+                if(right >= window.innerWidth){
+                  //  console.log(li.getBoundingClientRect());
+                  li.style.opacity = 0;
+                }else if(right-20 <= window.innerWidth){
+                  li.style.opacity = 1;
+                }
+              }
+            );
+          }
+      </script>
 
       <div class="main_Block_Div">
         <div class="main_block_left_div">
@@ -686,11 +708,11 @@
 
           <!-- ** section 2 div ** -->
           <div class="right_item_section2">
-            <div class="side_btn"><i class="fa-regular fa-angle-left"></i></div>
+            <!-- <div class="side_btn"><i class="fa-regular fa-angle-left"></i></div> -->
             <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" src="./images/mobile1.jpg" alt="Narzo" >
-            <div class="side_btn2">
+            <!-- <div class="side_btn2">
               <i class="fa-regular fa-angle-right"></i>
-            </div>
+            </div> -->
           </div>
             <!-- ** section 3 div ** -->
           <div class="right_item_section3">

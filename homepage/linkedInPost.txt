@@ -1,13 +1,34 @@
 Implemented Amazon.in Website User Interface !
+Amazon is a globally renowned e-commerce platform that operates as an expansive online marketplace. Established in 1994, the platform has evolved into a comprehensive digital retail space, offering an extensive array of products ranging from books and electronics to fashion, home goods, and beyond. Functioning on a marketplace model, Amazon accommodates third-party sellers, enabling them to list and sell their products alongside Amazon's proprietary offerings.
 
-Hosted Link:
+Hosted Website Link:
 https://alex21c.github.io/AmazonClone/homepage/
 
 GitHub Repository Link:
 https://github.com/Alex21c/AmazonClone
 
-README
-https://alex21c.github.io/AmazonClone/homepage/README/
+Key Features:
+1. Mobile/Tablet friendly Responsive UI
+2. Google Translate
+3. Interactive components using Javascript
+4. Semantic HTML5 markup validated using W3C Validator
+5. Gracefully handling 404 webpage not found
+6. image carousel designed using CSS3 Animations
+7. flexible design using CSS3 Grids & flexbox
+
+Tech Stack Used:
+1. HTML5
+2. CSS3
+3. JavaScript ES6
+4. Git
+5. AOS - Animation on scroll
+6. Owl carousel
+7. Clippy (css clip-path maker)
+8. Font Awesome
+9. Google Fonts
+10 Google Translate
+11. W3C Validator
+12. Visual Studio Code
 
 Key Learnings:
  1. How to collaborate with team members using Git | GitHub | Vs-Code | Zoom | GoogleMeet 
@@ -34,7 +55,9 @@ Team Info.:
 
 Credits:
 1. Geekster 
-2. Jaiten Sahu Sir (Mentor | Geekster Geekathon Project Module #3 | Amazon Clone)
+2. Jaiten Sahu Sir (Mentor | Geekster Geekathon Project Module #3 | Amazon.in Website User Interface Clone)
 3. Akhil Sharma Sir (Educator | Geekster MERN Stack Bootcamp Module #3)
 4. Ankit Singh Sir (TA | Booster Session | Geekster MERN Stack Bootcamp Module #3)
-5. Our Success Managers: Yatharth Sir, Aanchal Parnami Mam
+5. Yatharth Sharma Sir, Aanchal Parnami Mam (Our Success Managers)
+
+#geekster #mernstackbootcamp #geekathon #project #html5 #css3 #javascript #git #github #responsivewebdesign #geekstermodule3geekathon #mernstack #amazon #alex21c

@@ -1,4 +1,6 @@
-Mayank Kumar
+Amazon MiniTV
+
+[Mayank Kumar](https://www.linkedin.com/in/mayank-kumar-baa329217/) \| [Amazon miniTV](https://alex21c.github.io/AmazonClone/miniTV/index.html/) \| [Geekster](https://www.geekster.in/) FS-14 Batch
 
 This is the simple clone of Amazon website, 
 This project, crafted using the latest web technologies such as HTML5 and CSS3, mirrors the sleek and intuitive design of Amazon's MiniTV platform. The use of HTML5 ensures a dynamic and interactive experience, while CSS3 stylings add a touch of modern elegance to the user interface and it's a Responsive website.

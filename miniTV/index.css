@@ -192,7 +192,7 @@ figure>img {
 .owl-carousel .slide {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: calc(100% - 20px);
     margin-right: 20px;
 }
@@ -311,8 +311,8 @@ figure>img {
 }
 
 .footer_ad .footer-ad-img img{
-    height: 100%;
     width: 100%;
+    margin-right: 20px;
 }
 
 .footer_right {

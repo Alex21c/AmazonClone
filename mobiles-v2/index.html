@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta name="description" content="Geekster Module #3 Geekathon 01 TeamAmazon" >
+  <meta name="keywords" content="Mobiles, Amazon Clone, Geekster, Module #3" >
+  <!-- #1/6 Teammate, kindly replace homepage with name of the page you're designing-->
+  <meta name="author" content="Chetan Kausik" >
+  <!-- #2/6 Teammate, you name goes here -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+  <title>Mobiles</title>
+  <!-- #3/6 Teammate, kindly update title with the actaul title from amazon page, for the page you're designing -->
+
+  <!-- Common head Section Begin  -->
+  <meta name="google-site-verification" content="LBARKtXXKC58tg2ClDQXSGU8OntPWMxm0ZFOmwZPHsg">
+  <!-- Favicon icon -->
+   <link rel="icon" href="../Assests/Common/Images/pageHeaderAndFooter/favicon.ico">
+  <!-- Google Font matching Amazon Proprietory Fonts, this is how to use them:
+    font-family: 'Roboto', sans-serif;
+   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"  rel="stylesheet">
+   <!-- Common Header and footer section CSS -->
+    <link rel="stylesheet" href="../Assests/Common/CSS/headerAndFooterV2.css">
+    <link rel="stylesheet" href="../Assests/fontAwesomeProIcons/fontAwesomeIcons.css">
+  
+  <!-- Common head Section Ends  -->
+
+  <!-- #4/6 Teammate, You Need to update yours style sheet here, just replace index.css  -->
+  <link rel="stylesheet" href="index.css" >
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <h1 class="displayNone">Mobiles</h1> <!-- #5/6 Kindly replace homepage with the name of the page teammate designing-->
+  <div id="backToTop"></div>
+  <!-- 
+    Page Header Will be common (assigned to Abhishek kumar)
+  -->
+  <header id="pageHeader">
+    <div class="wrapperLogoAndAlternateNav">
+      <div id="navMenuAlternateActionButton">
+        <i class="fa-regular fa-bars"></i>
+      </div>
+      <a href="../homepage/index.html">
+        <img src="../Assests/Common/Images/pageHeaderAndFooter/logo.png" alt="Amazon Logo">  
+        <span>.in</span>
+      </a>
+    </div>
+
+    <div class="deliveringTo">
+      <div class="mapIcon">
+        <i class="fa-sharp fa-regular fa-location-dot"></i>
+      </div>
+      <div class="deliveryAddress">
+        <div>Delivering to Mumbai 400001</div>
+        <div>Update Location</div>
+      </div>
+    </div>
+
+    <form method="GET" action="index.html" class="searchBoxHeader">
+      <select name="url" class="categories">
+        <option selected="selected" value="All">All</option>
+        <option value="alexa-skills">Alexa Skills</option>
+        <option value="amazon-devices">Amazon Devices</option>
+        <option value="fashion">Amazon Fashion</option>
+        <option value="nowstore">Amazon Fresh</option>
+        <option value="amazon-pharmacy">Amazon Pharmacy</option>
+        <option value="appliances">Appliances</option>
+        <option value="mobile-apps">Apps &amp; Games</option>
+        <option value="audible">Audible Audiobooks</option>
+        <option value="baby">Baby</option>
+        <option value="beauty">Beauty</option>
+        <option value="stripbooks">Books</option>
+        <option value="automotive">Car &amp; Motorbike</option>
+        <option value="apparel">Clothing &amp; Accessories</option>
+        <option value="collectibles">Collectibles</option>
+        <option value="computers">Computers &amp; Accessories</option>
+        <option value="electronics">Electronics</option>
+        <option value="furniture">Furniture</option>
+        <option value="lawngarden">Garden &amp; Outdoors</option>
+        <option value="gift-cards">Gift Cards</option>
+        <option value="grocery">Grocery &amp; Gourmet Foods</option>
+        <option value="hpc">Health &amp; Personal Care</option>
+        <option value="kitchen">Home &amp; Kitchen</option>
+        <option value="industrial">Industrial &amp; Scientific</option>
+        <option value="jewelry">Jewellery</option>
+        <option value="digital-text">Kindle Store</option>
+        <option value="luggage">Luggage &amp; Bags</option>
+        <option value="luxury-beauty">Luxury Beauty</option>
+        <option value="dvd">Movies &amp; TV Shows</option>
+        <option value="popular">Music</option>
+        <option value="mi">Musical Instruments</option>
+        <option value="office-products">Office Products</option>
+        <option value="pets">Pet Supplies</option>
+        <option value="instant-video">Prime Video</option>
+        <option value="shoes">Shoes &amp; Handbags</option>
+        <option value="software">Software</option>
+        <option value="sporting">Sports, Fitness &amp; Outdoors</option>
+        <option value="specialty-aps-sns">Subscribe &amp; Save</option>
+        <option value="home-improvement">Tools &amp; Home Improvement</option>
+        <option value="toys">Toys &amp; Games</option>
+        <option value="under-ten-dollars">Under ₹500</option>
+        <option value="videogames">Video Games</option>
+        <option value="watches">Watches</option>
+      </select>
+      <div class="searchInput">
+        <input type="search" name="search" placeholder="Search Amazon.in">
+      </div>
+      <div class="submitBtn">
+        <input type="submit" value="">
+        <i class="fa-regular fa-magnifying-glass"></i>
+      </div>
+    </form>
+    <a href="#google_translate_element" class="linkingToGoogle_translate_element">
+      <div class="wrapperLang">
+        <div class="wrapperFlagImg"><img src="../Assests/Common/Images/pageHeaderAndFooter/indiaFlagV2.png" alt="India Flag"></div>
+        <div>
+          <span class="langEn">EN</span>
+          <i class="fa-sharp fa-solid fa-caret-down"></i>
+        </div>
+      </div>
+    </a>
+
+    <div class="wrapperHeaderKindOfHeading helloSignIn">
+      <div>Hello, sign in</div>
+      <div>
+        <span>Account & Lists</span>
+        <i class="fa-solid fa-caret-down"></i>
+      </div>
+    </div>
+    <div class="alternateSignIn">
+      <a href="../signIn/index.html">
+        <span>Sign in</span>
+        <i class="fa-regular fa-user"></i>
+      </a>
+    </div>
+
+    <div class="wrapperHeaderKindOfHeading returnsAndOrders">
+      <div>Returns</div>
+      <div>& Orders</div>
+    </div>
+
+    <div class="shoppingCart">
+      <div>
+        <img src="../Assests/Common/Images/pageHeaderAndFooter/cart.png" alt="Shopping Cart">
+      </div>
+      <div class="labelCart">Cart</div>
+      <div class="noOfItemsInCart">0</div>
+    </div>
+  </header>
+  <!--
+    Page Header Primary Navigation
+  -->
+  <nav id="primaryHeaderNavigation">
+    <h2 class="displayNone">Primary Navigation</h2>
+    <ul id="theHeaderNavMenu">
+      <li class="allItemsMenu"><a href="#" id="showMenuItems"><i class="fa-regular fa-bars"></i><span>All</span></a></li>
+      <li><a href="../homepage/index.html">Home</a></li>
+      <li><a href="../sell/index.html">Sell</a></li>
+      <li><a href="../prime/index.html">Prime <i class="fa-sharp fa-solid fa-caret-down"></i></a></li>
+      <li><a href="../miniTV/index.html">Amazon miniTV</a></li>
+      <li><a href="../bestSellers/index.html">Best Sellers</a></li>
+      <li><a href="../todaysDeals/index.html">Today's Deals</a></li>
+      <li><a href="../mobiles-v2/index.html">Mobiles</a></li>
+      <li><a href="../customerService/index.html">Customer Service</a></li>
+      <li><a href="../fresh/index.html">Fresh</a></li>
+      <li><a href="../electronics/index.html">Electronics</a></li>
+      <li><a href="../newReleases/index.html">New Releases</a></li>
+      <li><a href="../homeAndKitchen/index.html">Home &amp; Kitchen</a></li>
+      <li><a href="../giftIdeas/index.html">Gift Ideas</a></li>
+      <li><a href="../fashion/index.html">Fashion</a></li>
+      <li><a href="../amazonPay/index.html">Amazon Pay</a></li>
+      <li><a href="../computers/index.html">Computers</a></li>
+      <li><a href="../books/index.html">Books</a></li>
+      <li><a href="../beautyAndPersonalCare/index.html">Beauty & Personal Care</a></li>
+      <li><a href="../coupons/index.html">Coupons</a></li>
+    </ul>
+  </nav>
+
+
+
+
+  <!-- 
+    Header Navigation Menu Secondary  
+  -->
+  <section id="menuAll" class="displayNone">
+    <div class="masterWrapperMenuAll">
+      <h2 class="displayNone">Navigation Menu All Items</h2>
+      <div class="helloSignIn">
+        <div><img src="../Assests/Common/Images/pageHeaderAndFooter/person.png" alt="person"></div>
+        <div class="text">Hello, <a href="../signIn/index.html">sign in</a></div>
+        <div id="closeMenu"><i class="fa-regular fa-xmark"></i></div>
+      </div>
+
+      <div class="wrapperMenuItems">
+        <div>
+          <h3>Trending</h3>
+          <ul>
+            <li><a href="../homepage/index.html">Homepage</a></li>
+            <li><a href="../sell/index.html">Sell on Amazon</a></li>
+            <li><a href="../prime/index.html">Amazon Prime</a></li>
+            <li><a href="../miniTV/index.html">Amazon miniTV</a></li>
+            <li><a href="../todaysDeals/index.html">Today's Deals</a></li>
+            <li><a href="../bestSellers/index.html">Best Sellers</a></li>
+            <li><a href="../mobiles-v2/index.html">Mobiles</a></li>
+            <li><a href="../customerService/index.html">Customer Service</a></li>
+          </ul>
+        </div>
+        <hr>
+  
+        <div>
+          <h3>Digital Content And Devices</h3>
+          <ul>
+            <li><a href="../echoAndAlexa/index.html"><span>Echo &amp; Alexa</span><i class="fa-solid fa-chevron-right"></i></a></li>
+            <li><a href="../fireTV/index.html"><span>Fire TV</span><i class="fa-solid fa-chevron-right"></i></a></li>
+            <li><a href="../kindleE-Reader/index.html"><span>Kindle E-Readers &amp; eBooks</span><i class="fa-solid fa-chevron-right"></i></a></li>
+            <li><a href="../audibleAudiobooks/index.html"><span>Audible Audiobooks</span><i class="fa-solid fa-chevron-right"></i></a></li>
+            <li><a href="../amazonPrimeVideo/index.html"><span>Amazon Prime Video</span><i class="fa-solid fa-chevron-right"></i></a></li>
+            <li><a href="../amazonPrimeMusic/index.html"><span>Amazon Prime Music</span><i class="fa-solid fa-chevron-right"></i></a></li>
+          </ul>
+        </div>
+        <hr>
+  
+        <div>
+          <h3>Shop By Category</h3>
+          <ul>          
+            <li><a href="../mobilesComputers/index.html"><span>Mobiles, Computers</span><i class="fa-solid fa-chevron-right"></i></a></li>          
+            <li><a href="../tvAppliancesElectronics/index.html"><span>TV, Appliances, Electronics</span><i class="fa-solid fa-chevron-right"></i></a></li>          
+            <li><a href="../mensFashion/index.html"><span>Men's Fashion</span><i class="fa-solid fa-chevron-right"></i></a></li>          
+            <li><a href="../womensFashion/index.html"><span>Women's Fashion</span><i class="fa-solid fa-chevron-right"></i></a></li>          
+            <li><a href="#"><span><span>See All</span>&emsp;<i class="fa-solid fa-chevron-down"></i></span></a></li>          
+          </ul>
+        </div>
+        <hr>
+  
+        <div>
+          <h3>Programs &amp; Features</h3>
+          <ul>          
+            <li><a href="../amazonPay/index.html"><span>Amazon Pay</span></a></li>          
+            <li><a href="../giftCardsAndMobileRecharges/index.html"><span>Gift Cards & Mobile Recharges</span><i class="fa-solid fa-chevron-right"></i></a></li>          
+            <li><a href="../amazonLaunchpad/index.html"><span>Amazon Launchpad</span></a></li>          
+            <li><a href="../handloomAndHandicrafts/index.html"><span>Handloom and Handicrafts</span></a></li>          
+            <li><a href="#"><span><span>See All</span>&emsp;<i class="fa-solid fa-chevron-down"></i></span></a></li>          
+          </ul>
+        </div>
+        <hr>
+  
+        <div>
+          <h3>Help &amp; Settings</h3>
+          <ul>          
+            <li><a href="../amazonPay/index.html"><span>Your Account</span></a></li>             
+            <li><a href="../amazonPay/index.html"><span>Customer Service</span></a></li>             
+            <li><a href="../amazonPay/index.html"><span>Sign in</span></a></li>             
+          </ul>
+        </div>         
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <!-- Common Page Header Section Ends  -->
+
+  <!--
+     #6/6 Teammate, Your code starts from here 
+  -->
+  <main>
+    <div id="wrapperMainContent"> 
+    <!--
+        Sub Navbar for different categories.  
+      -->
+
+      <nav class="mobilesNav">
+        <ul id="mobilesNavMenu">
+          <li><a href="#">Electronics</a></li>
+          <li><a href="#">Mobile & Accessories</a></li>
+          <li><a href="#">Laptop & Accessories</a></li>
+          <li><a href="#">TV & Home Entertainment</a></li>
+          <li><a href="#">Cameras</a></li>
+          <li><a href="#">Techonology</a></li>
+          <li><a href="#">Cameras</a></li>
+          <li><a href="#">Computer Peripherals</a></li>
+          <li><a href="#">Musical Instruments</a></li>
+          <li><a href="#">Office & Stationery</a></li>
+        </ul>
+      </nav>
+      <script>
+
+        document.addEventListener('DOMContentLoaded', makeSureHeaderNavigationItemIsNotPartiallyShown2); 
+          window.addEventListener('resize', makeSureHeaderNavigationItemIsNotPartiallyShown2);
+
+          function makeSureHeaderNavigationItemIsNotPartiallyShown2(){
+            let theHeaderNavMenu = document.getElementById('mobilesNavMenu');
+            let liElements = theHeaderNavMenu.querySelectorAll("li");
+            // console.log(liElements);
+            liElements.forEach(
+              function(li) {
+                let right = li.getBoundingClientRect().right;
+                if(right >= window.innerWidth){
+                  //  console.log(li.getBoundingClientRect());
+                  li.style.opacity = 0;
+                }else if(right-20 <= window.innerWidth){
+                  li.style.opacity = 1;
+                }
+              }
+            );
+          }
+      </script>
+
+      <div class="main_Block_Div">
+        <div class="main_block_left_div">
+          <!-- Category Section  -->
+          <div class="left_item_cat_div">
+            <h4>Category</h4>
+            <!--  Electronics products -->
+            <div id="electronis" style="margin-top: 5px; margin-bottom: 5px;">
+              <i class="fa-sharp fa-solid fa-angle-left" style="color: rgb(28, 27, 27)"></i>
+              <a href="#" style="
+                    text-decoration-line: none;
+                    color: black;
+                    font-size: small;
+                  ">Electronics</a>
+            </div>
+
+            <div id="mobile_Accessorie">
+              <h3 style="margin-bottom: 5px;">Mobile & Accessories</h3>
+              <a href="#" style="
+                    text-decoration-line: none;
+                    color: black;
+                    font-size: small;
+                  ">Mobile Accessories</a>
+              <a href="#" style="
+                    text-decoration-line: none;
+                    color: black;
+                    font-size: small;
+                  ">Mobile Broadband Devices</a>
+              <a href="#" style="
+                    text-decoration-line: none;
+                    color: black;
+                    font-size: small;
+                  ">Mobile Broadband Devices</a>
+              <a href="#" style="
+                    text-decoration-line: none;
+                    color: black;
+                    font-size: small;
+                  ">SIM Cards</a>
+              <a href="#" style="
+                    text-decoration-line: none;
+                    color: black;
+                    font-size: small;
+                  ">Smartphones & Basic Mobiles</a>
+              <a href="#" style="
+                    text-decoration-line: none;
+                    color: black;
+                    font-size: small;
+                  ">Smart Watches</a>
+            </div>
+
+            <!--  Amazon Brands -->
+            <div class="amazon_brands">
+              <h3>Made for Amazon Brands</h3>
+              <div id="amazon_brand">
+                <input type="checkbox" id="amazon_brands" name="amazon_brands" value="brands" >
+                <label for="amazon_brands">Amazon Brands</label>
+              </div>
+            </div>
+
+            <!--  Amazon Prime member -->
+            <div>
+              <h3>Amazon Prime</h3>
+              <span style="
+                display: flex;
+                align-items: center;
+                ">
+                <label for="amazon_prime">
+                    <input type="checkbox"  id="amazon_prime" value="prime" >
+                </label>
+                <img  src="./images/amazon_Prime_icon.png" alt="prime" style="height: 4rem;">
+              </span>
+            </div>
+
+            <!--  Pay on Delivery -->
+            <div class="pay_on_delivery">
+              <h3>Pay On Delivery</h3>
+              <div id="pay_on_del">
+                <span><input type="checkbox" id="pay_on_delivery" name="pay_on_delivery" value="amount" >
+                  <label for="pay_on_delivery"><a href="#"
+                      style="text-decoration: none; color: black;">Eligible for Pay on Delivery</a></label>
+                </span>
+              </div>
+            </div>
+
+            <!--  Mobile Brands  -->
+            <div class="brands">
+              <h3>Brands</h3>
+              
+                <span>
+                  <input type="checkbox" id="realme" name="realme" value="mobile" >
+                  <label for="realme"><a href="#" style="
+                        text-decoration-line: none;
+                        color: black;
+                        font-size: small;
+                      ">realme</a></label>
+                </span>
+                <span>
+                  <input type="checkbox" id="Apple" name="Apple" value="mobile" >
+                  <label for="Apple"><a href="#" style="
+                        text-decoration-line: none;
+                        color: black;
+                        font-size: small;
+                      ">Apple</a></label>
+                </span>
+                <span>
+                  <input type="checkbox" id="redmi" name="redmi" value="mobile" >
+                  <label for="redmi"><a href="#" style="
+                        text-decoration-line: none;
+                        color: black;
+                        font-size: small;
+                      ">Redmi</a></label>
+                </span>
+                <span>
+                  <input type="checkbox" id="OnePlus" name="OnePlus" value="mobile" >
+                  <label for="OnePlus"><a href="#" style="
+                        text-decoration-line: none;
+                        color: black;
+                        font-size: small;
+                      ">OnePlus</a></label>
+                </span>
+                <span>
+                  <input type="checkbox" id="Ambrane" name="Ambrane" value="mobile" >
+                  <label for="Ambrane"><a href="#" style="
+                        text-decoration-line: none;
+                        color: black;
+                        font-size: small;
+                      ">Ambrane</a></label>
+                </span>
+                <span>
+                  <input type="checkbox" id="samsung" name="samsung" value="mobile" >
+                  <label for="samsung"><a href="#" style="
+                        text-decoration-line: none;
+                        color: black;
+                        font-size: small;
+                      ">Samsung</a></label>
+                </span>
+                <span>
+                  <input type="checkbox" id="MI" name="MI" value="mobile" >
+                  <label for="MI"><a href="#" style="
+                        text-decoration-line: none;
+                        color: black;
+                        font-size: small;
+                      ">MI</a></label>
+                </span>
+              
+            </div>
+
+            <!--  Customer Average Reviews -->
+            <div class="reviews">
+              <h3>Avg. Customer Review</h3>
+              <div>
+                <span><i class="fa-solid fa-star-sharp" style="color: #ffa41c"></i>
+                  <i class="fa-solid fa-star-sharp" style="color: #ffa41c"></i>
+                  <i class="fa-solid fa-star-sharp" style="color: #ffa41c"></i>
+                  <i class="fa-solid fa-star-sharp" style="color: #ffa41c"></i>
+                  <i class="fa-light fa-star-sharp" style="color: #ffa41c"></i>
+                  <a href="#" style="
+                        text-decoration-line: none;
+                        color: black;
+                        font-size: small;
+                      ">& up</a>
+                </span>
+              </div>
+              <div>
+                <span>
+                  <i class="fa-solid fa-star-sharp" style="color: #ffa41c"></i>
+                  <i class="fa-solid fa-star-sharp" style="color: #ffa41c"></i>
+                  <i class="fa-solid fa-star-sharp" style="color: #ffa41c"></i>
+                  <i class="fa-light fa-star-sharp" style="color: #ffa41c"></i>
+                  <i class="fa-light fa-star-sharp" style="color: #ffa41c"></i>
+                  <a href="#" style="
+                        text-decoration-line: none;
+                        color: black;
+                        font-size: small;
+                      ">& up</a>
+                </span>
+              </div>
+              <div>
+                <span>
+                  <i class="fa-solid fa-star-sharp" style="color: #ffa41c"></i>
+                  <i class="fa-solid fa-star-sharp" style="color: #ffa41c"></i>
+                  <i class="fa-light fa-star-sharp" style="color: #ffa41c"></i>
+                  <i class="fa-light fa-star-sharp" style="color: #ffa41c"></i>
+                  <i class="fa-light fa-star-sharp" style="color: #ffa41c"></i>
+                  <a href="#" style="
+                        text-decoration-line: none;
+                        color: black;
+                        font-size: small;
+                      ">& up</a>
+                </span>
+              </div>
+              <div>
+                <span>
+                  <i class="fa-solid fa-star-sharp" style="color: #ffa41c"></i>
+                  <i class="fa-light fa-star-sharp" style="color: #ffa41c"></i>
+                  <i class="fa-light fa-star-sharp" style="color: #ffa41c"></i>
+                  <i class="fa-light fa-star-sharp" style="color: #ffa41c"></i>
+                  <i class="fa-light fa-star-sharp" style="color: #ffa41c"></i>
+                  <a href="#" style="
+                        text-decoration-line: none;
+                        color: black;
+                        font-size: small;
+                      ">& up</a>
+                </span>
+              </div>
+            </div>
+            <!-- New Arrivals -->
+            <div id="new_arrivals">
+              <h3>New Arrivals</h3>
+              <a href="#" style="
+                    text-decoration-line: none;
+                    color: black;
+                    font-size: small;
+                  ">Last 30 Days</a>
+              <a href="#" style="
+                    text-decoration-line: none;
+                    color: black;
+                    font-size: small;
+                  ">Last 90 Days</a>
+            </div>
+
+            <!-- check  Items based on condition -->
+            <div class="item_condition">
+              <h3>Item Condition</h3>
+              <a href="#" style="
+                    text-decoration-line: none;
+                    color: black;
+                    font-size: small;
+                  ">New</a>
+              <a href="#" style="
+                    text-decoration-line: none;
+                    color: black;
+                    font-size: small;
+                  ">Renewed</a>
+              <a href="#" style="
+                    text-decoration-line: none;
+                    color: black;
+                    font-size: small;
+                  ">Used</a>
+            </div>
+
+            <!-- Price range based products -->
+            <div class="price">
+              <h3>Price</h3>
+              <a href="#" style="
+                    text-decoration-line: none;
+                    color: black;
+                    font-size: small;
+                  ">Under ₹1000</a>
+              <a href="#" style="
+                    text-decoration-line: none;
+                    color: black;
+                    font-size: small;
+                  ">₹1000 - ₹5000</a>
+              <a href="#" style="
+                    text-decoration-line: none;
+                    color: black;
+                    font-size: small;
+                  ">₹5000 - ₹10000</a>
+              <a href="#" style="
+                    text-decoration-line: none;
+                    color: black;
+                    font-size: small;
+                  ">₹10000 - ₹20000</a>
+              <a href="#" style="
+                    text-decoration-line: none;
+                    color: black;
+                    font-size: small;
+                  ">Over ₹20000</a>
+            </div>
+
+            <!-- Deals and Discounts on products -->
+            <div class="deals">
+              <h3>Deals & Discounts</h3>
+              <a href="#" style="
+                    text-decoration-line: none;
+                    color: black;
+                    font-size: small;
+                  ">10% Off or more</a>
+              <a href="#" style="
+                    text-decoration-line: none;
+                    color: black;
+                    font-size: small;
+                  ">25% Off or more</a>
+              <a href="#" style="
+                    text-decoration-line: none;
+                    color: black;
+                    font-size: small;
+                  ">35% Off or more</a>
+              <a href="#" style="
+                    text-decoration-line: none;
+                    color: black;
+                    font-size: small;
+                  ">50% Off or more</a>
+              <a href="#" style="
+                    text-decoration-line: none;
+                    color: black;
+                    font-size: small;
+                  ">60% Off or more</a>
+              <a href="#" style="
+                    text-decoration-line: none;
+                    color: black;
+                    font-size: small;
+                  ">70% Off or more</a>
+            </div>
+
+            <!-- Seller -->
+
+            <div class="seller">
+              <h3>Seller</h3>
+              <span>
+                <input type="checkbox" id="Cocoblu_retail" name="Cocoblu_retail" >
+                <label for="Cocoblu_retail"><a href="#" style="
+                        text-decoration-line: none;
+                        color: black;
+                        font-size: small;
+                      ">Cocoblu Retail</a></label>
+              </span>
+              <span>
+                <input type="checkbox" id="appario_retail" name="appario_retail" >
+                <label for="appario_retail"><a href="#" style="
+                        text-decoration-line: none;
+                        color: black;
+                        font-size: small;
+                      ">Appario Retail Private Ltd</a></label>
+              </span>
+              <span>
+                <input type="checkbox" id="the_gift_kart" name="the_gift_kart" >
+                <label for="the_gift_kart"><a href="#" style="
+                        text-decoration-line: none;
+                        color: black;
+                        font-size: small;
+                      ">TheGiftKart</a></label>
+              </span>
+              <span>
+                <input type="checkbox" id="spigen_india" name="spigen_india" >
+                <label for="spigen_india"><a href="#" style="
+                        text-decoration-line: none;
+                        color: black;
+                        font-size: small;
+                      ">Spigen India</a></label>
+              </span>
+              <span>
+                <input type="checkbox" id="imagine_design" name="imagine_design" >
+                <label for="imagine_design"><a href="#" style="
+                        text-decoration-line: none;
+                        color: black;
+                        font-size: small;
+                      ">Imagine Design</a></label>
+              </span>
+              <span>
+                <input type="checkbox" id="vonzee" name="vonzee" >
+                <label for="vonzee"><a href="#" style="
+                        text-decoration-line: none;
+                        color: black;
+                        font-size: small;
+                      ">VONZEE®</a></label>
+              </span>
+              <span>
+                <input type="checkbox" id="accessories_master" name="accessories_master" >
+                <label for="accessories_master"><a href="#" style="
+                        text-decoration-line: none;
+                        color: black;
+                        font-size: small;
+                      ">Accessories Master</a></label>
+              </span>
+            </div>
+
+            <!--  Availability of items -->
+            <div class="availability">
+              <h3>Availability</h3>
+              <span>
+                <input type="checkbox" id="outofstock" name="outofstock" >
+                <label for="outofstock"><a href="#" style="
+                        text-decoration-line: none;
+                        color: black;
+                        font-size: small;
+                      ">Include Out Of Stock</a></label>
+              </span>
+            </div>
+          </div>
+        </div>
+        
+        <!--  Right div of main block start here -->
+
+        
+        <div class="right_items_div" id="right_items_div">
+
+          <!--  ** section 1 div**-->
+          <div class="right_item_section1">
+            <span>Smartphones</span>
+            <span>Accessories</span>
+            <span>Samsung Galaxy M13</span>
+          </div>
+
+          <!-- ** section 2 div ** -->
+          <div class="right_item_section2">
+            <!-- <div class="side_btn"><i class="fa-regular fa-angle-left"></i></div> -->
+            <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" src="./images/mobile1.jpg" alt="Narzo" >
+            <!-- <div class="side_btn2">
+              <i class="fa-regular fa-angle-right"></i>
+            </div> -->
+          </div>
+            <!-- ** section 3 div ** -->
+          <div class="right_item_section3">
+            <div class="right_item_section3_content">
+              <div class="section3_content">
+                <div class="section3_heading">
+                  <h3>Bestselling affordable smartphones</h3>
+                </div>
+                <div class="section3_items">
+                  <div data-aos="flip-left" class="section3_item">
+                    <div class="section3_img">
+                      <img src="./images/iphoneN1.jpg" alt="iPhone" >
+                    </div>
+                    <div class="section3_shopnow">Shop Now</div>
+                  </div>
+                  <div class="section3_item">
+                    <div data-aos="flip-left" class="section3_img">
+                      <img src="./images/iQooN2.jpg" alt="iQoo" >
+                    </div>
+                    <div class="section3_shopnow">Shop Now</div>
+                  </div>
+                  <div class="section3_item">
+                    <div data-aos="flip-left"  class="section3_img">
+                      <img src="./images/oneplusN3.jpg" alt="Oneplus" >
+                    </div>
+                    <div class="section3_shopnow">Shop Now</div>
+                  </div>
+                  <div class="section3_item">
+                    <div data-aos="flip-left"  class="section3_img">
+                      <img src="./images/samsungN4.jpg" alt="Samsung" >
+                    </div>
+                    <div class="section3_shopnow">Shop Now</div>
+                  </div>
+                  <div class="section3_item">
+                    <div data-aos="flip-left"  class="section3_img">
+                      <img src="./images/oneplusN5.jpg" alt="OnePlus" >
+                    </div>
+                    <div class="section3_shopnow">Shop Now</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- *section 4 div*** -->
+          <div class="right_item_section4">
+            <div class="right_item_section4_content">
+              <div class="section4_content">
+                <div class="section4_heading">
+                  <h3>Amazone Smartphone Stores</h3>
+                </div>
+                <div  class="section4_items">
+                  <div data-aos="flip-left" class="section4_item">
+                    <div class="section4_img">
+                      <img src="./images/realme_narzo_50.jpg" alt=""  >
+                    </div>
+                  </div>
+                  <div data-aos="flip-left" class="section4_item">
+                    <div class="section4_img">
+                      <img src="./images/realme_narzo_50.jpg" alt=""  >
+                    </div>
+                  </div>
+                  <div data-aos="flip-left"  class="section4_item">
+                    <div class="section4_img">
+                      <img src="./images/realme_narzo_50.jpg" alt="" >
+                    </div>
+                  </div>
+                  <div data-aos="flip-left"  class="section4_item">
+                    <div class="section4_img">
+                      <img src="./images/realme_narzo_50.jpg" alt="" >
+                    </div>
+                  </div>
+                  <div data-aos="flip-left"  class="section4_item">
+                    <div class="section4_img">
+                      <img src="./images/realme_narzo_50.jpg" alt=""  >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ** Section 5 div canera bank ** -->
+          <div data-aos="fade-up" data-aos-anchor-placement="top-bottom"  class="section5_items">
+            <div class="section5_item kindOfBanner">
+              <img src="./images/canra.jpg" alt="Canra Bank">
+            </div>
+          </div>
+          <hr>
+
+          <!-- ** Section 6 div federal bank ** -->
+          <div data-aos="fade-up" data-aos-anchor-placement="top-bottom"  class="section6_items">
+            <div class="section6_item kindOfBanner">
+              <img src="./images/federal.jpg" alt="Federal Bank">
+            </div>
+          </div>
+          <hr style="background-color: rgb(126, 127, 127); height: 3px; margin-bottom: 1vh;">
+
+
+          <!-- **  Section 7 div top deals  ** -->
+          <div data-aos="fade-up" data-aos-anchor-placement="top-bottom"  class="section7_top_deals">
+            <div class="section7_top_deal">
+              <div class="section7_top_deal_tag kindOfBanner" >
+                <img src="./images/top_deals_week.jpg" alt="top deals week">
+              </div>
+            </div>
+
+            <div class="section7_top_deals_item">
+              <div class="section7_top_deals_item_grid">
+                <div class="section7_items">
+                  <div data-aos="flip-left" ><img src="./images/Grid1.jpg" alt="mobile1"></div>
+                  <div data-aos="flip-left" ><img src="./images/Grid2.jpg" alt="Mobile2"></div>
+                  <div data-aos="flip-left" ><img src="./images/Grid3.jpg" alt="Mobile3"></div>
+                  <div data-aos="flip-left" ><img src="./images/Grid4.jpg" alt="Mobile4"></div>
+                  <div data-aos="flip-left" ><img src="./images/Grid5.jpg" alt="Mobile5"></div>
+                  <div data-aos="flip-left" ><img src="./images/Grid6.jpg" alt="Mobile6"></div>
+                  <div data-aos="flip-left" ><img src="./images/Grid7.jpg" alt="Mobile7"></div>
+                  <div data-aos="flip-left" ><img src="./images/Grid8.jpg" alt="Mobile8"></div>
+                  <div data-aos="flip-left" ><img src="./images/Grid9.jpg" alt="Mobile9"></div>
+                  <div data-aos="flip-left" ><img src="./images/Grid10.jpg" alt="Mobile10"></div>
+                  <div data-aos="flip-left" ><img src="./images/Grid11.jpg" alt="Mobile11"></div>
+                  <div data-aos="flip-left" ><img src="./images/Grid12.jpg" alt="Mobile12"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Section 8 Best selling mid range smart phones -->
+
+          <div class="right_item_section3">
+            <div class="right_item_section3_content">
+              <div class="section3_content">
+                <div class="section3_heading">
+                  <h3>Bestselling Mid Range phones</h3>
+                </div>
+                <div class="section3_items">
+                  <div data-aos="flip-left"  class="section3_item">
+                    <div class="section3_img">
+                      <img src="./images/iphoneN1.jpg" alt="iPhone" >
+                    </div>
+                    <div class="section3_shopnow">Shop Now</div>
+                  </div>
+                  <div data-aos="flip-left"  class="section3_item">
+                    <div class="section3_img">
+                      <img src="./images/iQooN2.jpg" alt="iQoo" >
+                    </div>
+                    <div class="section3_shopnow">Shop Now</div>
+                  </div>
+                  <div data-aos="flip-left"  class="section3_item">
+                    <div class="section3_img">
+                      <img src="./images/oneplusN3.jpg" alt="Oneplus" >
+                    </div>
+                    <div class="section3_shopnow">Shop Now</div>
+                  </div>
+                  <div class="section3_item">
+                    <div class="section3_img">
+                      <img src="./images/samsungN4.jpg" alt="Samsung" >
+                    </div>
+                    <div class="section3_shopnow">Shop Now</div>
+                  </div>
+                  <div data-aos="flip-left"  class="section3_item">
+                    <div class="section3_img">
+                      <img src="./images/oneplusN5.jpg" alt="OnePlus" >
+                    </div>
+                    <div class="section3_shopnow">Shop Now</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- **  Section 9 best selling premium phones ** -->
+
+          <div class="right_item_section3">
+            <div class="right_item_section3_content">
+              <div class="section3_content">
+                <div class="section3_heading">
+                  <h3>Bestselling Premium smartphones</h3>
+                </div>
+                <div class="section3_items">
+                  <div data-aos="flip-left"  class="section3_item">
+                    <div class="section3_img">
+                      <img src="./images/iphoneN1.jpg" alt="iPhone" >
+                    </div>
+                    <div class="section3_shopnow">Shop Now</div>
+                  </div>
+                  <div  data-aos="flip-left" class="section3_item">
+                    <div class="section3_img">
+                      <img src="./images/iQooN2.jpg" alt="iQoo" >
+                    </div>
+                    <div class="section3_shopnow">Shop Now</div>
+                  </div>
+                  <div data-aos="flip-left"  class="section3_item">
+                    <div class="section3_img">
+                      <img src="./images/oneplusN3.jpg" alt="Oneplus" >
+                    </div>
+                    <div class="section3_shopnow">Shop Now</div>
+                  </div>
+                  <div data-aos="flip-left"  class="section3_item">
+                    <div class="section3_img">
+                      <img src="./images/samsungN4.jpg" alt="Samsung" >
+                    </div>
+                    <div class="section3_shopnow">Shop Now</div>
+                  </div>
+                  <div data-aos="flip-left"  class="section3_item">
+                    <div class="section3_img">
+                      <img src="./images/oneplusN5.jpg" alt="OnePlus" >
+                    </div>
+                    <div class="section3_shopnow">Shop Now</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 10 HDFC Discount -->
+          <div data-aos="fade-right"  class="section5_items">
+            <div class="section5_item">
+              <img src="./images/canra.jpg" alt="Canra Bank">
+            </div>
+          </div>
+          <hr style="background-color: rgb(126, 127, 127); height: 3px; margin-bottom: 1vh;">
+
+          <!-- Section 10 One Card -->
+          <div data-aos="fade-left" class="section5_items">
+            <div class="section5_item">
+              <img src="./images/OneCard.jpg" alt="Canra Bank">
+            </div>
+          </div>
+          <hr style="background-color: rgb(126, 127, 127); height: 3px; margin-bottom: 1vh;">
+
+
+        </div>
+      </div>
+    </div> <!-- END OF wrapperMainContent-->
+  
+  </main>
+  <!--
+     Your code Ends here 
+  -->
+
+  <!-- Common Page Footer Section Begins -->
+
+
+  <!-- 
+    Footer Section Designed by Savita Mam 
+  -->
+  <footer id="pageFooter">
+    <h2 class="displayNone">Page Footer</h2>
+    <!-- whenver user clicks on this backToTop user will be moved to top of the page -->      
+      <a class="footer-top" href="#backToTop">Back to top</a>            
+
+    <div class="footer-main">
+      <div class="links">
+          <h3>Get to Know Us</h3><br>
+          <ul>
+              <li><a href="../aboutUs/index.html">About us</a></li>
+              <li><a href="../Careers/index.html">Careers</a></li>
+              <li><a href="../pressReleases/index.html">Press releases</a></li>
+              <li><a href="../amazonScience/index.html">Amazon Science</a></li>
+          </ul>
+      </div>
+      <div class="links">
+          <h3>Connect with us</h3><br>
+          <ul>
+              <li><a href="https://www.facebook.com/AmazonIN">Facebook</a></li>
+              <li><a href="https://twitter.com/AmazonIN">Twitter</a></li>
+              <li><a href="https://www.instagram.com/amazondotin/">Instagram</a></li>
+          </ul>
+
+      </div>
+      <div class="links">
+          <h3>Make money with us</h3><br>
+          <ul>
+              <li><a href="../sellOnAmazon/index.html">Sell on Amazon</a></li>
+              <li><a href="../sellUnderAmazonAccelerator/index.html">Sell under Amazon Accelerator</a></li>
+              <li><a href="../protectAndBuildYourBrand/index.html">Protect and Build Your Brand</a></li>
+              <li><a href="../amazomGlobalSelling/index.html">Amazon Global Selling</a></li>
+              <li><a href="../becomeAnAffiliate/index.html">Become an Affiliate</a></li>
+              <li><a href="../fulfillmentByAmazon/index.html">Fulfilment by Amazon</a></li>
+              <li><a href="../advertiseYourProducts/index.html">Advertise Your Products</a></li>
+              <li><a href="../amazonPayOnMerchants/index.html">Amazon Pay on Merchants</a></li>
+          </ul>
+      </div>
+      <div class="links">
+          <h3>Let us Help You</h3><br>
+          <ul>
+              <li><a href="../covid19AndAmazon/index.html">COVID-19 and Amazon</a></li>
+              <li><a href="../yourAccount/index.html">Your account</a></li>
+              <li><a href="../returnsCenter/index.html">Returns Centre</a></li>
+              <li><a href="../100PercentPurchaseProtection/index.html">100% Purchase Protection</a></li>
+              <li><a href="../downloadTheAmazonApp/index.html">Amazon App Download</a></li>
+              <li><a href="../help/index.html">Help</a></li>
+          </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="footer-main-sec">
+        <div class="wrapperLogoAndLangsButton">
+            <div class="amazonLogo">
+              <a href="../homepage/index.html">
+                <img src="../Assests/Common/Images/pageHeaderAndFooter/logo.png" alt="Amazon Logo">
+              </a>
+            </div>
+            <div class="button">                
+              <i class="fa-light fa-globe"></i>
+              <div id="google_translate_element"></div>
+              <!-- <select>
+                  <option value="english">English</option>
+                  <option value="hindi">हिंदी</option>
+                  <option value="lang3">தமிழ்</option>
+                  <option value="lagn3">తెలుగు</option>
+                  <option value="marathi">मराठी</option>
+              </select>               -->
+            </div>
+        </div>
+    
+
+        <div>
+          <ul class="countries">
+            <li> <a href="https://www.amazon.com.au/ref=footer_au">Australia</a></li>
+            <li><a href="https://www.amazon.com.br/ref=footer_br">Brazil</a></li>
+            <li><a href="https://www.amazon.ca/ref=footer_ca">Canada</a></li>
+            <li><a href="https://www.amazon.cn/ref=footer_cn">China</a></li>
+            <li><a href="https://www.amazon.fr/ref=footer_fr"> France</a></li>
+            <li><a href="https://www.amazon.de/ref=footer_de">Germany</a></li>
+            <li><a href="https://www.amazon.it/ref=footer_it">Italy</a></li>
+            <li><a href="https://www.amazon.co.jp/ref=footer_jp">Japan</a></li>
+            <li><a href="https://www.amazon.com.mx/ref=footer_mx">Mexico</a></li>
+            <li><a href="https://www.amazon.nl/ref=footer_nl">Netherlands</a></li>
+            <li><a href="https://www.amazon.pl/ref=footer_pl">Poland</a></li>
+            <li><a href="https://www.amazon.sg/ref=footer_sg">Singapore</a></li>
+            <li><a href="https://www.amazon.es/ref=footer_es">Spain</a></li>
+            <li><a href="https://www.amazon.com.tr/ref=footer_tr">Turkey</a></li>
+            <li><a href="https://www.amazon.ae/ref=footer_ae">United Arab Emirates</a></li>
+            <li><a href="https://www.amazon.co.uk/ref=footer_uk">United Kingdom</a></li>
+            <li><a href="https://www.amazon.com/ref=footer_us">United States</a></li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="lists">
+          <div class="links">
+            <a href="https://www.abebooks.com/">
+              <span>AbeBooks</span>
+              <span>Books, art &amp;collectibles<br></span>
+            </a>
+          </div>
+          <div class="links">
+            <a href="https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter">
+              <span>Amazon Web Services</span>
+              <span>Scalable Cloud<br>Computing Services</span>
+            </a>
+          </div>
+          <div class="links">
+            <a href="https://www.audible.in/">
+              <span>Audible</span>
+              <span>Download<br>AudioBooks</span>
+            </a>
+          </div>
+          <div class="links">
+            <a href="https://www.imdb.com/">
+              <span>IMDb</span>
+              <span>Movies, TV<br>&amp; Celebrities</span>
+            </a>
+          </div>
+          <div class="links">
+            <a href="https://www.shopbop.com/">
+              <span>Shopbop</span>
+              <span>Designer<br>Fashion Brands</span>
+            </a>
+          </div>
+          <div class="links">
+            <a href="../AmazonBusiness/index.html">
+              <span>Amazon Business</span>
+              <span>Everything for<br>Your Business</span>
+            </a>
+          </div>
+          <div class="links">
+            <a href="../prime/index.html">
+              <span>Prime Now</span>
+              <span>2-Hour Delivery<br>on Everyday items</span>
+            </a>
+          </div>
+          <div class="links">
+            <a href="../primeMusic/index.html">
+              <span>Amazon Prime Music</span>
+              <span>100 million songs, ad-free<br>Over 15 million podcasts episodes</span>
+            </a>
+          </div>
+
+      </div>
+
+      <div class="last-links">
+          <ul>
+              <li><a href="../conditionsOfUseAndSale/index.html">Conditions of Use & Sale</a></li>
+              <li><a href="../privacyBasedAds/index.html">Privacy Notice</a></li>
+              <li><a href="../internetBasedAds/index.html">Interest-Based Ads</a></li>
+          </ul>
+          <p>&copy; 1996-2023, Amazon.com, Inc. or its affiliates</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Common Header & Footer Section Script -->
+    <script src="../Assests/Common/JS/headerAndFooter.js"></script>
+
+  <!-- Google Translate -->
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script >
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+    </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
